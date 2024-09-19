@@ -1,10 +1,19 @@
+@use 'variables';
+
 html {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
+    
 }
 
 body {
     margin:0;
     box-sizing: content-box;
     width: 100vw;
+}
+
+button{
+    background-color: white;
+    border: solid variables.$ldlRed 10px;
+    padding: 5px;
 }
