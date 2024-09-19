@@ -26,6 +26,9 @@ footer {
   width: 100%;
   text-align: left;
   padding: 55px 50px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer .footer-left,

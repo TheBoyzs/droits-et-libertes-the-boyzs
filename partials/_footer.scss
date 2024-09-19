@@ -1,8 +1,12 @@
+@use 'variables';
 footer{
-    background-color: #092327;
+    background-color: variables.$dark;
     width: 100%;
     text-align: left;
     padding: 55px 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 footer .footer-left,
 footer .footer-center,
