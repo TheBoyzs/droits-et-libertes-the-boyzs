@@ -10,3 +10,15 @@ footer .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  

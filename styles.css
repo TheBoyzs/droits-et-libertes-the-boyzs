@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
 }
 
 button {
@@ -36,4 +35,15 @@ footer .footer-center,
 footer .footer-right {
   display: inline-block;
   vertical-align: top;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.legal__links {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
