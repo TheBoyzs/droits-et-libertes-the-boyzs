@@ -1,9 +1,12 @@
 html {
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
 }
 
 body {
   margin: 0;
+  box-sizing: content-box;
+  width: 100vw;
 }
 
 button {
@@ -47,4 +50,6 @@ footer .footer-right {
 .legal__links {
   display: flex;
   align-items: center;
+}/*# sourceMappingURL=styles.css.map */ase;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
