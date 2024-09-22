@@ -105,14 +105,19 @@ header{
             align-self: center;
             height:6vh;
             width:19vw;
-            &:nth-child(1){
+            background-color: variables.$ldlRed;
+            color:variables.$white;
+            
+            &:hover{
                 background-color:variables.$white;
-                border: solid variables.$ldlRed;
                 color:variables.$ldlRed;
+                border: solid variables.$ldlRed;
             }
-            &:nth-child(2){
-                color:variables.$white;
-            }
+                
+            
+                
+            
+            
         }
 
 

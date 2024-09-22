@@ -177,14 +177,13 @@ footer .footer-right {
     align-self: center;
     height: 6vh;
     width: 19vw;
-  }
-  header .header__boutons button:nth-child(1) {
-    background-color: #FDFDFF;
-    border: solid #B20838;
-    color: #B20838;
-  }
-  header .header__boutons button:nth-child(2) {
+    background-color: #B20838;
     color: #FDFDFF;
+  }
+  header .header__boutons button:hover {
+    background-color: #FDFDFF;
+    color: #B20838;
+    border: solid #B20838;
   }
 }
 /*
