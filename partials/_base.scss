@@ -13,7 +13,7 @@ body {
 }
 
 button{
-    background-color: white;
-    border: solid variables.$ldlRed 10px;
+    background-color: variables.$ldlRed;
+    border: none;
     padding: 5px;
 }

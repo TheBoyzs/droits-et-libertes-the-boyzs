@@ -1,0 +1,16 @@
+
+@use 'variables';
+
+button{
+    background-color: variables.$ldlRed;
+    border: none;
+    padding: 5px;
+    width:25vw;
+}
+
+.menu{
+    width:50vw;
+    .fa-bars{
+        color:variables.$ldlRed;
+    }
+}
