@@ -42,7 +42,7 @@ footer .footer-right {
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-content: stretch;
-
+//style pour les icones de médias sociaux
   &__social-icons a {
     background-color: variables.$white;
     color: #818a91;
@@ -75,7 +75,7 @@ footer .footer-right {
     background-color: #00aced;
     color: variables.$white;
   }
-
+// Styles pour les liens dans le milieu
   &__links li{
     list-style: none;
     text-transform: uppercase;
@@ -86,5 +86,15 @@ footer .footer-right {
   &__link a:hover{
     text-decoration: underline;
     color: variables.$ldlRed;
+  }
+  &__legal{
+    line-height: 0;
+    text-align: center;
+    color: gray;
+  }
+  //Styles pour les infos: adresses, numéro de téléphone, etc.
+  &__info{
+    text-align: right;
+    line-height: 0%;
   }
 }

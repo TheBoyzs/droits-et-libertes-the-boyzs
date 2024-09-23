@@ -154,6 +154,15 @@ footer .footer-right {
   text-decoration: underline;
   color: #B20838;
 }
+.footer-wrapper__legal {
+  line-height: 0;
+  text-align: center;
+  color: gray;
+}
+.footer-wrapper__info {
+  text-align: right;
+  line-height: 0%;
+}
 
 @media (min-width: 375px) {
   header {
