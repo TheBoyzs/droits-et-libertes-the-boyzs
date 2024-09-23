@@ -30,3 +30,10 @@ footer .footer-right {
   text-transform: uppercase;
   color: white;
 }
+
+.footer-wrapper{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: fit-content;
+  justify-content: stretch;
+}

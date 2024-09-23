@@ -16,4 +16,9 @@ button{
     background-color: variables.$ldlRed;
     border: none;
     padding: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#7e082a;
+    transition: 0.5s ease-in-out;
 }

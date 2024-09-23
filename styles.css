@@ -14,6 +14,12 @@ button {
   background-color: #B20838;
   border: none;
   padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7e082a;
+  transition: 0.5s ease-in-out;
 }
 
 /* le disclaimer est en display grid sur une colonne et une rangée*/
@@ -63,7 +69,7 @@ button {
 }
 footer {
   background-color: #092327;
-  width: 100vw;
+  width: 100%;
   text-align: left;
   padding: 55px 50px;
   color: white;
@@ -92,6 +98,13 @@ footer .footer-right {
 .footer a {
   text-transform: uppercase;
   color: white;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: fit-content;
+  justify-content: stretch;
 }
 
 @media (min-width: 375px) {
