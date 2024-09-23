@@ -143,6 +143,10 @@ footer .footer-right {
   background-color: #00aced;
   color: #FDFDFF;
 }
+.footer-wrapper__social-icons a.instagram:hover {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  color: #FDFDFF;
+}
 .footer-wrapper__links li {
   list-style: none;
   text-transform: uppercase;
