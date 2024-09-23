@@ -7,27 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Raphael, Maik, Pierre-Luc" content="John Doe">
     <title>Ligue des droits et libertés - The Boyzs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="disclaimer">
-        <p>Ce site est un une refonte dans le contexte d'un projet étudiant. <strong>Consulter le site original</strong>
+        <p>Ce site est un une refonte dans le contexte d'un projet étudiant.            
+            <strong>Consulter le site original</strong>
+            
         </p>
+        <i class="fa-solid fa-x fa-2x"></i>
     </div>
     <header>
+        <div class="header__searchbar">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            <input type="text" placeholder="  RECHERCHER">
+
+        </div>
+       
+
+        <img class="logo" src="./sources/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+
+        <div class="header__boutons">
+            <button>
+                S'INFORMER
+            </button>
+            <button>
+                DONNER
+            </button>
+        </div>
+
         <nav>
-            <h1>Ligue des droits et libertés - The Boyzs</h1>
-            <button>Donner</button>
+            <div class="menu">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </div>
+            <!--La nav bar de bootstrap est ici-->
         </nav>
     </header>
-    <section>
-        <p>Membres: Maïk Hamel, Pierre-Luc Proulx, Raphaël Dumont</p><br>
-        <a href="https://liguedesdroits.ca/">Lien vers le site original</a>
-        <a href="https://github.com/TheBoyzs/droits-et-libertes-the-boyzs/tree/main">Lien vers le repo Github</a>
-        <footer class="footer">
-            <div class="footer">
-                <p>insert some shit</p>
+    
+    <p>Membres: Maïk Hamel, Pierre-Luc Proulx, Raphaël Dumont</p><br>
+    <a href="https://liguedesdroits.ca/">Lien vers le site original</a>
+    <a href="https://github.com/TheBoyzs/droits-et-libertes-the-boyzs/tree/main">Lien vers le repo Github</a>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/b6c9a53dc1.js" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer">
+
+        </div>
+        <div class="footer">
+
+
+        </div>
+        <div class="footer">
+            <a href="#">Accueil</a>
+            <a href="#">Luttes</a>
+            <a href="#">Équipe</a>
+            <a href="#">Nouvelles</a>
+            <a href="#">À propos</a>
+            <a href="#">contact</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="legal">
+            <p>&copy; 2024 Droit d'auteur TheBoyzs. All Rights reserved</p>
+            <div class="legal__links">
+                <span>Made with Visual Studio Code</span>
             </div>
             <div class="footer">
                 <a link="#">Accueil</a>

@@ -1,10 +1,54 @@
 @use 'variables';
 
-.disclaimer{
-    width: 100%;
-    height: 2rem;
-    background: variables.$pink;
-    color: variables.$ldlRed;
-    font-size: 1rem;
-    vertical-align: middle;
+/* le disclaimer est en display grid sur une colonne et une rangée*/
+@media(min-width:375px){
+    .disclaimer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        width: 100vw;
+        height: 10vh;
+        background: variables.$pink;
+        color: variables.$ldlRed;
+        font-size: 1rem;
+      
+        p{
+            /*
+            align-self: center;
+            */
+            justify-self: center;
+            margin-left: 2vw;
+        }
+        i{
+            margin-top: 2vh;
+            margin-bottom: 8vw;
+            margin-right: 2vw;;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    
+
+}
+
+
+@media (min-width: 768px){
+    p{
+        margin-top:4vh;
+        margin-left: 4vw;
+    }
+    i{
+        margin-left: 1vw;
+    }
+}
+
+@media (min-width: 1400px){
+ .disclaimer{
+    grid-template-columns: auto 10vw;
+    grid-template-rows: auto auto;
+ }
+ i{
+    align-self: end;
+ }
+    
 }

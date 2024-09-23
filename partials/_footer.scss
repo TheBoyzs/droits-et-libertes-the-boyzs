@@ -10,19 +10,23 @@ footer{
 }
 footer .footer-left,
 footer .footer-center,
-footer .footer-right{
-	display: inline-block;
-	vertical-align: top;
+footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .legal {
-    display: flex;
-    flex-wrap: wrap;
-    color: #999;
-  }
-    
-  .legal__links {
-    display: flex;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.footer a {
+  text-transform: uppercase;
+  color: white;
+}
