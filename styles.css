@@ -151,6 +151,7 @@ footer .footer-right {
     justify-content: start;
   }
   nav .menu .fa-bars {
+    background-color: #E2DED4;
     color: #B20838;
   }
 }
