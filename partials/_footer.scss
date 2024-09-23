@@ -1,13 +1,16 @@
 @use 'variables';
-footer{
-    background-color: variables.$dark;
-    width: 100%;
-    text-align: left;
-    padding: 55px 50px;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+
+footer {
+  background-color: variables.$dark;
+  width: 100%;
+  text-align: left;
+  padding: 55px 0;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
 }
+
 footer .footer-left,
 footer .footer-center,
 footer .footer-right {
@@ -31,9 +34,57 @@ footer .footer-right {
   color: white;
 }
 
-.footer-wrapper{
+
+
+.footer-wrapper {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: fit-content;
+  grid-template-rows: 1fr auto;
   justify-content: stretch;
+
+  &__social-icons a {
+    background-color: variables.$white;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    list-style: none;
+  }
+
+  &__social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 10px;
+  }
+
+  &__social-icons a.facebook:hover {
+    background-color: #3b5998;
+    color: variables.$white;
+  }
+
+  &__social-icons a.twitter:hover {
+    background-color: #00aced;
+    color: variables.$white;
+  }
+
+  &__links li{
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 3em;
+    text-align: center;
+  }
+  &__link a:hover{
+    text-decoration: underline;
+    color: variables.$ldlRed;
+  }
 }

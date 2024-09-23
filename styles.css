@@ -15,12 +15,20 @@ button {
   background-color: #B20838;
   border: none;
   padding: 5px;
-  cursor: pointer;
+  cursor: pointer; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 button:hover {
   background-color: #7e082a;
-  transition: 0.5s ease-in-out;
 }
 
 /* le disclaimer est en display grid sur une colonne et une rangée*/
@@ -72,10 +80,10 @@ footer {
   background-color: #092327;
   width: 100%;
   text-align: left;
-  padding: 55px 50px;
+  padding: 55px 0;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 footer .footer-left,
@@ -105,7 +113,46 @@ footer .footer-right {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: fit-content;
+  grid-template-rows: 1fr auto;
   justify-content: stretch;
+}
+.footer-wrapper__social-icons a {
+  background-color: #FDFDFF;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+  list-style: none;
+}
+.footer-wrapper__social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+.footer-wrapper__social-icons a.facebook:hover {
+  background-color: #3b5998;
+  color: #FDFDFF;
+}
+.footer-wrapper__social-icons a.twitter:hover {
+  background-color: #00aced;
+  color: #FDFDFF;
+}
+.footer-wrapper__links li {
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 3em;
+  text-align: center;
+}
+.footer-wrapper__link a:hover {
+  text-decoration: underline;
+  color: #B20838;
 }
 
 @media (min-width: 375px) {
