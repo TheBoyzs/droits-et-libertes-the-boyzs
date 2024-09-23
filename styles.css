@@ -8,6 +8,7 @@ body {
   margin: 0;
   box-sizing: content-box;
   width: 100vw;
+  background-color: #E2DED4;
 }
 
 button {
@@ -143,6 +144,7 @@ footer .footer-right {
   nav {
     align-self: center;
     justify-self: center;
+    background-color: #FDFDFF;
   }
   nav .menu {
     display: flex;
