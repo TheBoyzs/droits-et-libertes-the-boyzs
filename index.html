@@ -17,37 +17,68 @@
 <body>
     <div class="disclaimer">
         <p>Ce site est un une refonte dans le contexte d'un projet étudiant.
-            <strong>Consulter le site original</strong>
+            <strong><a href="#">Consulter le site original</a></strong>
 
         </p>
         <i class="fa-solid fa-x fa-2x"></i>
     </div>
-    <header>
-        <div class="header__searchbar">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-            <input type="text" placeholder="  RECHERCHER">
-
-        </div>
-
-
-        <img class="logo" src="./sources/medias/ldl-logo-horizontale-270.png" alt="logoldl">
-
-        <div class="header__boutons">
-            <button>
-                S'INFORMER
-            </button>
-            <button>
-                DONNER
-            </button>
-        </div>
-
-        <nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars fa-3x"></i>
+    <header class="navbar">
+        <div class="navbar-top">
+            <div class="navbar-top__searchbar"></div>
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <input type="text" placeholder="  RECHERCHER">
             </div>
-            <!--La nav bar de bootstrap est ici-->
+
+            <img class="logo" src="./sources/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+
+            <div class="navbar-top__buttons">
+                <button class="cta-button">S'INFORMER</button>
+                <button class="cta_button">DONNER</button>
+            </div>
+
+            <div class="mobile-menu">
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
+
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+              <div class="logo">Logo</div>
+              <input type="text" class="search" placeholder="Recherche...">
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <button class="cta-button">Call to Action</button>
+            </div>
+          </div>
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+        hamburger.addEventListener('click', () => {
+        mobileMenuOverlay.classList.toggle('show');
+        hamburger.parentElement.classList.toggle('open');
+        });
+    </script>
+
 
     <p>Membres: Maïk Hamel, Pierre-Luc Proulx, Raphaël Dumont</p><br>
     <a href="https://liguedesdroits.ca/">Lien vers le site original</a>
