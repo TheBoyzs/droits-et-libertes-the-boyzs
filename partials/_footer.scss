@@ -44,7 +44,7 @@ footer .footer-right {
   justify-content: stretch;
 
   &__logo {
-    text-align: center;
+    margin-left: 20%;
     width: 25cqh;
     max-width: 100%;
     cursor: pointer;
@@ -58,16 +58,11 @@ footer .footer-right {
     margin-top: 10px;
   }
   &__social-icons a {
-    background-color: variables.$white;
+    background: variables.$white;
     color: #818a91;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 50px;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -76,8 +71,17 @@ footer .footer-right {
 
   &__social-icons li {
     display: inline-block;
-    margin-bottom: 4px;
-    margin-right: 10px;
+    margin: 0 6px;
+  }
+
+  &__social-icons .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
   }
 
   &__social-icons a.facebook:hover {
