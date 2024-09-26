@@ -1,5 +1,7 @@
 @use "variables";
 
+
+@media(min-width: 768px){
 footer {
   background-color: variables.$dark;
   width: 100%;
@@ -154,6 +156,8 @@ footer .footer-right {
     text-align: center;
   }
 }
+}
+
 
 @media (min-width: 375px) {
   footer {
@@ -161,7 +165,7 @@ footer .footer-right {
     text-align: center; /* Center text */
     padding: 30px 0; /* Adjust padding */
     .footer-wrapper__socialtree {
-      flex-direction: row; /* Align social icons horizontally */
+      flex-direction: column; /* Align social icons horizontally */
     }
   
     .footer-wrapper__social-icons {
