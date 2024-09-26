@@ -10,37 +10,69 @@
       align-items: center;
       padding: 15px;
       background-color: variables.$white;
-      color: white;
   
       .logo {
+        justify-self: center;
+        height: 3rem;
         font-size: 1.5rem;
         font-weight: bold;
       }
   
       &__searchbar {
-        padding: 8px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
+        input {
+          padding: 0.5rem;
+          padding-inline: 0.2rem;
+          border:none;
+          &::placeholder {
+            color: variables.$ldlRed    
+          }
+          &:active {
+            border: 1px solid #ccc;
+          }
+        }
+
+        i {
+          font-size: 1rem;
+          margin-right: 0.5rem;
+          color: variables.$ldlRed;
+        }
+        
       }
   
       .cta-button {
-        background-color: #ff6600;
+        background-color: variables.$ldlRed;
         color: white;
         padding: 10px 20px;
+        margin-right: 1rem;
         border: none;
-        border-radius: 5px;
         cursor: pointer;
+      }
+
+      .secondary {
+        color: variables.$ldlRed;
+        background-color: variables.$white;
+        border: 2px solid variables.$ldlRed;
       }
     }
   
     .navbar-bottom {
       background-color: variables.$dark;
       ul {
+        height: 2.2rem;
         display: flex;
         list-style: none;
         justify-content: center;
+        align-items: center;
+        margin: 0 0;
         li {
+          display: flex;
+          align-items: center;
           margin: 0 0;
+          height: 100%;
+          padding: 0 10px;
+          &:hover {
+            background-color: variables.$ldlRed;
+          }
           a {
             color: white;
             text-decoration: none;
@@ -53,24 +85,24 @@
       }
     }
   
-    .mobile-menu {
-      display: none;
+  
+    .hamburger {
+      display: flex;
       position: absolute;
-      right: 20px;
-      top: 15px;
-  
-      .hamburger {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-  
-        span {
-          width: 30px;
-          height: 3px;
-          background-color: white;
-          transition: all 0.3s ease;
-        }
+      right: 2rem;
+      top: 1.6rem;
+      z-index: 2;
+
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      span {
+        width: 2rem;
+        height: 0.3rem;
+        background-color: variables.$dark;
+        transition: all 0.3s ease;
       }
     }
   
@@ -80,48 +112,65 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: variables.$white;
       display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: white;
-      z-index: 999;
+      z-index: 1;
   
       .mobile-menu-content {
         text-align: center;
   
         .logo {
-          font-size: 2rem;
-          margin-bottom: 20px;
+          height: 3rem;
+          margin-bottom: 1.5rem;
         }
   
-        .search {
-          padding: 10px;
-          margin-bottom: 20px;
-          border-radius: 5px;
-          width: 80%;
+        .searchbar {
+          input {
+            padding: 0.5rem;
+            padding-inline: 0.2rem;
+            border:none;
+            border-bottom: 1px solid variables.$ldlRed;
+            &::placeholder {
+              color: variables.$ldlRed    
+            }
+            &:active {
+              border: 1px solid #ccc;
+            }
+          }
+  
+          i {
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            color: variables.$ldlRed;
+          }
         }
   
         ul {
           list-style: none;
+          padding: 0;
           li {
             margin: 15px 0;
             a {
-              color: white;
-              font-size: 1.5rem;
+              color: variables.$ldlRed;
+              font-size: 1rem;
               text-decoration: none;
             }
           }
         }
   
         .cta-button {
-          background-color: #ff6600;
-          color: white;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
+          display: block;
+          margin: 10px auto;
+          padding: 10px 15px;
+        }
+        .secondary {
+          color: variables.$ldlRed;
+          background-color: variables.$white;
+          border: 2px solid variables.$ldlRed;
         }
       }
     }
@@ -129,13 +178,18 @@
   
   @media (max-width: 768px) {
     .navbar {
-      .navbar-top,
-      .navbar-bottom {
+      .navbar-bottom,
+      .navbar-top .navbar-top__searchbar,
+      .navbar-top .navbar-top__buttons {
         display: none;
       }
+      
+      .navbar-top {
+        justify-content: center;
+      }
   
-      .mobile-menu {
-        display: block;
+      .hamburger {
+        display: flex;
       }
     }
   
@@ -143,15 +197,15 @@
       display: flex;
     }
   
-    .mobile-menu.open .hamburger span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 8.5px);
     }
   
-    .mobile-menu.open .hamburger span:nth-child(2) {
+    .hamburger.open span:nth-child(2) {
       opacity: 0;
     }
   
-    .mobile-menu.open .hamburger span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -8.5px);
     }
   }
