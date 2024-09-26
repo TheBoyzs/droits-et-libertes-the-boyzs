@@ -304,13 +304,18 @@ footer .footer-right {
 
 .footer-wrapper {
   display: grid;
+  justify-items: center;
   width: 100vw;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
-  justify-content: stretch;
+  justify-self: stretch;
+}
+.footer-wrapper__socialtree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-wrapper__logo {
-  margin-left: 20%;
   width: 25cqh;
   max-width: 100%;
   cursor: pointer;
@@ -393,4 +398,36 @@ footer .footer-right {
   padding: 10px;
   color: white;
   text-align: center;
+}
+
+@media (min-width: 375px) {
+  footer {
+    grid-template-columns: 1fr; /* Stack columns */
+    text-align: center; /* Center text */
+    padding: 30px 0; /* Adjust padding */
+  }
+  footer .footer-wrapper__socialtree {
+    flex-direction: row; /* Align social icons horizontally */
+  }
+  footer .footer-wrapper__social-icons {
+    margin-top: 10px; /* Keep spacing */
+  }
+  footer .footer-wrapper__links li {
+    line-height: 2em; /* Adjust line height for smaller screens */
+  }
+  footer .footer-wrapper__info {
+    text-align: center; /* Center info text */
+  }
+  footer .footer-wrapper__buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons */
+    align-items: center; /* Center buttons */
+  }
+  footer .footer-wrapper__buttons button {
+    width: 80%; /* Make buttons wider for touch targets */
+    margin: 5px 0; /* Add space between buttons */
+  }
+  footer .footer-wrapper__legal {
+    font-size: 12px; /* Adjust legal text size */
+  }
 }/*# sourceMappingURL=styles.css.map */
