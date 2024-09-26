@@ -270,6 +270,7 @@ footer {
   background-color: #092327;
   width: 100%;
   text-align: left;
+  padding: 55px 0;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -407,8 +408,7 @@ footer {
     margin-top: 10px; /* Keep spacing */
   }
   footer .footer-wrapper__links li {
-    line-height: 2em;
-    margin: 0; /* Adjust line height for smaller screens */
+    line-height: 2em; /* Adjust line height for smaller screens */
   }
   footer .footer-wrapper__info {
     text-align: center;
@@ -439,6 +439,12 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: center;
+  }
+  footer .footer-left,
+  footer .footer-center,
+  footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
   }
   .legal {
     display: flex;
