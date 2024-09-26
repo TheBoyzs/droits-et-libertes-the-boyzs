@@ -1,5 +1,7 @@
 @use "variables";
 
+
+@media(min-width: 768px){
 footer {
   background-color: variables.$dark;
   width: 100%;
@@ -147,6 +149,8 @@ footer {
     text-align: center;
   }
 }
+}
+
 
 @media (min-width: 375px) {
   footer {
