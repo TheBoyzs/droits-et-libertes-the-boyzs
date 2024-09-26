@@ -95,6 +95,11 @@ footer .footer-right {
     color: variables.$white;
   }
 
+  &__social-icons a.linkedin:hover {
+    background-color: #0428f5;
+    color: variables.$white;
+  }
+
   // Styles pour les liens dans le milieu
   &__links li {
     list-style: none;
