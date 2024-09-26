@@ -168,7 +168,6 @@ a {
   top: 1.6rem;
   z-index: 2;
   cursor: pointer;
-  display: flex;
   flex-direction: column;
   gap: 5px;
 }
@@ -407,7 +406,8 @@ footer .footer-right {
     padding: 30px 0; /* Adjust padding */
   }
   footer .footer-wrapper__socialtree {
-    flex-direction: row; /* Align social icons horizontally */
+    justify-items: center;
+    flex-direction: column; /* Align social icons horizontally */
   }
   footer .footer-wrapper__social-icons {
     margin-top: 10px; /* Keep spacing */
