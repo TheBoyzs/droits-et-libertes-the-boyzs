@@ -1,0 +1,211 @@
+@use 'variables';
+
+.navbar {
+    width: 100%;
+    position: relative;
+  
+    .navbar-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: variables.$white;
+  
+      .logo {
+        justify-self: center;
+        height: 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      &__searchbar {
+        input {
+          padding: 0.5rem;
+          padding-inline: 0.2rem;
+          border:none;
+          &::placeholder {
+            color: variables.$ldlRed    
+          }
+          &:active {
+            border: 1px solid #ccc;
+          }
+        }
+
+        i {
+          font-size: 1rem;
+          margin-right: 0.5rem;
+          color: variables.$ldlRed;
+        }
+        
+      }
+  
+      .cta-button {
+        background-color: variables.$ldlRed;
+        color: white;
+        padding: 10px 20px;
+        margin-right: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+
+      .secondary {
+        color: variables.$ldlRed;
+        background-color: variables.$white;
+        border: 2px solid variables.$ldlRed;
+      }
+    }
+  
+    .navbar-bottom {
+      background-color: variables.$dark;
+      ul {
+        height: 2.2rem;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0;
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0 0;
+          height: 100%;
+          padding: 0 10px;
+          &:hover {
+            background-color: variables.$ldlRed;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            &:hover {
+              background-color: variables.$ldlRed;
+            }
+          }
+        }
+      }
+    }
+  
+  
+    .hamburger {
+      display: flex;
+      position: absolute;
+      right: 2rem;
+      top: 1.6rem;
+      z-index: 2;
+
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      span {
+        width: 2rem;
+        height: 0.3rem;
+        background-color: variables.$dark;
+        transition: all 0.3s ease;
+      }
+    }
+  
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: variables.$white;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      z-index: 1;
+  
+      .mobile-menu-content {
+        text-align: center;
+  
+        .logo {
+          height: 3rem;
+          margin-bottom: 1.5rem;
+        }
+  
+        .searchbar {
+          input {
+            padding: 0.5rem;
+            padding-inline: 0.2rem;
+            border:none;
+            border-bottom: 1px solid variables.$ldlRed;
+            &::placeholder {
+              color: variables.$ldlRed    
+            }
+            &:active {
+              border: 1px solid #ccc;
+            }
+          }
+  
+          i {
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            color: variables.$ldlRed;
+          }
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin: 15px 0;
+            a {
+              color: variables.$ldlRed;
+              font-size: 1rem;
+              text-decoration: none;
+            }
+          }
+        }
+  
+        .cta-button {
+          display: block;
+          margin: 10px auto;
+          padding: 10px 15px;
+        }
+        .secondary {
+          color: variables.$ldlRed;
+          background-color: variables.$white;
+          border: 2px solid variables.$ldlRed;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      .navbar-bottom,
+      .navbar-top .navbar-top__searchbar,
+      .navbar-top .navbar-top__buttons {
+        display: none;
+      }
+      
+      .navbar-top {
+        justify-content: center;
+      }
+  
+      .hamburger {
+        display: flex;
+      }
+    }
+  
+    .mobile-menu-overlay.show {
+      display: flex;
+    }
+  
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 8.5px);
+    }
+  
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -8.5px);
+    }
+  }
