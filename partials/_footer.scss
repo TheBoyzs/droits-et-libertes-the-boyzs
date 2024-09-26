@@ -8,7 +8,7 @@ footer {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  justify-items: stretch;
   align-items: center;
 }
 
@@ -37,7 +37,6 @@ footer .footer-right {
 
 .footer-wrapper {
   display: grid;
-  grid-gap: 10px;
   width: 100vw;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
