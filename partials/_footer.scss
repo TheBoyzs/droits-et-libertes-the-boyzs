@@ -165,6 +165,7 @@ footer .footer-right {
     text-align: center; /* Center text */
     padding: 30px 0; /* Adjust padding */
     .footer-wrapper__socialtree {
+      justify-items: center;
       flex-direction: column; /* Align social icons horizontally */
     }
   
