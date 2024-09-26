@@ -162,13 +162,12 @@ a {
   background-color: #B20838;
 }
 .navbar .hamburger {
-  display: flex;
+  display: none;
   position: absolute;
   right: 2rem;
   top: 1.6rem;
   z-index: 2;
   cursor: pointer;
-  display: flex;
   flex-direction: column;
   gap: 5px;
 }
