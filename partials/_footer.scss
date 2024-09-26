@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 footer {
   background-color: variables.$dark;
@@ -8,7 +8,6 @@ footer {
   color: white;
   display: grid;
   grid-template-columns: auto auto auto;
-
 }
 
 footer .footer-left,
@@ -34,8 +33,6 @@ footer .footer-right {
   color: white;
 }
 
-
-
 .footer-wrapper {
   display: grid;
   grid-gap: 10px;
@@ -55,9 +52,9 @@ footer .footer-right {
     text-align: center;
     margin-right: 8px;
     border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
     list-style: none;
   }
 
@@ -106,5 +103,19 @@ footer .footer-right {
   &__info {
     text-align: right;
     line-height: 0%;
+  }
+  &__buttons {
+    text-align: center;
+    cursor: pointer;
+    width: 4em;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  &__buttons button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    text-align: center;
   }
 }

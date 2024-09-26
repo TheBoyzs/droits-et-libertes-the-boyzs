@@ -304,4 +304,18 @@ footer .footer-right {
 .footer-wrapper__info {
   text-align: right;
   line-height: 0%;
+}
+.footer-wrapper__buttons {
+  text-align: center;
+  cursor: pointer;
+  width: 4em;
+  display: grid;
+  grid-gap: 1rem;
+}
+.footer-wrapper__buttons button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
