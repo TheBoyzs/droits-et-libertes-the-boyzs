@@ -12,12 +12,6 @@ footer {
   align-items: center;
 }
 
-footer .footer-left,
-footer .footer-center,
-footer .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
 
 .legal {
   display: flex;
@@ -48,7 +42,7 @@ footer .footer-right {
   &__socialtree{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     align-items: center;
   }
 
@@ -64,6 +58,7 @@ footer .footer-right {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    padding: 0;
   }
   &__social-icons a {
     background: variables.$white;
@@ -77,19 +72,22 @@ footer .footer-right {
     list-style: none;
   }
 
+
   &__social-icons li {
     display: inline-block;
     margin: 0 6px;
+    padding:0;
   }
 
   &__social-icons .fa {
-    padding: 20px;
+    justify-content: center;
     font-size: 30px;
-    width: 30px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
+    padding: 0;
   }
 
   &__social-icons a.facebook:hover {
@@ -110,6 +108,9 @@ footer .footer-right {
   &__social-icons a.linkedin:hover {
     background-color: #0428f5;
     color: variables.$white;
+  }
+  &__links{
+    padding: 0;
   }
 
   // Styles pour les liens dans le milieu
@@ -161,7 +162,9 @@ footer .footer-right {
     text-align: center; /* Center text */
     padding: 30px 0; /* Adjust padding */
     .footer-wrapper__socialtree {
+      display: flex;
       justify-items: center;
+      align-items: center;
       flex-direction: column; /* Align social icons horizontally */
     }
   
@@ -174,7 +177,8 @@ footer .footer-right {
     }
   
     .footer-wrapper__info {
-      text-align: center; /* Center info text */
+      text-align: center;
+      line-height: 20px; /* Center info text */
     }
   
     .footer-wrapper__buttons {
@@ -189,7 +193,8 @@ footer .footer-right {
     }
   
     .footer-wrapper__legal {
-      font-size: 12px; /* Adjust legal text size */
+      font-size: 12px;
+     /* Adjust legal text size */
     }
   }
 }
@@ -243,7 +248,7 @@ footer .footer-right {
   &__socialtree{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     align-items: center;
   }
 
@@ -280,7 +285,7 @@ footer .footer-right {
   &__social-icons .fa {
     padding: 20px;
     font-size: 30px;
-    width: 30px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
