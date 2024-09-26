@@ -13,8 +13,11 @@ body {
 
 button {
   background-color: #B20838;
+  color: #FDFDFF;
   border: none;
-  padding: 5px;
+  border: solid 2px #FDFDFF;
+  border-radius: 4px;
+  padding: 15px;
   cursor: pointer; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
@@ -221,7 +224,9 @@ footer {
   padding: 55px 0;
   color: white;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 footer .footer-left,
@@ -250,9 +255,21 @@ footer .footer-right {
 .footer-wrapper {
   display: grid;
   grid-gap: 10px;
+  width: 100vw;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-content: stretch;
+}
+.footer-wrapper__logo {
+  text-align: center;
+  width: 25cqh;
+  max-width: 100%;
+  cursor: pointer;
+}
+.footer-wrapper__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .footer-wrapper__social-icons a {
   background-color: #FDFDFF;
@@ -304,16 +321,18 @@ footer .footer-right {
 .footer-wrapper__info {
   text-align: right;
   line-height: 0%;
+  margin: 30px;
 }
 .footer-wrapper__buttons {
-  text-align: center;
   cursor: pointer;
-  width: 4em;
-  display: grid;
-  grid-gap: 1rem;
+  margin-right: 0;
 }
 .footer-wrapper__buttons button {
   text-decoration: none;
+  height: 3.2em;
+  min-width: 13vw;
+  width: 15vw;
+  margin: 10px;
   text-transform: uppercase;
   padding: 10px;
   color: white;

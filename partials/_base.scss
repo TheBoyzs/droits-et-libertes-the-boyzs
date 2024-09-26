@@ -1,42 +1,42 @@
-@use 'variables';
+@use "variables";
 
 html {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    margin:0;
-    box-sizing: content-box;
-    width: 100vw;
-    background-color: variables.$tan;
+  margin: 0;
+  box-sizing: content-box;
+  width: 100vw;
+  background-color: variables.$tan;
 }
 
-button{
-    background-color: variables.$ldlRed;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
+button {
+  background-color: variables.$ldlRed;
+  color: variables.$white;
+  border: none;
+  border: solid 2px variables.$white;
+  border-radius: 4px;
+  padding: 15px;
+
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
 }
 
-
-button:active:after{
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
-button:hover{
-    background-color:#7e082a;
-    
+button:hover {
+  background-color: #7e082a;
 }
 
 a {
-    color: variables.$ldlRed;
+  color: variables.$ldlRed;
 }

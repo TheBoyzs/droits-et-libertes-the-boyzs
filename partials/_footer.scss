@@ -7,7 +7,9 @@ footer {
   padding: 55px 0;
   color: white;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 footer .footer-left,
@@ -36,11 +38,25 @@ footer .footer-right {
 .footer-wrapper {
   display: grid;
   grid-gap: 10px;
+  width: 100vw;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-content: stretch;
 
+  &__logo {
+    text-align: center;
+    width: 25cqh;
+    max-width: 100%;
+    cursor: pointer;
+  }
+
   //style pour les icones de médias sociaux
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
   &__social-icons a {
     background-color: variables.$white;
     color: #818a91;
@@ -103,16 +119,18 @@ footer .footer-right {
   &__info {
     text-align: right;
     line-height: 0%;
+    margin: 30px;
   }
   &__buttons {
-    text-align: center;
     cursor: pointer;
-    width: 4em;
-    display: grid;
-    grid-gap: 1rem;
+    margin-right: 0;
   }
   &__buttons button {
     text-decoration: none;
+    height: 3.2em;
+    min-width: 13vw;
+    width: 15vw;
+    margin: 10px;
     text-transform: uppercase;
     padding: 10px;
     color: white;
