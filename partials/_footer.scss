@@ -1,199 +1,208 @@
 @use "variables";
 
 
-@media(min-width: 768px){
-footer {
-  background-color: variables.$dark;
-  width: 100%;
-  text-align: left;
-  padding: 55px 0;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: stretch;
-  align-items: center;
-}
-
-footer .footer-left,
-footer .footer-center,
-footer .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.legal {
-  display: flex;
-  flex-wrap: wrap;
-  color: #999;
-}
-
-.legal__links {
-  display: flex;
-  align-items: center;
-}
-
-.footer a {
-  text-transform: uppercase;
-  color: white;
-}
-
-.footer-wrapper {
-  display: grid;
-  justify-items: center;
-  width: 100vw;
-  grid-template-columns: fit-content;
-  grid-template-rows: 1fr auto;
-  justify-self: stretch;
- 
-  
-
-  &__socialtree{
-    display: flex;
-    flex-direction: column;
-
+@media(min-width: 768px) {
+  footer {
+    background-color: variables.$dark;
+    width: 100%;
+    text-align: left;
+    padding: 55px 0;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
     align-items: center;
   }
 
-  &__logo {
-    width: 25cqh;
-    max-width: 100%;
-    cursor: pointer;
-  }
-
-  //style pour les icones de médias sociaux
-
-  &__social-icons {
+  .legal {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  &__social-icons a {
-    background: variables.$white;
-    color: #818a91;
-    border-radius: 50%;
-    width: 50px;
-    font-size: 50px;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    list-style: none;
+    flex-wrap: wrap;
+    color: #999;
   }
 
-  &__social-icons li {
-    display: inline-block;
-    margin: 0 6px;
+  .legal__links {
+    display: flex;
+    align-items: center;
   }
 
-  &__social-icons .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
-
-  &__social-icons a.facebook:hover {
-    background-color: #3b5998;
-    color: variables.$white;
-  }
-
-  &__social-icons a.twitter:hover {
-    background-color: #00aced;
-    color: variables.$white;
-  }
-
-  &__social-icons a.instagram:hover {
-    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-    color: variables.$white;
-  }
-
-  &__social-icons a.linkedin:hover {
-    background-color: #0428f5;
-    color: variables.$white;
-  }
-
-  // Styles pour les liens dans le milieu
-  &__links li {
-    list-style: none;
+  .footer a {
     text-transform: uppercase;
-    cursor: pointer;
-    line-height: 3em;
-    text-align: center;
-  }
-
-  &__link a:hover {
-    text-decoration: underline;
-    color: variables.$ldlRed;
-  }
-
-  &__legal {
-    line-height: 0;
-    text-align: center;
-    color: gray;
-  }
-
-  //Styles pour les infos: adresses, numéro de téléphone, etc.
-  &__info {
-    text-align: right;
-    line-height: 0%;
-    margin: 30px;
-  }
-  &__buttons {
-    cursor: pointer;
-    margin-right: 0;
-  }
-  &__buttons button {
-    text-decoration: none;
-    height: 3.2em;
-    min-width: 13vw;
-    width: 15vw;
-    margin: 10px;
-    text-transform: uppercase;
-    padding: 10px;
     color: white;
-    text-align: center;
   }
-}
+
+  .footer-wrapper {
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    grid-template-columns: fit-content;
+    grid-template-rows: 1fr auto;
+    justify-self: stretch;
+
+
+
+    &__socialtree {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+
+    &__logo {
+      width: 25cqh;
+      max-width: 100%;
+      cursor: pointer;
+    }
+
+    //style pour les icones de médias sociaux
+
+    &__social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    &__social-icons a {
+      background: variables.$white;
+      color: #818a91;
+      border-radius: 50%;
+      width: 50px;
+      font-size: 50px;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      list-style: none;
+    }
+
+    &__social-icons li {
+      display: inline-block;
+      margin: 0 6px;
+    }
+
+    &__social-icons .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    &__social-icons a.facebook:hover {
+      background-color: #3b5998;
+      color: variables.$white;
+    }
+
+    &__social-icons a.twitter:hover {
+      background-color: #00aced;
+      color: variables.$white;
+    }
+
+    &__social-icons a.instagram:hover {
+      background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+      color: variables.$white;
+    }
+
+    &__social-icons a.linkedin:hover {
+      background-color: #0428f5;
+      color: variables.$white;
+    }
+
+    // Styles pour les liens dans le milieu
+    &__links li {
+      list-style: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      line-height: 3em;
+      text-align: center;
+    }
+
+    &__link a:hover {
+      text-decoration: underline;
+      color: variables.$ldlRed;
+    }
+
+    &__legal {
+      line-height: 0;
+      text-align: center;
+      color: gray;
+    }
+
+    //Styles pour les infos: adresses, numéro de téléphone, etc.
+    &__info {
+      text-align: right;
+      line-height: 0%;
+      margin: 30px;
+    }
+
+    &__buttons {
+      cursor: pointer;
+      margin-right: 0;
+    }
+
+    &__buttons button {
+      text-decoration: none;
+      height: 3.2em;
+      min-width: 13vw;
+      width: 15vw;
+      margin: 10px;
+      text-transform: uppercase;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+  }
 }
 
 
 @media (min-width: 375px) {
   footer {
-    grid-template-columns: 1fr; /* Stack columns */
-    text-align: center; /* Center text */
-    padding: 30px 0; /* Adjust padding */
+    grid-template-columns: 1fr;
+    /* Stack columns */
+    text-align: center;
+    /* Center text */
+    padding: 30px 0;
+
+    /* Adjust padding */
     .footer-wrapper__socialtree {
       justify-items: center;
-      flex-direction: column; /* Align social icons horizontally */
+      flex-direction: column;
+      /* Align social icons horizontally */
     }
-  
+
     .footer-wrapper__social-icons {
-      margin-top: 10px; /* Keep spacing */
+      margin-top: 10px;
+      /* Keep spacing */
     }
-  
+
     .footer-wrapper__links li {
-      line-height: 2em; /* Adjust line height for smaller screens */
+      line-height: 2em;
+      /* Adjust line height for smaller screens */
     }
-  
+
     .footer-wrapper__info {
-      text-align: center; /* Center info text */
+      text-align: center;
+      /* Center info text */
     }
-  
+
     .footer-wrapper__buttons {
       display: flex;
-      flex-direction: column; /* Stack buttons */
-      align-items: center; /* Center buttons */
+      flex-direction: column;
+      /* Stack buttons */
+      align-items: center;
+      /* Center buttons */
     }
-  
+
     .footer-wrapper__buttons button {
-      width: 80%; /* Make buttons wider for touch targets */
-      margin: 5px 0; /* Add space between buttons */
+      width: 80%;
+      /* Make buttons wider for touch targets */
+      margin: 5px 0;
+      /* Add space between buttons */
     }
-  
+
     .footer-wrapper__legal {
-      font-size: 12px; /* Adjust legal text size */
+      font-size: 12px;
+      /* Adjust legal text size */
     }
   }
-  }
+}
