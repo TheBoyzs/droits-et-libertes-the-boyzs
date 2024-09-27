@@ -8,14 +8,14 @@ body {
   margin: 0;
   box-sizing: content-box;
   width: 100vw;
-  background-color: #E2DED4;
+  background-color: #e2ded4;
 }
 
 button {
-  background-color: #B20838;
-  color: #FDFDFF;
+  background-color: #b20838;
+  color: #fdfdff;
   border: none;
-  border: solid 2px #FDFDFF;
+  border: solid 2px #fdfdff;
   padding: 15px;
   cursor: pointer; /* Safari */
   transition-duration: 0.4s;
@@ -34,7 +34,7 @@ button:hover {
 }
 
 a {
-  color: #B20838;
+  color: #b20838;
 }
 
 h1 {
@@ -46,7 +46,7 @@ section hr {
   width: 40%;
   border-width: 10px;
   max-width: 400px;
-  border: solid 2px #B20838;
+  border: solid 2px #b20838;
 }
 
 section:not([name=carrousel]) {
@@ -62,8 +62,8 @@ section:not([name=carrousel]) {
     grid-template-rows: auto auto;
     width: 100vw;
     height: 10vh;
-    background: #F8DDE5;
-    color: #B20838;
+    background: #f8dde5;
+    color: #b20838;
     font-size: 1rem;
   }
   .disclaimer p {
@@ -109,7 +109,7 @@ section:not([name=carrousel]) {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #FDFDFF;
+  background-color: #fdfdff;
 }
 .navbar .navbar-top .logo {
   justify-self: center;
@@ -123,10 +123,10 @@ section:not([name=carrousel]) {
   border: none;
 }
 .navbar .navbar-top__searchbar input::-moz-placeholder {
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .navbar-top__searchbar input::placeholder {
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .navbar-top__searchbar input:active {
   border: 1px solid #ccc;
@@ -134,10 +134,10 @@ section:not([name=carrousel]) {
 .navbar .navbar-top__searchbar i {
   font-size: 1rem;
   margin-right: 0.5rem;
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .navbar-top .cta-button {
-  background-color: #B20838;
+  background-color: #b20838;
   color: white;
   padding: 10px 20px;
   margin-right: 1rem;
@@ -145,9 +145,9 @@ section:not([name=carrousel]) {
   cursor: pointer;
 }
 .navbar .navbar-top .secondary {
-  color: #B20838;
-  background-color: #FDFDFF;
-  border: 2px solid #B20838;
+  color: #b20838;
+  background-color: #fdfdff;
+  border: 2px solid #b20838;
 }
 .navbar .navbar-bottom {
   background-color: #092327;
@@ -168,7 +168,7 @@ section:not([name=carrousel]) {
   padding: 0 10px;
 }
 .navbar .navbar-bottom ul li:hover {
-  background-color: #B20838;
+  background-color: #b20838;
 }
 .navbar .navbar-bottom ul li a {
   color: white;
@@ -176,7 +176,7 @@ section:not([name=carrousel]) {
   padding: 0 10px;
 }
 .navbar .navbar-bottom ul li a:hover {
-  background-color: #B20838;
+  background-color: #b20838;
 }
 .navbar .hamburger {
   display: none;
@@ -200,7 +200,7 @@ section:not([name=carrousel]) {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #FDFDFF;
+  background-color: #fdfdff;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -219,13 +219,13 @@ section:not([name=carrousel]) {
   padding: 0.5rem;
   padding-inline: 0.2rem;
   border: none;
-  border-bottom: 1px solid #B20838;
+  border-bottom: 1px solid #b20838;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content .searchbar input::-moz-placeholder {
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content .searchbar input::placeholder {
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content .searchbar input:active {
   border: 1px solid #ccc;
@@ -233,7 +233,7 @@ section:not([name=carrousel]) {
 .navbar .mobile-menu-overlay .mobile-menu-content .searchbar i {
   font-size: 1rem;
   margin-right: 0.5rem;
-  color: #B20838;
+  color: #b20838;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content ul {
   list-style: none;
@@ -243,7 +243,7 @@ section:not([name=carrousel]) {
   margin: 15px 0;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content ul li a {
-  color: #B20838;
+  color: #b20838;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -253,9 +253,9 @@ section:not([name=carrousel]) {
   padding: 10px 15px;
 }
 .navbar .mobile-menu-overlay .mobile-menu-content .secondary {
-  color: #B20838;
-  background-color: #FDFDFF;
-  border: 2px solid #B20838;
+  color: #b20838;
+  background-color: #fdfdff;
+  border: 2px solid #b20838;
 }
 
 @media (max-width: 768px) {
@@ -306,7 +306,7 @@ section:not([name=carrousel]) {
 }
 .section-card__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #FDFDFF;
+  background-color: #fdfdff;
   border-radius: 15px;
   transition: 0.3s;
   margin: 15px;
@@ -377,7 +377,7 @@ footer {
   padding: 0;
 }
 .footer-wrapper__social-icons a {
-  background: #FDFDFF;
+  background: #fdfdff;
   color: #818a91;
   border-radius: 50%;
   width: 50px;
@@ -402,19 +402,19 @@ footer {
 }
 .footer-wrapper__social-icons a.facebook:hover {
   background-color: #3b5998;
-  color: #FDFDFF;
+  color: #fdfdff;
 }
 .footer-wrapper__social-icons a.twitter:hover {
   background-color: #00aced;
-  color: #FDFDFF;
+  color: #fdfdff;
 }
 .footer-wrapper__social-icons a.instagram:hover {
   background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-  color: #FDFDFF;
+  color: #fdfdff;
 }
 .footer-wrapper__social-icons a.linkedin:hover {
   background-color: #0428f5;
-  color: #FDFDFF;
+  color: #fdfdff;
 }
 .footer-wrapper__links {
   padding: 0;
@@ -428,7 +428,7 @@ footer {
 }
 .footer-wrapper__link a:hover {
   text-decoration: underline;
-  color: #B20838;
+  color: #b20838;
 }
 .footer-wrapper__legal {
   line-height: 8px;
@@ -558,7 +558,7 @@ footer {
     margin-top: 10px;
   }
   .footer-wrapper__social-icons a {
-    background: #FDFDFF;
+    background: #fdfdff;
     color: #818a91;
     border-radius: 50%;
     width: 50px;
@@ -581,19 +581,19 @@ footer {
   }
   .footer-wrapper__social-icons a.facebook:hover {
     background-color: #3b5998;
-    color: #FDFDFF;
+    color: #fdfdff;
   }
   .footer-wrapper__social-icons a.twitter:hover {
     background-color: #00aced;
-    color: #FDFDFF;
+    color: #fdfdff;
   }
   .footer-wrapper__social-icons a.instagram:hover {
     background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-    color: #FDFDFF;
+    color: #fdfdff;
   }
   .footer-wrapper__social-icons a.linkedin:hover {
     background-color: #0428f5;
-    color: #FDFDFF;
+    color: #fdfdff;
   }
   .footer-wrapper__links li {
     list-style: none;
@@ -604,7 +604,7 @@ footer {
   }
   .footer-wrapper__link a:hover {
     text-decoration: underline;
-    color: #B20838;
+    color: #b20838;
   }
   .footer-wrapper__legal {
     line-height: 0;
@@ -650,7 +650,7 @@ footer {
 .testimony-wrapper__testimonial::before, .testimony-wrapper__testimonial::after {
   content: "“";
   font-size: 80px;
-  color: #B20838;
+  color: #b20838;
   position: absolute;
 }
 .testimony-wrapper__testimonial::before {
@@ -674,4 +674,62 @@ footer {
 
 .right-align p {
   text-align: right;
+}
+
+.lutte-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.lutte-wrapper__left-section {
+  flex: 1;
+  max-width: 400px;
+}
+.lutte-wrapper__fight-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.lutte-wrapper__fight-list li {
+  margin-bottom: 10px;
+}
+.lutte-wrapper__fight-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2ded4;
+  padding: 10px;
+  text-decoration: none;
+  width: 25vw;
+  min-width: 20vw;
+  color: #333;
+  font-weight: bold;
+  border-left: 5px solid #e74c3c;
+  transition: 0.3s ease-in-out;
+}
+.lutte-wrapper__fight-list li a .arrow {
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  background-color: #b20838;
+  padding: 10px;
+  border-radius: 15%;
+}
+.lutte-wrapper__fight-list li a:hover {
+  background-color: #e6e4e4;
+}
+.lutte-wrapper__see-more {
+  background-color: #b20838;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+}
+.lutte-wrapper__right-section {
+  flex: 1;
+}
+.lutte-wrapper__right-section img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */

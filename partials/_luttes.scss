@@ -1,1 +1,61 @@
 @use "variables";
+
+.lutte-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__left-section {
+    flex: 1;
+    max-width: 400px;
+  }
+  &__fight-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 10px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: variables.$tan;
+        padding: 10px;
+        text-decoration: none;
+        width: 25vw;
+        min-width: 20vw;
+        color: #333;
+        font-weight: bold;
+        border-left: 5px solid #e74c3c;
+        transition: 0.3s ease-in-out;
+        .arrow {
+          color: white;
+          font-size: large;
+          font-weight: bolder;
+          background-color: variables.$ldlRed;
+          padding: 10px;
+          border-radius: 15%;
+        }
+        &:hover {
+          background-color: #e6e4e4;
+        }
+      }
+    }
+  }
+  &__see-more {
+    background-color: variables.$ldlRed;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+  }
+  &__right-section {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
