@@ -374,7 +374,7 @@ footer {
   color: #B20838;
 }
 .footer-wrapper__legal {
-  line-height: 0;
+  line-height: 8px;
   text-align: center;
   color: gray;
 }

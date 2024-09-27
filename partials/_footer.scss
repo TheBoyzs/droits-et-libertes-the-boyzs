@@ -12,7 +12,6 @@ footer {
   align-items: center;
 }
 
-
 .legal {
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +35,6 @@ footer {
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-self: stretch;
-
-
 
   &__socialtree {
     display: flex;
@@ -72,7 +69,6 @@ footer {
     transition: all 0.2s linear;
     list-style: none;
   }
-
 
   &__social-icons li {
     display: inline-block;
@@ -130,7 +126,7 @@ footer {
   }
 
   &__legal {
-    line-height: 0;
+    line-height: 8px;
     text-align: center;
     color: gray;
   }
@@ -215,7 +211,7 @@ footer {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   footer {
     background-color: variables.$dark;
     width: 100%;
@@ -258,8 +254,6 @@ footer {
     grid-template-columns: fit-content;
     grid-template-rows: 1fr auto;
     justify-self: stretch;
-
-
 
     &__socialtree {
       display: flex;
