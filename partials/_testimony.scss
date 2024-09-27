@@ -2,16 +2,26 @@
 
 .testimony-wrapper {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
   &__testimonial {
     margin-bottom: 30px;
     position: relative;
     padding: 40px;
+    border-radius: 15px;
+    // border-left: 5px solid variables.$ldlRed;
+    // background: variables.$white;
+    width: 70vw;
   }
+  &__testimonial:not(#left) {
+    align-self: flex-end;
+  }
+
   &__testimonial::before,
   &__testimonial::after {
     content: "“";
-    font-size: 40px;
+    font-size: 80px;
     color: variables.$ldlRed;
     position: absolute;
   }
@@ -19,10 +29,22 @@
     left: 0;
     top: 0;
   }
-  .testimonial::after {
+  &__testimonial::after {
     content: "”";
-    font-size: 40px;
+    font-size: 80px;
     right: 0;
     bottom: -30px;
   }
+  &__testimonial p {
+    text-align: justify;
+    font-size: 20px;
+  }
+  &__source {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+.right-align p {
+  text-align: right;
 }
