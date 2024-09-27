@@ -43,15 +43,7 @@ footer {
     align-items: center;
   }
 
-  &__logo {
-    width: 25cqh;
-    max-width: 100%;
-    cursor: pointer;
-  }
-
-  //style pour les icones de médias sociaux
-
-  &__social-icons {
+  .legal {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -152,7 +144,6 @@ footer {
     text-transform: uppercase;
     padding: 10px;
     color: white;
-    text-align: center;
   }
 }
 

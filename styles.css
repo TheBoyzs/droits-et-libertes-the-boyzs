@@ -266,6 +266,18 @@ a {
     transform: rotate(-45deg) translate(5px, -8.5px);
   }
 }
+.item img {
+  width: 100%;
+  max-height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-wrapper {
+  height: 25vh;
+  width: 100vw;
+}
+
 footer {
   background-color: #092327;
   width: 100%;
@@ -308,12 +320,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footer-wrapper__logo {
-  width: 25cqh;
-  max-width: 100%;
-  cursor: pointer;
-}
-.footer-wrapper__social-icons {
+.footer-wrapper .legal {
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -396,7 +403,6 @@ footer {
   text-transform: uppercase;
   padding: 10px;
   color: white;
-  text-align: center;
 }
 
 @media (min-width: 375px) {
