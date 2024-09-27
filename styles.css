@@ -636,6 +636,7 @@ footer {
   position: relative;
   padding: 40px;
   border-radius: 15px;
+  border-left: 5px solid #b20838;
   width: 70vw;
 }
 .testimony-wrapper__testimonial:not(#left) {
