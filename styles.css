@@ -514,12 +514,6 @@ footer {
     justify-items: stretch;
     align-items: center;
   }
-  footer .footer-left,
-  footer .footer-center,
-  footer .footer-right {
-    display: inline-block;
-    vertical-align: top;
-  }
   .legal {
     display: flex;
     flex-wrap: wrap;
