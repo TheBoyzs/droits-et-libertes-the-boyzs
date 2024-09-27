@@ -37,6 +37,22 @@ a {
   color: #B20838;
 }
 
+h1 {
+  font-weight: bolder;
+}
+
+section hr {
+  margin-left: 0;
+  width: 40%;
+  max-width: 400px;
+  border: solid 2px #B20838;
+}
+
+section:not([name=carrousel]) {
+  margin: auto;
+  padding: 0 20px 0 20px;
+}
+
 /* le disclaimer est en display grid sur une colonne et une rangée*/
 @media (min-width: 375px) {
   .disclaimer {
@@ -278,6 +294,38 @@ a {
   width: 100vw;
 }
 
+.section-card {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  justify-content: center;
+}
+.section-card__card img {
+  border-radius: 15px;
+  width: 100%;
+}
+.section-card__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FDFDFF;
+  border-radius: 15px;
+  transition: 0.3s;
+  margin: 15px;
+  max-width: 381px;
+  min-width: 370px;
+}
+.section-card__card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.section-card__container {
+  padding: 2px 16px;
+}
+
+@media (min-width: 768px) {
+  .section-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 footer {
   background-color: #092327;
   width: 100%;

@@ -39,3 +39,20 @@ button:hover {
 a {
   color: variables.$ldlRed;
 }
+
+h1 {
+  font-weight: bolder;
+}
+
+section hr {
+  margin-left: 0;
+  width: 40%;
+  max-width: 400px;
+  border: solid 2px variables.$ldlRed;
+}
+
+// PL: ce style s'applique juste aux autres section excepté le carrousel
+section:not([name="carrousel"]) {
+  margin: auto;
+  padding: 0 20px 0 20px;
+}

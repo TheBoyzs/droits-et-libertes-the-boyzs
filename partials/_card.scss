@@ -1,1 +1,35 @@
-@use 'variables';
+@use "variables";
+
+.section-card {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  justify-content: center;
+
+  &__card img {
+    border-radius: 15px;
+    width: 100%;
+  }
+  &__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: variables.$white;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 15px;
+    max-width: 381px;
+    min-width: 370px;
+  }
+  &__card:hover {
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__container {
+    padding: 2px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
