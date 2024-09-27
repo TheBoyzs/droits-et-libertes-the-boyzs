@@ -1,0 +1,28 @@
+@use "variables";
+
+.testimony-wrapper {
+  margin: 0 auto;
+
+  &__testimonial {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 40px;
+  }
+  &__testimonial::before,
+  &__testimonial::after {
+    content: "“";
+    font-size: 40px;
+    color: variables.$ldlRed;
+    position: absolute;
+  }
+  &__testimonial::before {
+    left: 0;
+    top: 0;
+  }
+  .testimonial::after {
+    content: "”";
+    font-size: 40px;
+    right: 0;
+    bottom: -30px;
+  }
+}

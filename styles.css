@@ -631,4 +631,28 @@ footer {
     color: white;
     text-align: center;
   }
+}
+.testimony-wrapper {
+  margin: 0 auto;
+}
+.testimony-wrapper__testimonial {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 40px;
+}
+.testimony-wrapper__testimonial::before, .testimony-wrapper__testimonial::after {
+  content: "“";
+  font-size: 40px;
+  color: #B20838;
+  position: absolute;
+}
+.testimony-wrapper__testimonial::before {
+  left: 0;
+  top: 0;
+}
+.testimony-wrapper .testimonial::after {
+  content: "”";
+  font-size: 40px;
+  right: 0;
+  bottom: -30px;
 }/*# sourceMappingURL=styles.css.map */
