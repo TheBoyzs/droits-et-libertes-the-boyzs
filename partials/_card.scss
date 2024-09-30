@@ -3,7 +3,7 @@
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  justify-content: center;
+  justify-content: space-evenly;
 
   &__card img {
     border-radius: 15px;
