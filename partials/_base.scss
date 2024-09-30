@@ -23,18 +23,17 @@ button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
+  &:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  &:hover{
+    background-color: #7e082a;
+  }
 }
 
-button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
-}
-
-button:hover {
-  background-color: #7e082a;
-}
 
 a {
   color: variables.$ldlRed;
@@ -44,16 +43,19 @@ h1 {
   font-weight: bolder;
 }
 
-section hr {
-  margin-left: 0;
-  width: 40%;
-  border-width: 10px;
-  max-width: 400px;
-  border: solid 2px variables.$ldlRed;
+section{
+  text-decoration: none;
+  hr{
+    margin-left: 0;
+    width: 40%;
+    border-width: 10px;
+    max-width: 400px;
+    border: solid 2px variables.$ldlRed;
+  }
+  // PL: ce style s'applique juste aux autres section excepté le carrousel
+  &:not([name="carrousel"]){
+    margin: auto;
+    padding: 40px;
+  }
 }
 
-// PL: ce style s'applique juste aux autres section excepté le carrousel
-section:not([name="carrousel"]) {
-  margin: auto;
-  padding: 40px;
-}

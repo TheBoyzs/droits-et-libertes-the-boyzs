@@ -21,14 +21,12 @@ button {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-
 button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   transition: 0s;
 }
-
 button:hover {
   background-color: #7e082a;
 }
@@ -41,6 +39,9 @@ h1 {
   font-weight: bolder;
 }
 
+section {
+  text-decoration: none;
+}
 section hr {
   margin-left: 0;
   width: 40%;
@@ -48,7 +49,6 @@ section hr {
   max-width: 400px;
   border: solid 2px #b20838;
 }
-
 section:not([name=carrousel]) {
   margin: auto;
   padding: 40px;
@@ -298,11 +298,7 @@ section:not([name=carrousel]) {
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  justify-content: center;
-}
-.section-card__card img {
-  border-radius: 15px;
-  width: 100%;
+  justify-content: space-evenly;
 }
 .section-card__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -313,6 +309,10 @@ section:not([name=carrousel]) {
   height: 40vh;
   max-width: 500px;
   min-width: 480px;
+}
+.section-card__card img {
+  border-radius: 15px;
+  width: 100%;
 }
 .section-card__card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
@@ -328,6 +328,7 @@ section:not([name=carrousel]) {
     flex-direction: row;
   }
 }
+/**footer style**/
 footer {
   background-color: #092327;
   width: 100%;
@@ -376,7 +377,13 @@ footer {
   margin-top: 10px;
   padding: 0;
 }
+.footer-wrapper__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 .footer-wrapper__social-icons a {
+  align-self: flex-start;
   background: #fdfdff;
   color: #818a91;
   border-radius: 50%;
@@ -385,10 +392,24 @@ footer {
   transition: all 0.2s linear;
   list-style: none;
 }
+.footer-wrapper__social-icons a:hover {
+  color: #fdfdff;
+}
+.footer-wrapper__social-icons a .facebook:hover {
+  background-color: #3b5998;
+}
+.footer-wrapper__social-icons a .twitter:hover {
+  background-color: #00aced;
+}
+.footer-wrapper__social-icons a .instagram:hover {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+}
+.footer-wrapper__social-icons a .linkedin:hover {
+  background-color: #0428f5;
+}
 .footer-wrapper__social-icons li {
   display: inline-block;
   margin: 0 6px;
-  padding: 0;
 }
 .footer-wrapper__social-icons .fa {
   justify-content: center;
@@ -400,22 +421,6 @@ footer {
   border-radius: 50%;
   padding: 0;
 }
-.footer-wrapper__social-icons a.facebook:hover {
-  background-color: #3b5998;
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.twitter:hover {
-  background-color: #00aced;
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.instagram:hover {
-  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.linkedin:hover {
-  background-color: #0428f5;
-  color: #fdfdff;
-}
 .footer-wrapper__links {
   padding: 0;
 }
@@ -426,19 +431,24 @@ footer {
   line-height: 3em;
   text-align: center;
 }
-.footer-wrapper__link a:hover {
+.footer-wrapper__links a:hover {
   text-decoration: underline;
   color: #b20838;
 }
 .footer-wrapper__legal {
-  line-height: 8px;
+  line-height: 2px;
   text-align: center;
   color: gray;
+  margin: 0 auto;
+}
+.footer-wrapper__nav {
+  line-height: 0;
 }
 .footer-wrapper__info {
-  text-align: right;
-  line-height: 0%;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
 }
 .footer-wrapper__buttons {
   cursor: pointer;
@@ -614,7 +624,7 @@ footer {
     cursor: pointer;
     margin-right: 0;
   }
-  .footer-wrapper__buttons button {
+  .footer-wrapper__buttons buttons {
     text-decoration: none;
     height: 3.2em;
     min-width: 13vw;
