@@ -57,12 +57,13 @@ footer {
     margin-top: 10px;
 
     a {
-      align-self: flex-start;
       background: variables.$white;
       color: #818a91;
       border-radius: 50%;
       width: 50px;
       font-size: 50px;
+      text-align: center; /* Center text */
+  line-height: 50px;
       -webkit-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
@@ -191,8 +192,8 @@ footer {
     }
 
     .footer-wrapper__info {
-      text-align: center;
-      line-height: 20px;
+      align-items: stretch;
+      line-height: 15px;
       /* Center info text */
     }
 

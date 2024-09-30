@@ -383,12 +383,13 @@ footer {
   margin-top: 10px;
 }
 .footer-wrapper__social-icons a {
-  align-self: flex-start;
   background: #fdfdff;
   color: #818a91;
   border-radius: 50%;
   width: 50px;
   font-size: 50px;
+  text-align: center; /* Center text */
+  line-height: 50px;
   transition: all 0.2s linear;
   list-style: none;
 }
@@ -490,8 +491,8 @@ footer {
     /* Adjust line height for smaller screens */
   }
   footer .footer-wrapper__info {
-    text-align: center;
-    line-height: 20px;
+    align-items: stretch;
+    line-height: 15px;
     /* Center info text */
   }
   footer .footer-wrapper__buttons {
