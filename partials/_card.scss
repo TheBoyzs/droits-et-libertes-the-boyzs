@@ -15,7 +15,7 @@
     border-radius: 15px;
     transition: 0.3s;
     margin: 15px;
-    height: 40vh;
+    height: 50vh;
     max-width: 500px;
     min-width: 480px;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .section-card {
     display: flex;
     align-items: center;

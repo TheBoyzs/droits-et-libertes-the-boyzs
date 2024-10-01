@@ -310,7 +310,7 @@ section:not([name=carrousel]) {
   border-radius: 15px;
   transition: 0.3s;
   margin: 15px;
-  height: 40vh;
+  height: 50vh;
   max-width: 500px;
   min-width: 480px;
 }
@@ -321,7 +321,7 @@ section:not([name=carrousel]) {
   padding: 2px 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .section-card {
     display: flex;
     align-items: center;
@@ -338,6 +338,14 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: stretch;
   align-items: center;
+}
+
+p {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+  padding: 0;
 }
 
 .legal {
@@ -376,6 +384,12 @@ footer {
   margin-top: 10px;
   padding: 0;
 }
+.footer-wrapper__social-icons {
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 30px;
+}
 .footer-wrapper__social-icons a {
   background: #fdfdff;
   color: #818a91;
@@ -395,10 +409,12 @@ footer {
   font-size: 30px;
   width: 50px;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
   padding: 0;
+  padding-bottom: 7px;
 }
 .footer-wrapper__social-icons a.facebook:hover {
   background-color: #3b5998;
@@ -433,7 +449,12 @@ footer {
 .footer-wrapper__legal {
   line-height: 8px;
   text-align: center;
+  justify-self: center;
   color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-wrapper__info {
   text-align: right;
@@ -565,7 +586,8 @@ footer {
     margin: 0 6px;
   }
   .footer-wrapper__social-icons .fa {
-    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -606,8 +628,8 @@ footer {
     color: gray;
   }
   .footer-wrapper__info {
-    text-align: right;
-    line-height: 0%;
+    text-align: center;
+    line-height: 2%;
     margin: 30px;
   }
   .footer-wrapper__buttons {
@@ -671,11 +693,16 @@ footer {
   text-align: right;
 }
 
+section {
+  overflow: hidden;
+}
+
 .lutte-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  align-items: flex-start;
 }
 .lutte-wrapper__left-section {
   flex: 1;
@@ -723,8 +750,11 @@ footer {
 }
 .lutte-wrapper__right-section {
   flex: 1;
+  position: relative;
 }
 .lutte-wrapper__right-section img {
-  width: 100%;
+  position: absolute;
+  width: 70vw;
   height: auto;
+  align-self: baseline;
 }/*# sourceMappingURL=styles.css.map */

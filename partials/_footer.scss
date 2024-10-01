@@ -11,6 +11,13 @@ footer {
   justify-items: stretch;
   align-items: center;
 }
+p{
+ vertical-align: middle;
+ align-items: center;
+ text-align: center;
+ margin-left: 0;
+ padding: 0;
+}
 
 .legal {
   display: flex;
@@ -49,6 +56,13 @@ footer {
     margin-top: 10px;
     padding: 0;
   }
+  &__social-icons{
+   
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
 
   &__social-icons a {
     background: variables.$white;
@@ -73,10 +87,12 @@ footer {
     font-size: 30px;
     width: 50px;
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
     padding: 0;
+    padding-bottom: 7px;
   }
 
   &__social-icons a.facebook:hover {
@@ -120,7 +136,13 @@ footer {
   &__legal {
     line-height: 8px;
     text-align: center;
+    justify-self: center;
     color: gray;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   //Styles pour les infos: adresses, numéro de téléphone, etc.
@@ -167,6 +189,7 @@ footer {
     .footer-wrapper__social-icons {
       margin-top: 10px;
       /* Keep spacing */
+      
     }
 
     .footer-wrapper__links li {
@@ -278,7 +301,9 @@ footer {
     }
 
     &__social-icons .fa {
-      padding: 20px;
+      
+      text-align: center;
+      vertical-align: middle;
       font-size: 30px;
       width: 50px;
       text-align: center;
@@ -325,13 +350,15 @@ footer {
       line-height: 0;
       text-align: center;
       color: gray;
+      
     }
 
     //Styles pour les infos: adresses, numéro de téléphone, etc.
     &__info {
-      text-align: right;
-      line-height: 0%;
+      text-align: center;
+      line-height: 2%;
       margin: 30px;
+      
     }
 
     &__buttons {

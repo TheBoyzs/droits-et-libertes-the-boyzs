@@ -1,11 +1,16 @@
 @use "variables";
 
+section{
+  overflow: hidden;
+  
+}
+
 .lutte-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-
+  align-items: flex-start;
   &__left-section {
     flex: 1;
     max-width: 400px;
@@ -53,9 +58,12 @@
   }
   &__right-section {
     flex: 1;
+    position: relative;
     img {
-      width: 100%;
+      position:absolute;
+      width: 70vw;
       height: auto;
+      align-self: baseline;
     }
   }
 }
