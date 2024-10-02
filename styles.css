@@ -72,6 +72,8 @@ section:not([name=carrousel]) {
     */
     justify-self: center;
     margin-left: 2vw;
+    font-size: 15px;
+    vertical-align: middle;
   }
   .disclaimer i {
     margin-top: 2vh;
@@ -754,7 +756,45 @@ section {
 }
 .lutte-wrapper__right-section img {
   position: absolute;
-  width: 70vw;
+  width: 600px;
   height: auto;
+  right: 0;
+  left: 0;
   align-self: baseline;
+}
+
+@media (min-width: 375px) {
+  .lutte-wrapper__right-section img {
+    left: 0;
+    z-index: 1;
+    top: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .lutte-wrapper__right-section img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 0;
+    left: 100px;
+    top: 0;
+    align-self: baseline;
+  }
+}
+@media (min-width: 1400px) {
+  .lutte-wrapper__right-section img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 0;
+    left: 400px;
+    top: 0;
+    align-self: baseline;
+  }
+}
+.don {
+  background-color: white;
+}
+.don.don-wrapper.__description-don-wrapper p {
+  font-size: 20px;
 }/*# sourceMappingURL=styles.css.map */

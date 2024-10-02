@@ -18,6 +18,8 @@
             */
             justify-self: center;
             margin-left: 2vw;
+            font-size: 15px;
+            vertical-align: middle;
         }
         i{
             margin-top: 2vh;
@@ -33,7 +35,7 @@
 }
 
 
-@media (min-width: 768px){
+@media(min-width: 768px){
     p{
         margin-top:4vh;
         margin-left: 4vw;
@@ -43,7 +45,7 @@
     }
 }
 
-@media (min-width: 1400px){
+@media(min-width: 1400px){
  .disclaimer{
     grid-template-columns: auto 10vw;
     grid-template-rows: auto auto;
@@ -51,5 +53,6 @@
  i{
     align-self: end;
  }
+ 
     
 }

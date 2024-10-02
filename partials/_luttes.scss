@@ -61,9 +61,55 @@ section{
     position: relative;
     img {
       position:absolute;
-      width: 70vw;
+      width: 600px;
       height: auto;
+      right: 0;
+      left: 0;
       align-self: baseline;
+    }
+  }
+}
+
+@media(min-width:375px){
+  .lutte-wrapper{
+    &__right-section{
+      img{
+        left: 0;
+        z-index: 1;
+        top:100px;
+      }
+    }
+  }
+}
+
+@media(min-width:768px){
+  .lutte-wrapper{
+    &__right-section{
+      img {
+        position:absolute;
+        width: 600px;
+        height: auto;
+        right: 0;
+        left: 100px;
+        top:0;
+        align-self: baseline;
+      }
+    }
+  }
+}
+
+@media(min-width:1400px){
+  .lutte-wrapper{
+    &__right-section{
+      img {
+        position:absolute;
+        width: 600px;
+        height: auto;
+        right: 0;
+        left: 400px;
+        top:0;
+        align-self: baseline;
+      }
     }
   }
 }

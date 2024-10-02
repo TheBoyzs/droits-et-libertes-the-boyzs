@@ -1,0 +1,14 @@
+@use "variables";
+.don{
+    background-color: white;
+    &.don-wrapper{
+        &.__description-don-wrapper{
+            p{
+                font-size: 20px;
+            }
+            
+        }
+
+    }
+    
+}
