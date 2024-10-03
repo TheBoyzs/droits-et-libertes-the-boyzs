@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 const hamburger = document.querySelector(".hamburger");
 const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
 
@@ -25,4 +23,3 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
->>>>>>> Stashed changes
