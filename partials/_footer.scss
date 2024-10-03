@@ -12,9 +12,10 @@ footer {
   justify-items: stretch;
   align-items: center;
 }
-footer:last-of-type{
-  display:grid;
-  justify-items:center;
+
+footer:last-of-type {
+  display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
 }
 
@@ -68,7 +69,8 @@ footer:last-of-type{
       border-radius: 50%;
       width: 50px;
       font-size: 50px;
-      text-align: center; /* Center text */
+      text-align: center;
+      /* Center text */
       line-height: 50px;
       -webkit-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
@@ -134,14 +136,19 @@ footer:last-of-type{
     }
   }
 
-  &__partner{
+  &__partner {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; /* Set direction to row */
-    justify-content: center; /* Center items horizontally */
-   align-items: center; 
+    flex-direction: row;
+  
+    /* Set direction to row */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
     border: solid 2px red;
-    
+    img{
+      margin: 10px;
+    }
   }
 
   &__legal {
@@ -228,7 +235,7 @@ footer:last-of-type{
       margin: 5px 0;
       /* Add space between buttons */
     }
-
+    
     .footer-wrapper__legal {
       font-size: 12px;
       /* Adjust legal text size */
@@ -285,6 +292,11 @@ footer:last-of-type{
       width: 25cqh;
       max-width: 100%;
       cursor: pointer;
+    }
+
+    &__partner{
+  
+        border: solid blue 2px;
     }
 
     //style pour les icones de médias sociaux
@@ -372,7 +384,8 @@ footer:last-of-type{
     &__buttons {
       cursor: pointer;
       margin-right: 0;
-      buttons{
+
+      buttons {
         text-decoration: none;
         height: 3.2em;
         min-width: 13vw;

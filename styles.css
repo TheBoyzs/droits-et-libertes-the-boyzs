@@ -483,7 +483,8 @@ footer:last-of-type {
   border-radius: 50%;
   width: 50px;
   font-size: 50px;
-  text-align: center; /* Center text */
+  text-align: center;
+  /* Center text */
   line-height: 50px;
   transition: all 0.2s linear;
   list-style: none;
@@ -534,10 +535,15 @@ footer:last-of-type {
 .footer-wrapper__partner {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; /* Set direction to row */
-  justify-content: center; /* Center items horizontally */
+  flex-direction: row;
+  /* Set direction to row */
+  justify-content: center;
+  /* Center items horizontally */
   align-items: center;
   border: solid 2px red;
+}
+.footer-wrapper__partner img {
+  margin: 10px;
 }
 .footer-wrapper__legal {
   line-height: 2px;
@@ -659,6 +665,9 @@ footer:last-of-type {
     width: 25cqh;
     max-width: 100%;
     cursor: pointer;
+  }
+  .footer-wrapper__partner {
+    border: solid blue 2px;
   }
   .footer-wrapper__social-icons {
     display: flex;
