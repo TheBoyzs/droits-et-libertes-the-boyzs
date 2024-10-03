@@ -12,6 +12,6 @@ const swiper = new Swiper(".swiper", {
         el: ".swiper-pagination",
       },
     autoplay: {
-     delay: 0.1,
+     delay: 2000,
     },
 });
