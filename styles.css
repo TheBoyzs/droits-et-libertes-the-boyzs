@@ -21,7 +21,6 @@ button {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-
 button:active:after {
   padding: 0;
   margin: 0;
