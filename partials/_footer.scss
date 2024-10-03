@@ -11,6 +11,12 @@ footer {
   justify-items: stretch;
   align-items: center;
 }
+
+footer:last-of-type {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
 p{
  vertical-align: middle;
  align-items: center;
