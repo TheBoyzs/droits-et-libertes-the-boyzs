@@ -366,18 +366,17 @@ p{
     &__buttons {
       cursor: pointer;
       margin-right: 0;
-    }
-
-    &__buttons button {
-      text-decoration: none;
-      height: 3.2em;
-      min-width: 13vw;
-      width: 15vw;
-      margin: 10px;
-      text-transform: uppercase;
-      padding: 10px;
-      color: white;
-      text-align: center;
+      button {
+        text-decoration: none;
+        height: 3.2em;
+        min-width: 13vw;
+        width: 15vw;
+        margin: 10px;
+        text-transform: uppercase;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
     }
   }
 }
