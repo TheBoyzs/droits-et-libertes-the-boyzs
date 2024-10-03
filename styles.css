@@ -295,6 +295,94 @@ section:not([name=carrousel]) {
   width: 100vw;
 }
 
+.carrousel-wrapper {
+  margin-top: none;
+}
+
+.container {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.container > div {
+  height: 80vh;
+}
+
+.project_content {
+  justify-items: center;
+  align-items: center;
+}
+
+.project_content h1,
+h2,
+p {
+  padding: 0.2rem 1rem;
+}
+
+.project_content img {
+  height: 35%;
+  max-width: 100%;
+}
+
+/* Swiper container stylng */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image__wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.image__wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.slide_1 {
+  background-color: #643ca3;
+}
+
+.slide_2 {
+  background-color: #e38364;
+}
+
+.slide_3 {
+  background-color: #faf47a;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 50%;
+}
+
+.item button {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
@@ -341,6 +429,12 @@ footer {
   align-items: center;
 }
 
+footer:last-of-type {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
 .legal {
   display: flex;
   flex-wrap: wrap;
@@ -364,6 +458,7 @@ footer {
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-self: stretch;
+  border: solid red 2px;
 }
 .footer-wrapper__socialtree {
   display: flex;
@@ -435,6 +530,14 @@ footer {
 .footer-wrapper__links a:hover {
   text-decoration: underline;
   color: #b20838;
+}
+.footer-wrapper__partner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /* Set direction to row */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  border: solid 2px red;
 }
 .footer-wrapper__legal {
   line-height: 2px;

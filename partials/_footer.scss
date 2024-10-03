@@ -12,6 +12,11 @@ footer {
   justify-items: stretch;
   align-items: center;
 }
+footer:last-of-type{
+  display:grid;
+  justify-items:center;
+  grid-template-columns: 1fr;
+}
 
 .legal {
   display: flex;
@@ -36,6 +41,7 @@ footer {
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-self: stretch;
+  border: solid red 2px;
 
   &__socialtree {
     display: flex;
@@ -63,7 +69,7 @@ footer {
       width: 50px;
       font-size: 50px;
       text-align: center; /* Center text */
-  line-height: 50px;
+      line-height: 50px;
       -webkit-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
@@ -113,6 +119,7 @@ footer {
   &__links {
     padding: 0;
 
+
     li {
       list-style: none;
       text-transform: uppercase;
@@ -125,6 +132,16 @@ footer {
       text-decoration: underline;
       color: variables.$ldlRed;
     }
+  }
+
+  &__partner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Set direction to row */
+    justify-content: center; /* Center items horizontally */
+   align-items: center; 
+    border: solid 2px red;
+    
   }
 
   &__legal {
@@ -367,7 +384,5 @@ footer {
         text-align: center;
       }
     }
-
-   
   }
 }
