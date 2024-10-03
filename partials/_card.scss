@@ -5,10 +5,6 @@
   grid-template-columns: 1fr, 1fr, 1fr;
   justify-content: center;
 
-  &__card img {
-    border-radius: 15px;
-    width: 100%;
-  }
   &__card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: variables.$white;
@@ -18,9 +14,13 @@
     height: 50vh;
     max-width: 500px;
     min-width: 480px;
-  }
-  &__card:hover {
-    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    &:hover{
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+    img{
+      border-radius: 15px;
+      width: 100%;
+    }
   }
   &__container {
     padding: 2px 16px;
