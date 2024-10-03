@@ -11,6 +11,12 @@ footer {
   justify-items: stretch;
   align-items: center;
 }
+
+footer:last-of-type {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
 p{
  vertical-align: middle;
  align-items: center;
@@ -135,6 +141,7 @@ p{
   }
 
   &__partner {
+    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -142,7 +149,6 @@ p{
     justify-content: center;
     /* Center items horizontally */
     align-items: center;
-    border: solid 2px red;
     img{
       margin: 10px;
     }
@@ -211,13 +217,12 @@ p{
       /* Stack buttons */
       align-items: center;
       /* Center buttons */
-    }
-
-    .footer-wrapper__buttons button {
-      width: 80%;
-      /* Make buttons wider for touch targets */
-      margin: 5px 0;
-      /* Add space between buttons */
+      button{
+        width: 80%;
+        /* Make buttons wider for touch targets */
+        margin: 5px 0;
+        /* Add space between buttons */
+      }
     }
 
     .footer-wrapper__legal {
@@ -244,12 +249,12 @@ p{
     display: flex;
     flex-wrap: wrap;
     color: #999;
+    &__links{
+      display: flex;
+      align-items: center;
+    }
   }
 
-  .legal__links {
-    display: flex;
-    align-items: center;
-  }
 
   .footer a {
     text-transform: uppercase;

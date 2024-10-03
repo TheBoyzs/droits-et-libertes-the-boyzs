@@ -341,6 +341,12 @@ footer {
   align-items: center;
 }
 
+footer:last-of-type {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
 p {
   vertical-align: middle;
   align-items: center;
@@ -458,6 +464,7 @@ p {
   align-items: center;
 }
 .footer-wrapper__partner {
+  max-width: 1500px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -465,7 +472,6 @@ p {
   justify-content: center;
   /* Center items horizontally */
   align-items: center;
-  border: solid 2px red;
 }
 .footer-wrapper__partner img {
   margin: 10px;
