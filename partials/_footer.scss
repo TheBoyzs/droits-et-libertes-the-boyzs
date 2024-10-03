@@ -57,81 +57,71 @@ p{
     padding: 0;
   }
   &__social-icons{
-   
     justify-content: center;
     margin: 0;
     padding-left: 0;
     padding-bottom: 30px;
+    a{
+      background: variables.$white;
+      color: #818a91;
+      border-radius: 50%;
+      width: 50px;
+      font-size: 50px;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      list-style: none;
+      .facebook:hover{
+        background-color: #3b5998;
+        color: variables.$white;
+      }
+      .twitter:hover{
+        background-color: #00aced;
+        color: variables.$white;
+      }
+      .instagram:hover {
+        background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+        color: variables.$white;
+      }
+      .linkedin:hover {
+        background-color: #0428f5;
+        color: variables.$white;
+      }
+    }
+    li{
+      display: inline-block;
+      margin: 0 6px;
+      padding: 0;
+    }
+    .fa{
+      justify-content: center;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      padding: 0;
+      padding-bottom: 7px;
+    }
   }
-
-  &__social-icons a {
-    background: variables.$white;
-    color: #818a91;
-    border-radius: 50%;
-    width: 50px;
-    font-size: 50px;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    list-style: none;
-  }
-
-  &__social-icons li {
-    display: inline-block;
-    margin: 0 6px;
-    padding: 0;
-  }
-
-  &__social-icons .fa {
-    justify-content: center;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    padding: 0;
-    padding-bottom: 7px;
-  }
-
-  &__social-icons a.facebook:hover {
-    background-color: #3b5998;
-    color: variables.$white;
-  }
-
-  &__social-icons a.twitter:hover {
-    background-color: #00aced;
-    color: variables.$white;
-  }
-
-  &__social-icons a.instagram:hover {
-    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-    color: variables.$white;
-  }
-
-  &__social-icons a.linkedin:hover {
-    background-color: #0428f5;
-    color: variables.$white;
-  }
-
+  // Styles pour les liens dans le milieu
   &__links {
     padding: 0;
+    li{
+      list-style: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      line-height: 3em;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: variables.$ldlRed;
+    }
   }
 
-  // Styles pour les liens dans le milieu
-  &__links li {
-    list-style: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    line-height: 3em;
-    text-align: center;
-  }
-
-  &__link a:hover {
-    text-decoration: underline;
-    color: variables.$ldlRed;
-  }
 
   &__legal {
     line-height: 8px;
@@ -148,7 +138,6 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  
     /* Set direction to row */
     justify-content: center;
     /* Center items horizontally */
@@ -169,17 +158,16 @@ p{
   &__buttons {
     cursor: pointer;
     margin-right: 0;
-  }
-
-  &__buttons button {
-    text-decoration: none;
-    height: 3.2em;
-    min-width: 13vw;
-    width: 15vw;
-    margin: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-    color: white;
+    button{
+      text-decoration: none;
+      height: 3.2em;
+      min-width: 13vw;
+      width: 15vw;
+      margin: 10px;
+      text-transform: uppercase;
+      padding: 10px;
+      color: white;
+    }
   }
 }
 
