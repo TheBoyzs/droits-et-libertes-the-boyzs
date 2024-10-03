@@ -1,5 +1,6 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-let swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
     loop: true,
     slidesPerView: 1,
     //spaceBetween: 100,

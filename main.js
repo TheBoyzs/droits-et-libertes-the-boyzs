@@ -1,7 +1,3 @@
-
-
-
-
 const hamburger = document.querySelector('.hamburger');
 const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
 
