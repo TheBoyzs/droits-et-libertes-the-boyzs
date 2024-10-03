@@ -53,12 +53,7 @@ section hr {
 }
 
 // PL: ce style s'applique juste aux autres section excepté le carrousel
-section:not([name="carrousel"]) {
-  margin: auto;
-  padding: 40px;
-}
-
-section:not([name="swiper"]) {
+section:not([name="carrousel"], [name="swiper"]) {
   margin: auto;
   padding: 40px;
 }
