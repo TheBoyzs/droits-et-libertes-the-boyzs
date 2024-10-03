@@ -1,12 +1,86 @@
 @use "variables";
 
 .item img {
-    width: 100%;
-    max-height: 50vh;
-    object-fit:contain;
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
 }
 
-.section-wrapper{
-    height: 25vh;
-    width: 100vw;
+.section-wrapper {
+  height: 25vh;
+  width: 100vw;
+}
+
+//Styles Swiper
+.container {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.container > div {
+  height: 80vh;
+}
+
+.project_content {
+  justify-items: center;
+  align-items: center;
+}
+
+.project_content h1,
+h2,
+p {
+  padding: 0.2rem 1rem;
+}
+
+.project_content img {
+  height: 35%;
+  max-width: 100%;
+}
+
+/* Swiper container stylng */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image__wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.image__wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.slide_1 {
+  background-color: #643ca3;
+}
+
+.slide_2 {
+  background-color: #e38364;
+}
+
+.slide_3 {
+  background-color: #faf47a;
+}
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 50%;
 }

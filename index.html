@@ -15,12 +15,17 @@
     <link rel="icon" type="image/x-icon" href="/sources/medias/ldl-icone.ico">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
+
     <div class="disclaimer" id="disclaimer">
         <p>Ce site est un une refonte dans le contexte d'un projet étudiant.
-            <strong><a href="#">Consulter le site original</a></strong>
+            <<<<<<< Updated upstream <strong><a href="#">Consulter le site original</a></strong>
+                =======
+                <strong><a href="https://liguedesdroits.ca/">Consulter le site original</a></strong>
+                >>>>>>> Stashed changes
 
         </p>
         <i class="fa-solid fa-x fa-2x" id="disclaimer-close"></i>
@@ -40,13 +45,11 @@
             </div>
 
         </div>
-
         <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
-
         <nav class="navbar-bottom">
             <ul class="nav-links">
                 <li><a href="#">LUTTES</a></li>
@@ -80,8 +83,47 @@
             </div>
         </div>
     </header>
+    <!-- <section name="carrousel">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide_1">
+                        <div class="image__wrapper">
+                            <img src="sources/medias/4manholdinghands.PNG" alt="Los Angeles">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide_2">
+                        <div class="image__wrapper">
+                            <img src="sources/medias/image_article_jmartel_livre_20240709-731x1118.png" alt="Chicago">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide_3">
+                        <div class="image__wrapper"><img
+                                src="sources/medias/image_carnet_droit_humain_generique_20231006-448x448.png"
+                                alt="New York">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section> -->
+
     <section name="carrousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -102,7 +144,7 @@
                 <div class="item">
                     <img src="sources/medias/image_carnet_droit_humain_generique_20231006-448x448.png" alt="New York">
                 </div>
-            </div>
+            </div> -->
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -192,76 +234,99 @@
             </article>
         </div>
     </section>
-    <script>
+    <<<<<<< Updated upstream <script>
         const hamburger = document.querySelector('.hamburger');
         const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
 
         hamburger.addEventListener('click', () => {
-            mobileMenuOverlay.classList.toggle('show');
-            hamburger.classList.toggle('open');
+        mobileMenuOverlay.classList.toggle('show');
+        hamburger.classList.toggle('open');
         });
-    </script>
-    <script>
-        const closeButton = document.getElementById("disclaimer-close");
-        const disclaimer = document.getElementById("disclaimer");
-        closeButton.addEventListener('click', () => {
-            disclaimer.style.display = "none";
-        });
-    </script>
+        </script>
+        <script>
+            const closeButton = document.getElementById("disclaimer-close");
+            const disclaimer = document.getElementById("disclaimer");
+            closeButton.addEventListener('click', () => {
+                disclaimer.style.display = "none";
+            });
+        </script>
 
 
-    <p>Membres: Maïk Hamel, Pierre-Luc Proulx, Raphaël Dumont</p><br>
-    <a href="https://liguedesdroits.ca/">Lien vers le site original</a>
-    <a href="https://github.com/TheBoyzs/droits-et-libertes-the-boyzs/tree/main">Lien vers le repo Github</a>
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/b6c9a53dc1.js" crossorigin="anonymous"></script>
-    <!-- Footer -->
-    <footer class="footer-wrapper">
-        <div class="footer-wrapper__socialtree">
-            <img class="footer-wrapper__logo" src="/sources/medias/ldl-icone.png">
-            <span class="text-logo" style="font-size: 30px; text-align: center">
-                <p>Ligue des <br> <b>Droits</b> et <b>libertés</b></p>
-            </span>
-            <ul class="footer-wrapper__social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i
-                            class="fa fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-wrapper__nav">
-            <ul class="footer-wrapper__links">
-                <li><a link="#">Accueil</a></li>
-                <li> <a link="#">Luttes</a></li>
-                <li><a link="#">Équipe</a></li>
-                <li><a link="#">Nouvelles</a></li>
-                <li><a link="#">À Propos</a></li>
-                <li><a link="#">Contant</a></li>
-                <li><a link="#">FAQ</a></li>
-            </ul>
+        <p>Membres: Maïk Hamel, Pierre-Luc Proulx, Raphaël Dumont</p><br>
+        <a href="https://liguedesdroits.ca/">Lien vers le site original</a>
+        =======
+        <section class="don">
+            <!--ANIMATION TIMELAPSE ICI!!!!!!!!!-->
+            <h1>PARCE QUE LES DROITS HUMAINS, C'EST POUR TOUT LE MONDE</h1>
             <hr>
-            <div class="footer-wrapper__legal">
-                <p>&copy; 2024 TheBoysz. All rights deserved.</p><br>
-                <p>Made with Visual Studio Code</p>
+            <div class="don-wrapper">
+                <article class="__description-don-wrapper">
+                    <p>Contre les multiples risques et reculs auxquels les droits humains font face, au Québec et au
+                        Canada,
+                        comme ailleurs, il faut parler, agir et dénoncer.</p>
+                </article>
+                <article class="bouton-don">
+                    <button>donner</button>
+                </article>
             </div>
-        </div>
-        <div class="footer-wrapper__info">
-            <p id="address">469 Jean-Talon Ouest, bureau 105</p><br>
-            <p id="ville">Montréal, Québec H3N 1R4</p><br>
-            <p id="cell">Tél.: 514 849-7717</p><br>
-            <p id="media">Cell. médias: 514-715-7727</p><br>
-            <div class="footer-wrapper__buttons">
-                <button>
-                    S'INFORMER
-                </button><br>
-                <button>
-                    DONNER
-                </button>
+        </section>
+
+
+
+        >>>>>>> Stashed changes
+        <a href="https://github.com/TheBoyzs/droits-et-libertes-the-boyzs/tree/main">Lien vers le repo Github</a>
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/b6c9a53dc1.js" crossorigin="anonymous"></script>
+        <!-- Footer -->
+        <footer class="footer-wrapper">
+            <div class="footer-wrapper__socialtree">
+                <img class="footer-wrapper__logo" src="/sources/medias/ldl-icone.png">
+                <span class="text-logo" style="font-size: 30px; text-align: center">
+                    <p>Ligue des <br> <b>Droits</b> et <b>libertés</b></p>
+                </span>
+                <ul class="footer-wrapper__social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i
+                                class="fa fa-linkedin"></i></a></li>
+                </ul>
             </div>
-        </div>
-    </footer>
-    <script src="main.js"></script>
+            <div class="footer-wrapper__nav">
+                <ul class="footer-wrapper__links">
+                    <li><a link="#">Accueil</a></li>
+                    <li> <a link="#">Luttes</a></li>
+                    <li><a link="#">Équipe</a></li>
+                    <li><a link="#">Nouvelles</a></li>
+                    <li><a link="#">À Propos</a></li>
+                    <li><a link="#">Contant</a></li>
+                    <li><a link="#">FAQ</a></li>
+                </ul>
+                <hr>
+                <div class="footer-wrapper__legal">
+                    <p>&copy; 2024 TheBoysz. All rights deserved.</p><br>
+                    <p>Made with Visual Studio Code</p>
+                </div>
+            </div>
+            <div class="footer-wrapper__info">
+                <p id="address">469 Jean-Talon Ouest, bureau 105</p><br>
+                <p id="ville">Montréal, Québec H3N 1R4</p><br>
+                <p id="cell">Tél.: 514 849-7717</p><br>
+                <p id="media">Cell. médias: 514-715-7727</p><br>
+                <div class="footer-wrapper__buttons">
+                    <button>
+                        S'INFORMER
+                    </button><br>
+                    <button>
+                        DONNER
+                    </button>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
