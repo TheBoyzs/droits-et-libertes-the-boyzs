@@ -154,7 +154,7 @@ section:not([name=carrousel], [name=swiper]) {
   background-color: #092327;
 }
 .navbar .navbar-bottom ul {
-  height: 2.2rem;
+  height: 3.8rem;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -175,6 +175,7 @@ section:not([name=carrousel], [name=swiper]) {
 .navbar .navbar-bottom ul li a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
   padding: 0 10px;
   transition: 0.4s ease-in-out;
 }
