@@ -14,6 +14,8 @@ body {
 
 button {
   background-color: variables.$ldlRed;
+  font-size: 20px;
+  text-transform: uppercase;
   color: variables.$white;
   border: none;
   border: solid 2px variables.$white;

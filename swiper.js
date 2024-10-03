@@ -9,6 +9,6 @@ const swiper = new Swiper(".swiper", {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-     delay: 5,
+     delay: 0.1,
     },
 });
