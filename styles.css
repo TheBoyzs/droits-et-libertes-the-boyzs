@@ -48,12 +48,7 @@ section hr {
   border: solid 2px #b20838;
 }
 
-section:not([name=carrousel]) {
-  margin: auto;
-  padding: 40px;
-}
-
-section:not([name=swiper]) {
+section:not([name=carrousel], [name=swiper]) {
   margin: auto;
   padding: 40px;
 }
@@ -824,20 +819,13 @@ section {
   font-size: 20px;
 }
 
-section {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
 .swiper {
-  justify-self: center;
-  width: 80vw;
-  height: 50vh;
+  width: 100vw;
+  height: 60vh;
 }
 .swiper .swiper-wrapper .swiper-slide {
-  width: 80vw;
-  height: 50vh;
+  width: 100vw;
+  height: 60vh;
   display: flex;
   justify-content: center;
 }
