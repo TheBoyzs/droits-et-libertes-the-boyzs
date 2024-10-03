@@ -13,9 +13,9 @@
     border-left: 5px solid variables.$ldlRed;
     // background: variables.$white;
     width: 70vw;
-  }
-  &__testimonial:not(#left) {
-    align-self: flex-end;
+    &:not(#left){
+      align-self: flex-end;
+    }
   }
 
   &__testimonial::before,
