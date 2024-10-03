@@ -405,6 +405,22 @@ p {
   transition: all 0.2s linear;
   list-style: none;
 }
+.footer-wrapper__social-icons a .facebook:hover {
+  background-color: #3b5998;
+  color: #fdfdff;
+}
+.footer-wrapper__social-icons a .twitter:hover {
+  background-color: #00aced;
+  color: #fdfdff;
+}
+.footer-wrapper__social-icons a .instagram:hover {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  color: #fdfdff;
+}
+.footer-wrapper__social-icons a .linkedin:hover {
+  background-color: #0428f5;
+  color: #fdfdff;
+}
 .footer-wrapper__social-icons li {
   display: inline-block;
   margin: 0 6px;
@@ -422,22 +438,6 @@ p {
   padding: 0;
   padding-bottom: 7px;
 }
-.footer-wrapper__social-icons a.facebook:hover {
-  background-color: #3b5998;
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.twitter:hover {
-  background-color: #00aced;
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.instagram:hover {
-  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-  color: #fdfdff;
-}
-.footer-wrapper__social-icons a.linkedin:hover {
-  background-color: #0428f5;
-  color: #fdfdff;
-}
 .footer-wrapper__links {
   padding: 0;
 }
@@ -448,7 +448,7 @@ p {
   line-height: 3em;
   text-align: center;
 }
-.footer-wrapper__link a:hover {
+.footer-wrapper__links a:hover {
   text-decoration: underline;
   color: #b20838;
 }
