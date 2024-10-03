@@ -84,6 +84,9 @@
             &:hover {
               background-color: variables.$ldlRed;
             }
+            &:active{
+              background-color: variables.$ldlRed;
+            }
           }
         }
       }
