@@ -27,10 +27,16 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .section-card {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     flex-direction: row;
+    button{
+      margin:10px;
+      align-self: center;
+    }
   }
 }

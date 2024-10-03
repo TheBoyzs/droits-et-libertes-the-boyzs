@@ -325,11 +325,17 @@ section:not([name=carrousel], [name=swiper]) {
   padding: 2px 16px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .section-card {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     flex-direction: row;
+  }
+  .section-card button {
+    margin: 10px;
+    align-self: center;
   }
 }
 footer {
