@@ -54,6 +54,11 @@ section:not([name=carrousel]) {
   padding: 40px;
 }
 
+section:not([name=swiper]) {
+  margin: auto;
+  padding: 40px;
+}
+
 /* le disclaimer est en display grid sur une colonne et une rangée*/
 @media (min-width: 375px) {
   .disclaimer {
@@ -797,4 +802,22 @@ section {
 }
 .don.don-wrapper.__description-don-wrapper p {
   font-size: 20px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.swiper {
+  justify-self: center;
+  width: 80vw;
+  height: 50vh;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
