@@ -64,12 +64,14 @@
         justify-content: center;
         align-items: center;
         margin: 0 0;
+        
         li {
           display: flex;
           align-items: center;
           margin: 0 0;
           height: 100%;
           padding: 0 10px;
+          transition: 0.3s ease-in-out;
           &:hover {
             background-color: variables.$ldlRed;
           }
@@ -77,6 +79,7 @@
             color: white;
             text-decoration: none;
             padding: 0 10px;
+            transition: 0.4s ease-in-out;
             &:hover {
               background-color: variables.$ldlRed;
             }
