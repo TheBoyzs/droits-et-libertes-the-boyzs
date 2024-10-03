@@ -138,11 +138,25 @@ p{
     text-align: center;
     justify-self: center;
     color: gray;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__partner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+    /* Set direction to row */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    border: solid 2px red;
+    img{
+      margin: 10px;
+    }
   }
 
   //Styles pour les infos: adresses, numéro de téléphone, etc.

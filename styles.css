@@ -463,6 +463,19 @@ p {
   justify-content: center;
   align-items: center;
 }
+.footer-wrapper__partner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* Set direction to row */
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  border: solid 2px red;
+}
+.footer-wrapper__partner img {
+  margin: 10px;
+}
 .footer-wrapper__info {
   text-align: right;
   line-height: 0%;
