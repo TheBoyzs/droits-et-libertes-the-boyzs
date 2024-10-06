@@ -385,3 +385,15 @@ p{
     }
   }
 }
+
+@media(min-width:1000px){
+  .footer-wrapper{
+    grid-template-rows: auto auto auto;
+  }
+  footer:last-of-type {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+  }
+
+}

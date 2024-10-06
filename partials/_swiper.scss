@@ -5,6 +5,14 @@
     width:100vw;
     height:60vh;
     z-index: 0;
+    .swiper-button-prev{
+        color: variables.$white;
+        padding-left: 7vw;
+    }
+    .swiper-button-next{
+        color: variables.$white;
+        padding-right: 7vw;
+    }
     .swiper-wrapper{
         .swiper-slide{
             position: relative;

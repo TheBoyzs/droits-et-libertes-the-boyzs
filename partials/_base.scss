@@ -8,6 +8,7 @@ html {
 body {
   margin: 0;
   box-sizing: content-box;
+  max-width: 100vw;
   width: 100vw;
   background-color: variables.$tan;
 }
