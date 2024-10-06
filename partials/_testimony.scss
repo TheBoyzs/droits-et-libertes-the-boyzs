@@ -16,6 +16,7 @@
     &:not(#left){
       align-self: flex-end;
     }
+    
   }
 
   &__testimonial::before,
@@ -48,3 +49,4 @@
 .right-align p {
   text-align: right;
 }
+
