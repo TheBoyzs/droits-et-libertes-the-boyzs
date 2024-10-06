@@ -106,6 +106,7 @@ section:not([name=carrousel], [name=swiper]) {
 .navbar {
   width: 100%;
   position: relative;
+  margin: 0;
 }
 .navbar .navbar-top {
   display: flex;
@@ -834,12 +835,70 @@ section {
 .swiper {
   width: 100vw;
   height: 60vh;
+  z-index: 0;
 }
 .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
   width: 100vw;
   height: 60vh;
   display: flex;
   justify-content: center;
+}
+.swiper .swiper-wrapper .swiper-slide .fondnoir {
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.swiper .swiper-wrapper .swiper-slide .text {
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text span {
+  width: 50vw;
+  height: auto;
+  font-size: 29px;
+  font-weight: bold;
+  color: #fdfdff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.swiper .swiper-wrapper .swiper-slide .text .text3 {
+  width: 50vw;
+  height: auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fdfdff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.swiper .swiper-wrapper .swiper-slide .text p {
+  color: #fdfdff;
+  width: 50vw;
+  font-size: 18px;
+}
+.swiper .swiper-wrapper .swiper-slide .text span {
+  margin: 0;
+  color: #b20838;
+  font-size: 49px;
+}
+.swiper .swiper-wrapper .swiper-slide .text .boutonhero {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide .text .boutonhero button {
+  margin-top: 20px;
 }
 .swiper .swiper-wrapper .swiper-slide img {
   display: block;
@@ -847,4 +906,14 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -2;
+}
+
+@media (min-width: 1000px) {
+  .swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text .text3, .swiper .swiper-wrapper .swiper-slide .text p, .swiper .swiper-wrapper .swiper-slide .text span {
+    text-align: left;
+  }
+  .swiper .swiper-wrapper .swiper-slide .text .boutonhero {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */
