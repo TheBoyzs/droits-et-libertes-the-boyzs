@@ -1,4 +1,4 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
 
 const swiper = new Swiper(".swiper", {
     loop: true,
@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
       },
-    autoplay: {
+    /*autoplay: {
      delay: 2000,
-    },
+    },*/
 });
