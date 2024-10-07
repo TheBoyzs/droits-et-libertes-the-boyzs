@@ -1,11 +1,8 @@
 @charset "UTF-8";
-html {
+body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   max-width: 2000px;
-}
-
-body {
   margin: 0;
   box-sizing: content-box;
   max-width: 2000px;
@@ -816,6 +813,7 @@ section {
   height: auto;
   right: 0;
   left: 0;
+  bottom: 0;
   align-self: baseline;
 }
 
@@ -823,7 +821,7 @@ section {
   .lutte-wrapper__right-section img {
     left: 0;
     z-index: 1;
-    top: 100px;
+    top: 200px;
   }
 }
 @media (min-width: 768px) {
@@ -833,8 +831,8 @@ section {
     height: auto;
     right: 0;
     left: 100px;
-    top: 0;
     align-self: baseline;
+    top: 170px;
   }
 }
 @media (min-width: 1400px) {
@@ -844,8 +842,8 @@ section {
     height: auto;
     right: 0;
     left: 400px;
-    top: 0;
     align-self: baseline;
+    top: 100px;
   }
 }
 .don {
@@ -864,7 +862,7 @@ section {
   }
 }
 .swiper {
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   z-index: 0;
 }
