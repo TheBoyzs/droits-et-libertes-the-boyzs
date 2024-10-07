@@ -349,6 +349,7 @@ section:not([name=carrousel], [name=swiper]) {
 footer {
   background-color: #092327;
   width: 100vw;
+  max-width: 100%;
   text-align: left;
   padding: 55px 0;
   color: white;
@@ -394,7 +395,8 @@ p {
 .footer-wrapper {
   display: grid;
   justify-items: center;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-self: stretch;
@@ -565,7 +567,8 @@ p {
 @media (min-width: 768px) {
   footer {
     background-color: #092327;
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
     text-align: left;
     padding: 55px 0;
     color: white;
@@ -589,7 +592,8 @@ p {
   .footer-wrapper {
     display: grid;
     justify-items: center;
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
     grid-template-columns: fit-content;
     grid-template-rows: 1fr auto;
     justify-self: stretch;
