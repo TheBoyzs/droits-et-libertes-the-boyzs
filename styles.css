@@ -319,7 +319,7 @@ section:not([name=carrousel], [name=swiper]) {
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .section-card__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -338,6 +338,9 @@ section:not([name=carrousel], [name=swiper]) {
 }
 .section-card__container {
   padding: 2px 16px;
+}
+.section-card__button {
+  margin-top: 20px;
 }
 
 @media (min-width: 1400px) {
