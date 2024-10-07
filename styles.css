@@ -994,4 +994,25 @@ section {
   .swiper .swiper-wrapper .swiper-slide .text .boutonhero {
     align-items: flex-start;
   }
+}
+.news-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.news-wrapper__news {
+  width: 100%;
+}
+.news-wrapper__news ul {
+  width: 100vw;
+}
+.news-wrapper__news li {
+  list-style-type: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+.news-wrapper__news li:nth-child(odd) {
+  background-color: #092327;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
