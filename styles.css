@@ -356,13 +356,42 @@ section:not([name=carrousel], [name=swiper]) {
   margin-top: 20px;
 }
 
-@media (min-width: 1400px) {
+#barrecarte {
+  margin-left: 30%;
+}
+
+#textcarte {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .section-card {
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     flex-direction: row;
+  }
+  .section-card__card {
+    max-width: 500px;
+    min-width: 180px;
+  }
+  .cardbouton {
+    justify-content: flex-start;
+  }
+  #barrecarte {
+    margin-left: 0;
+  }
+  #textcarte {
+    text-align: start;
+  }
+}
+@media (min-width: 1500px) {
+  .section-card__card {
+    max-width: 500px;
+    min-width: 480px;
+  }
+  .cardbouton {
+    justify-content: flex-start;
   }
 }
 footer {
@@ -735,6 +764,7 @@ p {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .testimony-wrapper__testimonial {
   margin-bottom: 30px;
@@ -781,10 +811,31 @@ p {
     width: 70vw;
   }
   .testimony-wrapper__testimonial:not(#left) {
-    align-self: flex-start;
+    align-self: center;
   }
   .right-align p {
     text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  .testimony-wrapper {
+    align-items: center;
+  }
+}
+#barretemoi {
+  margin-left: 30%;
+}
+
+#texttemoi {
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #barretemoi {
+    margin-left: 0;
+  }
+  #texttemoi {
+    text-align: start;
   }
 }
 section {

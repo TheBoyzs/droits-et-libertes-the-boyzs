@@ -4,7 +4,10 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  
 
+  
   &__testimonial {
     margin-bottom: 30px;
     position: relative;
@@ -16,6 +19,8 @@
     &:not(#left){
       align-self: flex-end;
     }
+
+    
     
   }
 
@@ -43,6 +48,7 @@
   &__source {
     font-weight: bold;
     margin-top: 10px;
+    
   }
 }
 
@@ -50,12 +56,13 @@
   text-align: right;
 }
 
+
 @media(max-width:1000px){
   .testimony-wrapper{
     &__testimonial {
       width: 70vw;
       &:not(#left){
-        align-self: flex-start;
+        align-self: center;
         
       }
       
@@ -68,3 +75,26 @@
 
 }
 
+@media(max-width:1000px){
+  .testimony-wrapper{
+    align-items: center;
+  }
+}
+
+#barretemoi{
+  margin-left:30%;
+}
+#texttemoi{
+  text-align: center;
+}
+
+@media(min-width:1000px) {
+
+  #barretemoi{
+    margin-left: 0;
+  }
+  #texttemoi{
+    text-align: start;
+  }
+  
+}
