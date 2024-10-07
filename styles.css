@@ -320,12 +320,14 @@ section:not([name=carrousel], [name=swiper]) {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
   justify-content: flex-start;
+  margin: 0;
 }
 .section-card__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fdfdff;
   transition: 0.3s;
   margin: 15px;
+  margin-left: 0;
   height: 95%;
   max-width: 500px;
   min-width: 480px;
@@ -334,7 +336,8 @@ section:not([name=carrousel], [name=swiper]) {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .section-card__card img {
-  width: 100%;
+  max-width: 100%;
+  width: 100vw;
 }
 .section-card__container {
   padding: 2px 16px;
@@ -767,6 +770,17 @@ p {
   text-align: right;
 }
 
+@media (max-width: 1000px) {
+  .testimony-wrapper__testimonial {
+    width: 70vw;
+  }
+  .testimony-wrapper__testimonial:not(#left) {
+    align-self: flex-start;
+  }
+  .right-align p {
+    text-align: left;
+  }
+}
 section {
   overflow: hidden;
 }
@@ -775,7 +789,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   align-items: flex-start;
 }
 .lutte-wrapper__left-section {

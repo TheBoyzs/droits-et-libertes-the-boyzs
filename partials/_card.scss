@@ -5,6 +5,9 @@
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
   justify-content: flex-start;
+  margin:0;
+  
+  
   
  
 
@@ -13,14 +16,18 @@
     background-color: variables.$white;
     transition: 0.3s;
     margin: 15px;
+    margin-left:0;
     height: 95%;
     max-width: 500px;
     min-width: 480px;
+    
+    
     &:hover{
       box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
     }
     img{
-      width: 100%;
+      max-width: 100%;
+      width: 100vw;
     }
   }
   &__container {

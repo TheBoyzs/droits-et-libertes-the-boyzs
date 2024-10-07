@@ -50,3 +50,21 @@
   text-align: right;
 }
 
+@media(max-width:1000px){
+  .testimony-wrapper{
+    &__testimonial {
+      width: 70vw;
+      &:not(#left){
+        align-self: flex-start;
+        
+      }
+      
+    }
+
+  }
+  .right-align p {
+    text-align: left;
+  }
+
+}
+
