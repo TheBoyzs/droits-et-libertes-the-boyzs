@@ -21,6 +21,7 @@
             font-size: 15px;
             vertical-align: middle;
             align-self: center;
+            margin:0;
         }
         i{
           
@@ -50,7 +51,7 @@
 @media(min-width: 1400px){
  .disclaimer{
     grid-template-columns: auto 10vw;
-    
+    margin:0;
  }
  p{
     align-self:center;
