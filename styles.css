@@ -79,6 +79,7 @@ section:not([name=carrousel], [name=swiper]) {
     font-size: 15px;
     vertical-align: middle;
     align-self: center;
+    margin: 0;
   }
   .disclaimer i {
     margin-right: 2vw;
@@ -100,6 +101,7 @@ section:not([name=carrousel], [name=swiper]) {
 @media (min-width: 1400px) {
   .disclaimer {
     grid-template-columns: auto 10vw;
+    margin: 0;
   }
   p {
     align-self: center;
