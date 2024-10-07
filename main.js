@@ -10,3 +10,7 @@ const disclaimer = document.getElementById("disclaimer");
 closeButton.addEventListener("click", () => {
   disclaimer.style.display = "none";
 });
+
+$("li").click(function () {
+  $(this).addClass("active").siblings().removeClass("active");
+});
