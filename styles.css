@@ -319,7 +319,7 @@ section:not([name=carrousel], [name=swiper]) {
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .section-card__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -338,6 +338,9 @@ section:not([name=carrousel], [name=swiper]) {
 }
 .section-card__container {
   padding: 2px 16px;
+}
+.section-card__button {
+  margin-top: 20px;
 }
 
 @media (min-width: 1400px) {
@@ -952,6 +955,10 @@ section {
 }
 .swiper .swiper-wrapper .swiper-slide .text .boutonhero button {
   margin-top: 20px;
+  box-shadow: 3px 5px 14px 1px black;
+}
+.swiper .swiper-wrapper .swiper-slide .text .boutonhero button:hover {
+  box-shadow: 3px 5px 14px 4px black;
 }
 .swiper .swiper-wrapper .swiper-slide img {
   display: block;
