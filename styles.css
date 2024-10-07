@@ -108,13 +108,14 @@ section:not([name=carrousel], [name=swiper]) {
   }
 }
 .navbar {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   position: relative;
   margin: 0;
 }
 .navbar .navbar-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px;
   background-color: #fdfdff;
@@ -167,6 +168,7 @@ section:not([name=carrousel], [name=swiper]) {
   justify-content: center;
   align-items: center;
   margin: 0 0;
+  padding: 0;
 }
 .navbar .navbar-bottom ul li {
   display: flex;
@@ -212,7 +214,8 @@ section:not([name=carrousel], [name=swiper]) {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #fdfdff;
   display: none;
