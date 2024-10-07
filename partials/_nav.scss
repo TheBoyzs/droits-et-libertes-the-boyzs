@@ -1,12 +1,13 @@
 @use 'variables';
 
 .navbar {
-    width: 100%;
+    width: 100vw;
+    max-width:100%;
     position: relative;
     margin: 0;
     .navbar-top {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       padding: 15px;
       background-color: variables.$white;
@@ -64,6 +65,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 0;
+        padding:0;
         
         li {
           display: flex;
@@ -116,7 +118,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      max-width:100%;
+      width: 100vw;
       height: 100vh;
       background-color: variables.$white;
       display: none;
@@ -128,7 +131,7 @@
   
       .mobile-menu-content {
         text-align: center;
-  
+        
         .logo {
           height: 3rem;
           margin-bottom: 1.5rem;
