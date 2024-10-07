@@ -33,6 +33,11 @@
 }
 
 .container {
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-items: center;
     background-color: variables.$ldlRed;
     box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
     margin: 0 auto;
@@ -40,10 +45,12 @@
 
     &__pagination {
         display: flex;
+        justify-content: center;
         list-style: none;
 
+
         li {
-            flex: 1;
+            align-self: center;
             margin: 0px 5px;
 
             &:first-child a {
@@ -53,17 +60,28 @@
             &:last-child a {
                 width: 100px;
             }
+            &:first-child{
+                margin: 0 15px 0 0;
+            }
+            &:last-child{
+                margin: 0 0 0 15px;  
+            }
 
             &.active {
                 box-shadow: inset -3px -3px 7px #ffffff73, 
                 inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+            }
+            &.active a{
+                font-size: 17px;
+                color: #6f6cde;
             }
         }
 
         li a {
             font-size: 18px;
             text-decoration: none;
-            color: #4d3252;
+            color: #000000;
+            font-weight: bolder;
             height: 45px;
             width: 55px;
             display: block;
