@@ -950,6 +950,10 @@ section {
 }
 .swiper .swiper-wrapper .swiper-slide .text .boutonhero button {
   margin-top: 20px;
+  box-shadow: 3px 5px 14px 1px black;
+}
+.swiper .swiper-wrapper .swiper-slide .text .boutonhero button:hover {
+  box-shadow: 3px 5px 14px 4px black;
 }
 .swiper .swiper-wrapper .swiper-slide img {
   display: block;
