@@ -63,7 +63,6 @@ section:not([name=carrousel], [name=swiper]) {
   .disclaimer {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     max-width: 100%;
     width: 100vw;
     height: 10vh;
@@ -79,10 +78,9 @@ section:not([name=carrousel], [name=swiper]) {
     margin-left: 2vw;
     font-size: 15px;
     vertical-align: middle;
+    align-self: center;
   }
   .disclaimer i {
-    margin-top: 2vh;
-    margin-bottom: 8vw;
     margin-right: 2vw;
     align-self: center;
     justify-self: center;
@@ -91,8 +89,9 @@ section:not([name=carrousel], [name=swiper]) {
 }
 @media (min-width: 768px) {
   p {
-    margin-top: 4vh;
+    align-self: center;
     margin-left: 4vw;
+    margin: 0;
   }
   i {
     margin-left: 1vw;
@@ -101,10 +100,13 @@ section:not([name=carrousel], [name=swiper]) {
 @media (min-width: 1400px) {
   .disclaimer {
     grid-template-columns: auto 10vw;
-    grid-template-rows: auto auto;
+  }
+  p {
+    align-self: center;
+    margin: 0;
   }
   i {
-    align-self: end;
+    align-self: center;
   }
 }
 .navbar {
