@@ -1100,6 +1100,7 @@ section {
 .container__pagination li {
   align-self: center;
   margin: 0px 5px;
+  box-shadow: -3px -3px 7px rgba(85, 2, 2, 0.4509803922), 3px 3px 5px rgba(70, 45, 1, 0.288);
 }
 .container__pagination li:first-child a {
   width: 120px;
@@ -1114,11 +1115,11 @@ section {
   margin: 0 0 0 15px;
 }
 .container__pagination li.active {
-  box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.4509803922), inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: inset -3px -3px 7px rgba(255, 126, 126, 0.4509803922), inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .container__pagination li.active a {
   font-size: 17px;
-  color: #6f6cde;
+  color: #ffffff;
 }
 .container__pagination li a {
   font-size: 18px;

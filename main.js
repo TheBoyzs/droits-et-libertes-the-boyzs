@@ -11,6 +11,9 @@ closeButton.addEventListener("click", () => {
   disclaimer.style.display = "none";
 });
 
+
+//Script pour pagination 
+//Ajout par Pierre-Luc
 $("li").click(function () {
   $(this).addClass("active").siblings().removeClass("active");
 });

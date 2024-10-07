@@ -52,7 +52,7 @@
         li {
             align-self: center;
             margin: 0px 5px;
-
+            box-shadow: -3px -3px 7px #55020273, 3px 3px 5px rgba(70, 45, 1, 0.288);
             &:first-child a {
                 width: 120px;
             }
@@ -68,12 +68,12 @@
             }
 
             &.active {
-                box-shadow: inset -3px -3px 7px #ffffff73, 
+                box-shadow: inset -3px -3px 7px #ff7e7e73, 
                 inset 3px 3px 5px rgba(94, 104, 121, 0.288);
             }
             &.active a{
                 font-size: 17px;
-                color: #6f6cde;
+                color: #ffffff;
             }
         }
 
