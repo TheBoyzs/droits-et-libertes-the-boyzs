@@ -22,7 +22,9 @@ button {
   border: none;
   border: solid 2px #fdfdff;
   padding: 15px;
+  /*
   box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
+  */
   cursor: pointer; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
@@ -811,7 +813,7 @@ section {
   background-color: #e2ded4;
   padding: 10px;
   text-decoration: none;
-  width: 25vw;
+  width: 40vw;
   min-width: 20vw;
   color: #333;
   font-weight: bold;
@@ -862,14 +864,9 @@ section {
   }
 }
 @media (min-width: 768px) {
-  .lutte-wrapper__right-section img {
-    position: absolute;
-    width: 600px;
-    height: auto;
-    right: 0;
-    left: 100px;
-    align-self: baseline;
-    top: 170px;
+  .lutte-wrapper__fight-list li a {
+    width: 40vw;
+    min-width: 20vw;
   }
 }
 @media (min-width: 1400px) {
