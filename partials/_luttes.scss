@@ -29,7 +29,7 @@ section{
         background-color: variables.$tan;
         padding: 10px;
         text-decoration: none;
-        width: 25vw;
+        width: 40vw;
         min-width: 20vw;
         color: #333;
         font-weight: bold;
@@ -85,6 +85,19 @@ section{
 
 @media(min-width:768px){
   .lutte-wrapper{
+    &__fight-list {
+      
+  
+      li {
+        
+        a {
+          width: 25vw;
+          min-width: 20vw;
+          }
+          
+        }
+      }
+    }
     &__right-section{
       img {
         position:absolute;
@@ -96,8 +109,8 @@ section{
         top:170px;
       }
     }
-  }
 }
+
 
 @media(min-width:1400px){
   .lutte-wrapper{
