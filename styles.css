@@ -337,7 +337,6 @@ section:not([name=carrousel], [name=swiper]) {
 }
 .section-card__card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
 }
 .section-card__card img {
   max-width: 100%;
@@ -828,6 +827,10 @@ section {
   background-color: #b20838;
   padding: 10px;
   border-radius: 15%;
+  transition: 0.3s ease-in-out;
+}
+.lutte-wrapper__fight-list li a .arrow:hover {
+  background-color: rgb(68, 2, 2);
 }
 .lutte-wrapper__fight-list li a:hover {
   background-color: #e6e4e4;
