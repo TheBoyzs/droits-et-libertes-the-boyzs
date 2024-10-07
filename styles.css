@@ -322,7 +322,7 @@ section:not([name=carrousel], [name=swiper]) {
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0;
 }
 .section-card__card {
@@ -345,7 +345,14 @@ section:not([name=carrousel], [name=swiper]) {
 .section-card__container {
   padding: 2px 16px;
 }
-.section-card__button {
+
+.cardbouton {
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.cardbouton button {
   margin-top: 20px;
 }
 
@@ -356,10 +363,6 @@ section:not([name=carrousel], [name=swiper]) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     flex-direction: row;
-  }
-  .section-card button {
-    margin: 10px;
-    align-self: center;
   }
 }
 footer {
@@ -865,8 +868,17 @@ section {
 }
 @media (min-width: 768px) {
   .lutte-wrapper__fight-list li a {
-    width: 40vw;
+    width: 25vw;
     min-width: 20vw;
+  }
+  .__right-section img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 0;
+    left: 100px;
+    align-self: baseline;
+    top: 170px;
   }
 }
 @media (min-width: 1400px) {
