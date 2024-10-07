@@ -23,6 +23,7 @@ button {
   border: none;
   border: solid 2px variables.$white;
   padding: 15px;
+  box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
 
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
