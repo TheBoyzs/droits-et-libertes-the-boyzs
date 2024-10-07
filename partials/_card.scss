@@ -1,36 +1,43 @@
 @use "variables";
 
+
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
   justify-content: center;
+  
+ 
 
-  &__card img {
-    border-radius: 15px;
-    width: 100%;
-  }
   &__card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: variables.$white;
-    border-radius: 15px;
     transition: 0.3s;
     margin: 15px;
-    height: 50vh;
+    height: 95%;
     max-width: 500px;
     min-width: 480px;
-  }
-  &__card:hover {
-    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    &:hover{
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+    img{
+      width: 100%;
+    }
   }
   &__container {
     padding: 2px 16px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .section-card {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     flex-direction: row;
+    button{
+      margin:10px;
+      align-self: center;
+    }
   }
 }

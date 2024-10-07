@@ -1,5 +1,6 @@
 
-let swiper = new Swiper(".swiper", {
+
+const swiper = new Swiper(".swiper", {
     loop: true,
     slidesPerView: 1,
     //spaceBetween: 100,
@@ -7,7 +8,10 @@ let swiper = new Swiper(".swiper", {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    pagination: {
+        el: ".swiper-pagination",
+      },
     autoplay: {
-     delay: 500,
+     delay: 3000,
     },
 });

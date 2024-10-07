@@ -1,19 +1,24 @@
 @use "variables";
 
-html {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
+*{
+  box-sizing: border-box;
 }
 
 body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
   margin: 0;
   box-sizing: content-box;
+  max-width: 100%;
   width: 100vw;
   background-color: variables.$tan;
 }
 
 button {
   background-color: variables.$ldlRed;
+  font-size: 20px;
+  text-transform: uppercase;
   color: variables.$white;
   border: none;
   border: solid 2px variables.$white;
@@ -57,3 +62,5 @@ section:not([name="carrousel"], [name="swiper"]) {
   margin: auto;
   padding: 40px;
 }
+
+

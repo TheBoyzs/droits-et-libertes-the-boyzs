@@ -12,3 +12,20 @@
     }
     
 }
+
+@media(min-width:375px){
+    article{
+        &.__description-don-wrapper{
+            
+            p{
+                text-align: left;
+                font-size: 15px;
+                margin-top:15px;
+                margin-bottom:15px;
+            }
+
+            
+        }
+    }
+
+}

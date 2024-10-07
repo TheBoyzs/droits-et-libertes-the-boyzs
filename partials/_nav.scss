@@ -3,7 +3,7 @@
 .navbar {
     width: 100%;
     position: relative;
-  
+    margin: 0;
     .navbar-top {
       display: flex;
       justify-content: space-between;
@@ -82,6 +82,9 @@
             padding: 0 10px;
             transition: 0.4s ease-in-out;
             &:hover {
+              background-color: variables.$ldlRed;
+            }
+            &:active{
               background-color: variables.$ldlRed;
             }
           }
