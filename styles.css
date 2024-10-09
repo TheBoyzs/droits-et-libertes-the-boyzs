@@ -319,6 +319,15 @@ section:not([name=carrousel], [name=swiper]) {
   width: 100vw;
 }
 
+.hero-image {
+  background-image: url("/sources/medias/nouvelle1.png");
+  padding: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .section-card {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;

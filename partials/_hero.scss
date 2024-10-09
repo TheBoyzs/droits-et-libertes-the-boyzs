@@ -10,3 +10,12 @@
     height: 25vh;
     width: 100vw;
 }
+
+.hero-image{
+    background-image: url("/sources/medias/nouvelle1.png");
+    padding: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
