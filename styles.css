@@ -1104,10 +1104,11 @@ section {
   background-color: #092327;
   color: white;
 }
-.news-wrapper ul.news-wrapper__list li p {
+.news-wrapper ul.news-wrapper__list li a {
   text-align: left;
   font-size: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .container {
