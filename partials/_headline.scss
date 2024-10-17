@@ -1,0 +1,105 @@
+@import "bourbon";
+
+$pagination-icon-size: 70px;
+$pagination-z-index: 1090;
+
+
+.headline-wrapper {
+    padding: 10px;
+    display: flex;
+
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;  // Spacious layout
+
+    button.prev {
+        background-color: #b20838;  // Button color
+        border: 2px solid #b20838;  // Border color matches button
+        color: white;  // White text for contrast
+        padding: 20px 50px;  // Increased padding
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;  // Font size
+        border-radius: 12px;  // Rounded corners
+        transition: 
+            color 0.3s, 
+            border-color 0.3s, 
+            background-color 0.3s, 
+            transform 0.3s, 
+            box-shadow 0.3s;  // Smooth transitions
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  // Subtle shadow for depth
+
+        &:hover {
+            background-color: #a00731;  // Darker shade on hover
+            border-color: #a00731;  // Darker border on hover
+            transform: translateY(-5px);  // Increased lift effect
+            box-shadow: 0 8px 20px rgba(178, 8, 56, 0.4);  // Enhanced shadow on hover
+        }
+
+        &.active {
+            background-color: #a00731;  // Highlight active button
+            border-color: #a00731;  // Darker border
+        }
+    }
+
+    .divider {
+        width: 4px;  // Thicker divider
+        height: 50px;  // Increased height for visibility
+        background-color: #b20838;  // Matches button color
+        margin: 0 50px;  // Increased spacing for balance
+        position: relative;
+        transition: transform 0.3s, background-color 0.3s;  // Smooth transitions
+
+        button:hover ~ & {
+            transform: scaleY(1.7);  // Enhanced scale effect on hover
+            background-color: #a00731;  // Darker color on hover
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .prev:hover ~ &::after {
+            border-width: 6px 6px 6px 0;  // Arrow size
+            border-color: transparent #b20838 transparent transparent;  // Arrow color
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .next:hover ~ &::before {
+            border-width: 6px 0 6px 6px;  // Arrow size
+            border-color: transparent transparent transparent #b20838;  // Arrow color
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    button:focus {
+        outline: none;  // Remove default outline
+        box-shadow: 0 0 8px rgba(178, 8, 56, 0.6);  // Enhanced focus effect
+    }
+
+    // Responsive adjustments
+    @media (max-width: 600px) {
+        button {
+            padding: 16px 30px;  // Smaller padding for mobile
+            font-size: 18px;  // Consistent font size
+        }
+
+        .divider {
+            height: 35px;  // Smaller divider height for mobile
+            margin: 0 20px;  // Reduced margin for mobile
+        }
+    }
+}
