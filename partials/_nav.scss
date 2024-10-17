@@ -47,12 +47,19 @@
         margin-right: 1rem;
         border: none;
         cursor: pointer;
+        &:hover{
+          background: #7e082a;
+        } 
       }
 
       .secondary {
         color: variables.$ldlRed;
         background-color: variables.$white;
         border: 2px solid variables.$ldlRed;
+        &:hover{
+          color: white;
+          background-color: variables.$ldlRed;
+        }
       }
     }
   
@@ -176,15 +183,22 @@
           display: block;
           margin: 10px auto;
           padding: 10px 15px;
+          &:hover{
+            background: #7e082a;
+          }
         }
         .secondary {
           color: variables.$ldlRed;
           background-color: variables.$white;
           border: 2px solid variables.$ldlRed;
+          &:hover{
+            color: white;
+            background-color: variables.$ldlRed;
+          }
+          }
         }
       }
     }
-  }
   
   @media (max-width: 768px) {
     .navbar {

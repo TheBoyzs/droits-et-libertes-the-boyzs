@@ -7,15 +7,19 @@ section{
 
 .lutte-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  align-items: flex-start;
+  flex-direction: row;
   &__left-section {
-    flex: 1;
-    max-width: 400px;
+    width: 50vw;
+  }
+  &__right-section {
+    width: 50%;
+    align-self: flex-end;
+    img {
+      width: 100%;
+    }
   }
   &__fight-list {
+    width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
@@ -29,8 +33,6 @@ section{
         background-color: variables.$tan;
         padding: 10px;
         text-decoration: none;
-        width: 40vw;
-        min-width: 20vw;
         color: #333;
         font-weight: bold;
         border-left: 5px solid #e74c3c;
@@ -54,80 +56,18 @@ section{
     }
   }
   &__see-more {
-    background-color: variables.$ldlRed;
+    width: 100%;
     color: white;
-    padding: 10px 20px;
     border: none;
     font-size: 16px;
   }
-  &__right-section {
-    flex: 1;
-    position: relative;
-    img {
-      position:absolute;
-      width: 600px;
-      height: auto;
-      right: 0;
-      left: 0;
-      bottom:0;
-      align-self: baseline;
-    }
-  }
 }
 
-@media(min-width:375px){
-  .lutte-wrapper{
-    &__right-section{
-      img{
-        left: 0;
-        z-index: 1;
-        top:200px;
-      }
+@media(max-width:768px){
+  .lutte-wrapper__right-section {
+      display:none;
     }
-  }
-}
-
-@media(min-width:768px){
-  .lutte-wrapper{
-    &__fight-list {
-      
-  
-      li {
-        
-        a {
-          width: 25vw;
-          min-width: 20vw;
-          }
-          
-        }
-      }
-    }
-    .__right-section{
-      img {
-        position:absolute;
-        width: 600px;
-        height: auto;
-        right: 0;
-        left: 100px;
-        align-self: baseline;
-        top:170px;
-      }
-    }
-}
-
-
-@media(min-width:1400px){
-  .lutte-wrapper{
-    &__right-section{
-      img {
-        position:absolute;
-        width: 600px;
-        height: auto;
-        right: 0;
-        left: 400px;
-        align-self: baseline;
-        top:100px;
-      }
-    }
+  .lutte-wrapper__left-section {
+    width: 100%;
   }
 }
