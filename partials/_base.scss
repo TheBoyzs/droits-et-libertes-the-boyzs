@@ -62,6 +62,7 @@ section hr {
 
 // PL: ce style s'applique juste aux autres section excepté le carrousel
 section:not([name="carrousel"], [name="swiper"]) {
+  max-width: 1900px;
   margin: auto;
   padding: 40px;
 }

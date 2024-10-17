@@ -13,9 +13,10 @@ section{
   }
   &__right-section {
     width: 50%;
+    height: 100%;
     align-self: flex-end;
     img {
-      width: 100%;
+      max-height: 500px;
     }
   }
   &__fight-list {

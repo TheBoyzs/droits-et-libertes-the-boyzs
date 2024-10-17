@@ -1,4 +1,4 @@
-Montmorency
+The Boyzs
 ===============
 
 Un thème de base pour bien commencer avec Wordpress
