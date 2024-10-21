@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Raphael, Maik, Pierre-Luc" content="John Doe">
+    <title>Ligue des droits et libertés - The Boyzs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/sources/medias/ldl-icone.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="disclaimer" id="disclaimer">
+        <p>Ce site est un une refonte dans le contexte d'un projet étudiant.
+            <strong><a href="https://liguedesdroits.ca/">Consulter le site original</a></strong>
+            
+        </p>
+        <i class="fa-solid fa-x fa-2x" id="disclaimer-close"></i>
+    </div>
+    <header class="navbar">
+        <div class="navbar-top">
+            <div class="navbar-top__searchbar">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <input type="text" placeholder="  RECHERCHER">
+            </div>
+
+            <img class="logo" src="medias/ldl-logo-horizontale-270.png" alt="logoldl">
+
+            <div class="navbar-top__buttons">
+                <button class="cta-button secondary">S'INFORMER</button>
+                <button class="cta-button">DONNER</button>
+            </div>
+
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a class="nav-link__active" href="index.html">ACCUEIL</a></li>
+                <li><a class="nav-link" href="luttes.html">LUTTES</a></li>
+                <li><a class="nav-link" href="teams.html">ÉQUIPE</a></li>
+                <li><a class="nav-link" href="news.html">NOUVELLES</a></li>
+                <li><a class="nav-link" href="about.html">À PROPOS</a></li>
+                <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <img class="logo" src="medias/ldl-logo-horizontale-270.png" alt="logoldl">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    <input type="text" placeholder="  RECHERCHER">
+                </div>
+                <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">ACCUEIL</a></li>
+                <li><a  href="luttes.html">LUTTES</a></li>
+                <li><a  href="teams.html">ÉQUIPE</a></li>
+                <li><a  href="news.html">NOUVELLES</a></li>
+                <li><a  href="about.html">À PROPOS</a></li>
+                <li><a  href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="buttons">
+                    <button class="cta-button secondary">S'INFORMER</button>
+                    <button class="cta-button">DONNER</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section name="swiper">
+        <div class="swiper">
+            
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide">
+                <div class=text>
+                    <div class="fondnoir"></div>
+                    <div class="text1"><p> NOUS PROTÉGEONS VOS DROITS </p> </div>
+                    <span>CIVILS</span>
+                    <div class="text2">
+                        DEPUIS 1963
+                    </div>
+                    <div class="boutonhero">
+                        <button class="swiper-button">DONNER</button>
+                    </div>
+                </div>
+                
+                <img src="medias/4manholdinghands.PNG" alt="Los Angeles">
+              </div>
+              <div class="swiper-slide">
+                <div class =text>
+                    <div class="fondnoir"></div>
+                    <div class="text3">NOUS COMPTONS SUR VOUS</div>
+                    <p>De nombreuses recrues sont recherchées pour marquer collectivement des points pour les droits humains.</p>
+                    <div class="boutonhero">
+                        <button>DEVENIR MEMBRE</button>
+                    </div>
+                    
+                </div>
+                <img src="medias/image_article_jmartel_livre_20240709-731x1118.png" alt="Chicago">
+              </div>
+              <div class="swiper-slide">
+                <div class =text>
+                    <div class="fondnoir"></div>
+                    <div class="text3">SOYEZ INFORMÉS</div>
+                    <p>Consulter les publications de la LDL permet d'alimenter les discussions sur les enjeux des droits humains!</p>
+                    <div class="boutonhero">
+                        <button>S'INFORMER</button>
+                    </div>
+                </div>
+                <img src="medias/image_carnet_droit_humain_generique_20231006-448x448.png" alt="New York">
+              </div>
+            </div>
+            
+            
+           
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+        </div>
+    </section>
+
+    <section>
+        <h1 id="textcarte">À la une</h1>
+        <hr id="barrecarte">
+        <div class="section-card">
+            <a href="headline.html">
+                <article class="section-card__card">
+                    <img src="medias/nouvelle1.png" alt="nouvelle #1">
+                    <div class="section-card__container">
+                        <h4>Pour l'interdiction des interpellations policières une bonne fois pour toute.</h4>
+                        <h5>4 septembre 2024 | Communiqués</h5>
+    
+                    </div>
+                </article>
+
+            </a>
+            <a href="">
+                <article class="section-card__card">
+                    <img src="medias/nouvelle2.png" alt="nouvelle #2">
+                    <div class="section-card__container">
+                        <h4>Le Canada doit stopper de façon urgente l'exportation d'armes à destination d'Israël</h4>
+                        <h5>27 août 2024 | Lettre ouverte</h5>
+                    </div>
+                </article>
+            </a>
+            <a href="">
+                <article class="section-card__card">
+                    <img src="medias/nouvelle3.png" alt="nouvelle #3">
+                    <div class="section-card__container">
+                        <h4>Haine et panique morale au croisement de la transphobie et de la domination adulte.</h4>
+                        <h5>27 août 2024 | Lettre ouverte</h5>
+                    </div>
+                    
+                </article>
+            </a>
+            
+        </div>
+        <div class="cardbouton">
+            <button class="section-card__button">Voir plus</button>
+
+        </div>
+           
+    </section>
+    <section style="background-color: white;">
+        <h1>Nos luttes</h1>
+        <hr>
+        <div class="lutte-wrapper">
+            <div class="lutte-wrapper__left-section">
+                <ul class="lutte-wrapper__fight-list">
+                    <li><a href="#">Droits des personnes en détention <span class="arrow">→</span></a></li>
+                    <li><a href="#">Droits des peuples autochtones <span class="arrow">→</span></a></li>
+                    <li><a href="#">Racisme, exclusion sociale et laïcité <span class="arrow">→</span></a></li>
+                    <li><a href="#">Droits des personnes migrantes <span class="arrow">→</span></a></li>
+                    <li><a href="#">Environnement et droits humains <span class="arrow">→</span></a></li>
+                    <li><a href="#">Droits à la santé <span class="arrow">→</span></a></li>
+                </ul>
+            </div>
+            <div class="lutte-wrapper__right-section">
+                <img src="medias/—Pngtree—three fists up raised high_9140570 1.png" alt="Lutte image">
+            </div>
+            
+        </div>
+            <div class="lutte-wrapper__see-more">
+                    <button>Voir plus</button>
+                </div>
+    </section>
+    <section>
+        <h1 id="texttemoi">Témoignages</h1>
+        <hr id="barretemoi">
+        <div class="testimony-wrapper">
+            <!--Témoignage 1-->
+            <article class="testimony-wrapper__testimonial" id="left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat.</p>
+                <p class="testimony-wrapper__source">Source d'où provient le témoignage</p>
+            </article>
+            <!--Témoignage 2-->
+            <article class="testimony-wrapper__testimonial right-align" dir="rtl">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p class="testimony-wrapper__source right-align">Source d'où provient le témoignage</p>
+            </article>
+            <!--Témoignage 3-->
+            <article class="testimony-wrapper__testimonial" id="left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p class="testimony-wrapper__source">Source d'où provient le témoignage</p>
+            </article>
+        </div>
+    </section>
+   <section class="don">
+    <!--ANIMATION TIMELAPSE ICI!!!!!!!!!-->
+        <h1>PARCE QUE LES DROITS HUMAINS, C'EST POUR TOUT LE MONDE</h1>
+        <hr>
+        <div class="don-wrapper">
+            <article class="__description-don-wrapper">
+                <p>Contre les multiples risques et reculs auxquels les droits humains font face, au Québec et au Canada, comme ailleurs, il faut parler, agir et dénoncer.</p>
+            </article>
+            <article class="bouton-don">
+                <button>donner</button>
+            </article>
+        </div>
+   </section>
+   <section class="partners-section">
+        <div class="logo-container">
+            <div class="logo-slider">
+                <img src="medias/partners/casifq.png" alt="casifq">
+                <img src="medias/partners/bdsquebec-logo-email.jpg">
+                <img src="medias/partners/coalitionaidejuridique.png">
+                <img src="medias/partners/fidh.jpg">
+                <img src="medias/partners/iclmg-csilc.jpg">
+                <img src="medias/partners/logo-echec-a-la-guerre-retin.png">
+                <img src="medias/partners/osp.png">
+                <img src="medias/partners/rodcd_logo.png">
+                <img src="medias/partners/rqaca.png">
+                <!-- Loop -->
+                <img src="medias/partners/casifq.png" alt="casifq">
+                <img src="medias/partners/bdsquebec-logo-email.jpg">
+                <img src="medias/partners/coalitionaidejuridique.png">
+                <img src="medias/partners/fidh.jpg">
+                <img src="medias/partners/iclmg-csilc.jpg">
+                <img src="medias/partners/logo-echec-a-la-guerre-retin.png">
+                <img src="medias/partners/osp.png">
+                <img src="medias/partners/rodcd_logo.png">
+                <img src="medias/partners/rqaca.png">
+            </div>
+        </div>
+
+   </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+        <div class="footer-wrapper__socialtree">
+            <img class="footer-wrapper__logo" src="medias/ldl-icone.png">
+            <span class="text-logo" style="font-size: 30px; text-align: center">
+                <p>Ligue des <br> <b>Droits</b> et <b>libertés</b></p>
+            </span>
+            <ul class="footer-wrapper__social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i
+                            class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer-wrapper__links">
+                <li><a link="#">Accueil</a></li>
+                <li> <a link="#">Luttes</a></li>
+                <li><a link="#">Équipe</a></li>
+                <li><a link="#">Nouvelles</a></li>
+                <li><a link="#">À Propos</a></li>
+                <li><a link="#">Contant</a></li>
+                <li><a link="#">FAQ</a></li>
+            </ul>
+            <hr>
+            <div class="footer-wrapper__legal">
+                <p>&copy; 2024 TheBoysz. All rights deserved.</p><br>
+                <p>Made with Visual Studio Code</p>
+            </div>
+        </div>
+        <div class="footer-wrapper__info">
+            <p id="address">469 Jean-Talon Ouest, bureau 105</p><br>
+            <p id="ville">Montréal, Québec H3N 1R4</p><br>
+            <p id="cell">Tél.: 514 849-7717</p><br>
+            <p id="media">Cell. médias: 514-715-7727</p><br>
+            <div class="footer-wrapper__buttons">
+                <button>
+                    S'INFORMER
+                </button><br>
+                <button>
+                    DONNER
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b6c9a53dc1.js" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+    
+</body>
+
+</html>
