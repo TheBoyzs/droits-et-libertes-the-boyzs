@@ -1201,4 +1201,7 @@ section {
   100% {
     transform: translateX(-50%);
   }
+}
+.titrecontact {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
