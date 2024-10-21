@@ -1,62 +1,96 @@
-@import "bourbon";
 
-$pagination-icon-size: 70px;
-$pagination-z-index: 1090;
+@use "variables";
 
 
 .headline-wrapper {
-    padding: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px; // Set a max width for a more newspaper-like column
+    margin: 40px auto; // Center the wrapper with space above and below
+    padding: 20px; // Add padding for spacing
+     // Light border to simulate newspaper edges
+    background-color: variables.$white; // Slightly off-white background for a classic feel
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    
 
+    h1 {
+        grid-column: span 2;
+        font-family: 'Georgia', serif; // Classic serif font for headlines
+        font-size: 2.5em; // Larger size for the main headline
+        font-weight: bold; // Bold weight for emphasis
+        margin-bottom: 10px; // Space below the headline
+        line-height: 1.2; // Tight line height for a compact look
+        color: #333; // Dark color for readability
+    }
+
+    article { 
+        grid-column: span 1;
+        font-size: 1.1em; // Slightly larger than normal text size
+        line-height: 1.6; // Increased line height for readability
+        color: #555; // Darker gray for a softer contrast than pure black
+        margin-top: 20px; // Space above the article
+        max-width: 100%;
+        width: 100vw;
+        text-align: left;
+        p {
+          text-align: left;
+        }
+    }
 }
-
-.pagination {
+.nextprev-wrapper {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 60px 0;  // Spacious layout
+    background-color: variables.$tan;
 
-    button.prev {
-        background-color: #b20838;  // Button color
-        border: 2px solid #b20838;  // Border color matches button
-        color: white;  // White text for contrast
-        padding: 20px 50px;  // Increased padding
-        cursor: pointer;
-        position: relative;
-        font-size: 20px;  // Font size
-        border-radius: 12px;  // Rounded corners
-        transition: 
-            color 0.3s, 
-            border-color 0.3s, 
-            background-color 0.3s, 
-            transform 0.3s, 
-            box-shadow 0.3s;  // Smooth transitions
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  // Subtle shadow for depth
+    &__container {
+        margin: 60px 0; // Spacious layout
+        display: flex;
 
-        &:hover {
-            background-color: #a00731;  // Darker shade on hover
-            border-color: #a00731;  // Darker border on hover
-            transform: translateY(-5px);  // Increased lift effect
-            box-shadow: 0 8px 20px rgba(178, 8, 56, 0.4);  // Enhanced shadow on hover
-        }
+        button {
+            background-color: #b20838; // Button color
+            border: 2px solid #b20838; // Border color matches button
+            color: white; // White text for contrast
+            padding: 20px 50px; // Increased padding
+            cursor: pointer;
+            position: relative;
+            font-size: 20px; // Font size
+            border-radius: 12px; // Rounded corners
+            transition: 
+                color 0.3s,
+                border-color 0.3s,
+                background-color 0.3s,
+                transform 0.3s,
+                box-shadow 0.3s; // Smooth transitions
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
 
-        &.active {
-            background-color: #a00731;  // Highlight active button
-            border-color: #a00731;  // Darker border
+            &:hover {
+                background-color: #a00731; // Darker shade on hover
+                border-color: #a00731; // Darker border on hover
+                transform: translateY(-5px); // Increased lift effect
+                box-shadow: 0 8px 20px rgba(178, 8, 56, 0.4); // Enhanced shadow on hover
+            }
+
+            &.active {
+                background-color: #a00731; // Highlight active button
+                border-color: #a00731; // Darker border
+            }
         }
     }
 
-    .divider {
-        width: 4px;  // Thicker divider
-        height: 50px;  // Increased height for visibility
-        background-color: #b20838;  // Matches button color
-        margin: 0 50px;  // Increased spacing for balance
+    &__divider {
+        width: 4px; // Thicker divider
+        height: 50px; // Increased height for visibility
+        background-color: #b20838; // Matches button color
+        margin: 0 50px; // Increased spacing for balance
         position: relative;
-        transition: transform 0.3s, background-color 0.3s;  // Smooth transitions
+        transition: transform 0.3s, background-color 0.3s; // Smooth transitions
 
         button:hover ~ & {
-            transform: scaleY(1.7);  // Enhanced scale effect on hover
-            background-color: #a00731;  // Darker color on hover
+            transform: scaleY(); // Enhanced scale effect on hover
+            background-color: #a00731; // Darker color on hover
         }
 
         &::after,
@@ -68,17 +102,17 @@ $pagination-z-index: 1090;
             border-style: solid;
         }
 
-        .prev:hover ~ &::after {
-            border-width: 6px 6px 6px 0;  // Arrow size
-            border-color: transparent #b20838 transparent transparent;  // Arrow color
+        &__prev:hover ~ &::after {
+            border-width: 6px 6px 6px 0; // Arrow size
+            border-color: transparent #b20838 transparent transparent; // Arrow color
             right: 100%;
             top: 50%;
             transform: translateY(-50%);
         }
 
-        .next:hover ~ &::before {
-            border-width: 6px 0 6px 6px;  // Arrow size
-            border-color: transparent transparent transparent #b20838;  // Arrow color
+        &__next:hover ~ &::before {
+            border-width: 6px 0 6px 6px; // Arrow size
+            border-color: transparent transparent transparent #b20838; // Arrow color
             left: 100%;
             top: 50%;
             transform: translateY(-50%);
@@ -86,20 +120,20 @@ $pagination-z-index: 1090;
     }
 
     button:focus {
-        outline: none;  // Remove default outline
-        box-shadow: 0 0 8px rgba(178, 8, 56, 0.6);  // Enhanced focus effect
+        outline: none; // Remove default outline
+        box-shadow: 0 0 8px rgba(178, 8, 56, 0.6); // Enhanced focus effect
     }
 
     // Responsive adjustments
     @media (max-width: 600px) {
         button {
-            padding: 16px 30px;  // Smaller padding for mobile
-            font-size: 18px;  // Consistent font size
+            padding: 16px 30px; // Smaller padding for mobile
+            font-size: 18px; // Consistent font size
         }
 
-        .divider {
-            height: 35px;  // Smaller divider height for mobile
-            margin: 0 20px;  // Reduced margin for mobile
+        &__divider {
+            height: 35px; // Smaller divider height for mobile
+            margin: 0 20px; // Reduced margin for mobile
         }
     }
 }
