@@ -1206,6 +1206,9 @@ section {
     transform: translateX(-50%);
   }
 }
+.titrecontact {
+  text-align: center;
+}
 .headline-wrapper {
   max-width: 800px;
   margin: 40px auto;
