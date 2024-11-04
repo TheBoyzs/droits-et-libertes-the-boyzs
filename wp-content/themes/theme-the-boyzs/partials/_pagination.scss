@@ -1,0 +1,54 @@
+.container {
+    background: $ldlRed;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #f8525273, 3px 3px 5px rgba(138, 81, 81, 0.781);
+
+    &__pagination {
+        display: flex;
+        list-style: none;
+
+        li {
+            flex: 1;
+            margin: 0px 5px;
+            background: #eec3c3;
+            border-radius: 3px;
+            box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(129, 83, 83, 0.288);
+
+            &:first-child {
+                margin: 0 15px 0 0;
+            }
+
+            &:last-child {
+                margin: 0 0 0 15px;
+            }
+
+            &.active {
+                box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(121, 94, 94, 0.288);
+
+                a {
+                    font-size: 17px;
+                    color: #6f6cde;
+                }
+            }
+
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                color: #523232;
+                height: 45px;
+                width: 55px;
+                display: block;
+                line-height: 45px;
+
+                &:first-child {
+                    width: 120px;
+                }
+
+                &:last-child {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
