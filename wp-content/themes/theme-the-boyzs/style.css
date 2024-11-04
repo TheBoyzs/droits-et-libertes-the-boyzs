@@ -1169,7 +1169,7 @@ section {
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
-  margin-top: 0;
+  margin-top: 130px;
 }
 
 .descriptionapropos {
@@ -1407,7 +1407,13 @@ button:hover ~ .nextprev-wrapper__divider {
 }
 
 .titrecontact {
+  font-size: 50px;
+  margin-top: 200px;
   text-align: center;
+}
+
+.descriptioncontact {
+  margin-bottom: 50px;
 }
 
 .titremontreal {
