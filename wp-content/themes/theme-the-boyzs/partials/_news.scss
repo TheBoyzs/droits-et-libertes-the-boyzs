@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: variables.$lightGray; // Light background for better contrast
+    background-color: variables.$whitetrans; // Light background for better contrast
 
     ul.news-wrapper__list {
         display: flex;
@@ -39,7 +39,7 @@
                 transition: color 0.3s; // Smooth color transition
 
                 &:hover {
-                    color: variables.$highlightColor; // Change color on hover
+                    color: variables.$whitetrans; // Change color on hover
                 }
             }
         }

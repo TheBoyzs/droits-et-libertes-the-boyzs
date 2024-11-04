@@ -1,2 +1,24 @@
 @use "variables";
 
+.equipe-container{
+    display: grid;
+    width:100vw;
+    max-width: 100%;
+    grid-template-columns: auto ;
+    justify-content: center;
+    
+
+    .equipe__carte {
+        background-color: aqua;
+        width:55vw;
+        display:flex;
+        justify-content: center;
+        .equipe_container_texte{
+            img{
+                width:50vw;
+            }
+        }
+        
+    }
+
+}

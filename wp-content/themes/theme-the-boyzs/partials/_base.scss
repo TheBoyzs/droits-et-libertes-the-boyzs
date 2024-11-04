@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.posfix{
+  position: fixed;
+  z-index: 8;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
