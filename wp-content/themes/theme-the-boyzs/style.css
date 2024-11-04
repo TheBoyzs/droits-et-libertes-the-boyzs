@@ -973,6 +973,7 @@ section {
   }
 }
 .swiper {
+  margin-top: 130px;
   width: 100%;
   height: 60vh;
   z-index: 0;
@@ -1062,6 +1063,9 @@ section {
 }
 
 @media (min-width: 1000px) {
+  .swiper {
+    margin-top: 210px;
+  }
   .swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text .text3, .swiper .swiper-wrapper .swiper-slide .text p, .swiper .swiper-wrapper .swiper-slide .text span {
     text-align: left;
   }
@@ -1227,6 +1231,15 @@ section {
   text-align: center;
   margin-top: 130px;
   margin-bottom: 20px;
+}
+
+.equipe__modal {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  z-index: 14;
+  position: absolute;
+  background-color: black;
 }
 
 .equipe-container {
