@@ -1105,7 +1105,7 @@ section {
   transition: color 0.3s;
 }
 .news-wrapper ul.news-wrapper__list li a:hover {
-  color: rgba(253, 253, 255, 0.3725490196);
+  color: #b20838;
 }
 
 .container {
