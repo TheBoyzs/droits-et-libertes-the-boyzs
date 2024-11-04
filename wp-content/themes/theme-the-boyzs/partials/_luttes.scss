@@ -1,66 +1,100 @@
 @use "variables";
 
-section{
-  overflow: hidden;
-  
+
+body {
+  background-color: #e6e2dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.lutte-wrapper {
-  display: flex;
-  flex-direction: row;
-  &__left-section {
-    width: 50vw;
-  }
-  &__right-section {
-    width: 50%;
-    height: 100%;
-    align-self: flex-end;
-    img {
-      max-height: 500px;
-    }
-  }
-  &__fight-list {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+.page-wrapper {
+  text-align: center;
+  color: #000;
 
-    li {
-      margin-bottom: 10px;
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: variables.$tan;
-        padding: 10px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        border-left: 5px solid #e74c3c;
-        transition: 0.3s ease-in-out;
-        .arrow {
-          color: white;
-          font-size: large;
-          font-weight: bolder;
-          background-color: variables.$ldlRed;
-          padding: 10px;
-          border-radius: 15%;
-          transition: 0.3s ease-in-out;
-          &:hover{
-            background-color: rgb(68, 2, 2);
-          }
-        }
-        &:hover {
-          background-color: #e6e4e4;
-        }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .committees {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .committee-card {
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      padding: 20px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
       }
     }
   }
-  &__see-more {
-    width: 100%;
-    color: white;
-    border: none;
+
+  .view-more {
+    background-color: #a30032;
+    color: #fff;
+    padding: 10px 20px;
     font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: #850026;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .pagination-btn {
+      background-color: #a30032;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background-color: #850026;
+      }
+    }
+
+    .pagination-dots {
+      font-size: 18px;
+      color: #a30032;
+    }
   }
 }
 
@@ -72,3 +106,4 @@ section{
     width: 100%;
   }
 }
+
