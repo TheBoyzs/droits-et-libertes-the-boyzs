@@ -1073,6 +1073,7 @@ section {
   margin: 0;
   width: 100;
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   background-color: rgba(253, 253, 255, 0.3725490196);
 }

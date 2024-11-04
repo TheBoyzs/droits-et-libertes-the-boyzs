@@ -4,6 +4,7 @@
     margin: 0;
     width: 100;
     display: flex;
+    margin-top: 100px;
     flex-direction: column;
     background-color: variables.$whitetrans;
    ; // Light background for better contrast
@@ -11,6 +12,7 @@
     ul.news-wrapper__list {
         display: flex;
         flex-direction: column;
+        
     
 
         li {
