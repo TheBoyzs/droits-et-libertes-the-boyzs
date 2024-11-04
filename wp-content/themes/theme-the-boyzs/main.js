@@ -1,6 +1,10 @@
 const hamburger = document.querySelector(".hamburger");
 const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
 
+const carteArr = document.querySelectorAll(".equipe__carte");
+
+
+
 hamburger.addEventListener("click", () => {
   mobileMenuOverlay.classList.toggle("show");
   hamburger.classList.toggle("open");
@@ -33,3 +37,33 @@ const swiper = new Swiper(".swiper", {
    delay: 3000,
   },
 });
+
+
+if(carteArr !== null){
+
+console.log(carteArr);
+  carteArr.forEach((element, index) => {
+    let boutonx = document.querySelectorAll("#modal-close");
+    let chiffre = index + 1;
+    let modaleAssociee = document.querySelector("#modal"+chiffre);
+    element.addEventListener("click",() =>{
+
+     
+
+      modaleAssociee.style.display = "grid";
+    })
+    boutonx.forEach((element) => {
+      element.addEventListener("click",() =>{
+        modaleAssociee.style.display = "none";
+      })
+    })
+    
+
+  });
+
+  
+
+}
+
+
+

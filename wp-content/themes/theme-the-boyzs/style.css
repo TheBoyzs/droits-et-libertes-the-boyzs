@@ -1300,13 +1300,47 @@ section {
   margin-bottom: 20px;
 }
 
+#modal-close {
+  width: 90%;
+  display: flex;
+  color: #fdfdff;
+  margin-top: 40px;
+  justify-content: end;
+}
+
+#modal-close:hover {
+  cursor: pointer;
+}
+
 .equipe__modal {
+  display: none;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   max-width: 100%;
   z-index: 14;
-  position: absolute;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.838);
+}
+.equipe__modal .equipe__modal-container {
+  display: flex;
+  justify-content: center;
+}
+.equipe__modal .equipe__modal-container .modal-texte {
+  align-self: center;
+  text-align: center;
+  width: 70vw;
+  background-color: #373f40;
+  height: 100vh;
+  color: #fdfdff;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.equipe__modal .equipe__modal-container .modal-texte p {
+  margin: 20px;
 }
 
 .equipe-container {
@@ -1316,7 +1350,12 @@ section {
   grid-template-columns: auto;
   justify-content: center;
 }
+.equipe-container .equipe__carte:hover {
+  background-color: #373f40;
+  cursor: pointer;
+}
 .equipe-container .equipe__carte {
+  transition: ease-in-out 0.3s;
   background-color: #092327;
   width: 55vw;
   display: flex;
