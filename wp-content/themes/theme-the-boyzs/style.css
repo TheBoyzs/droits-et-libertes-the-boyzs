@@ -1071,7 +1071,7 @@ section {
 }
 .news-wrapper {
   margin: 0;
-  width: 100%;
+  width: 100;
   display: flex;
   flex-direction: column;
   background-color: rgba(253, 253, 255, 0.3725490196);
@@ -1089,7 +1089,11 @@ section {
 }
 .news-wrapper ul.news-wrapper__list li:nth-child(odd) {
   background-color: #092327;
+  height: 75px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 .news-wrapper ul.news-wrapper__list li:hover {
   transform: translateY(-5px);
@@ -1149,6 +1153,65 @@ section {
 .container__pagination li.active a {
   font-size: 17px;
   color: #ffffff;
+}
+.container__pagination li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  height: 45px;
+  width: 55px;
+  display: block;
+  line-height: 45px;
+  margin: 0;
+}
+
+.container {
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  justify-items: center;
+  background-color: #b20838;
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 3px 3px 5px rgba(94, 104, 121, 0.288);
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.container__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.container__pagination li {
+  align-self: center;
+  margin: 0px 5px;
+  box-shadow: -3px -3px 7px rgba(85, 2, 2, 0.4509803922), 3px 3px 5px rgba(70, 45, 1, 0.288);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.container__pagination li:first-child a {
+  width: 120px;
+}
+.container__pagination li:last-child a {
+  width: 100px;
+}
+.container__pagination li:first-child {
+  margin: 0 15px 0 0;
+}
+.container__pagination li:last-child {
+  margin: 0 0 0 15px;
+}
+.container__pagination li.active {
+  box-shadow: inset -3px -3px 7px rgba(255, 126, 126, 0.4509803922), inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.container__pagination li.active a {
+  font-size: 17px;
+  color: #ffffff;
+}
+.container__pagination li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .container__pagination li a {
   font-size: 18px;
