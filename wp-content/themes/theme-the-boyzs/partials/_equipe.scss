@@ -1,5 +1,10 @@
 @use "variables";
 
+.titre_equipe{
+    text-align: center;
+    margin-top:130px;
+    margin-bottom:20px;
+}
 .equipe-container{
     display: grid;
     width:100vw;
@@ -9,16 +14,69 @@
     
 
     .equipe__carte {
-        background-color: aqua;
+        background-color: variables.$dark;
         width:55vw;
         display:flex;
         justify-content: center;
+        align-items: center;
+        margin:10px;
         .equipe_container_texte{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top:35px;
             img{
-                width:50vw;
+                width:40vw;
+            }
+            p{
+                font-family: "Manrope", sans-serif;
+                margin-top:10px;
+                font-size: 20px;
+                color:variables.$white;
             }
         }
         
     }
 
+}
+
+@media(min-width:768px){
+    .titre_equipe{
+        text-align: center;
+        margin-top:200px;
+        margin-bottom:20px;
+    }
+    .equipe-container{
+        grid-template-columns: auto auto;
+        .equipe__carte{
+            width:40vw;
+            .equipe_container_texte{
+                img{
+                    width:30vw;
+                }
+            }
+        }
+    }
+    
+}
+
+@media(min-width:1000px){
+    .titre_equipe{
+        text-align: center;
+        margin-top:200px;
+        margin-bottom:20px;
+    }
+    .equipe-container{
+        grid-template-columns: auto auto auto;
+        .equipe__carte{
+            width:30vw;
+            .equipe_container_texte{
+                img{
+                    width:20vw;
+                }
+            }
+        }
+    }
+    
 }
