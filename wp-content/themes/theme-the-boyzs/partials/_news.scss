@@ -1,8 +1,12 @@
 @use "variables";
 
+
+#container-news{
+    margin-top: 150px !important;
+}
 .news-wrapper {
     margin: 0;
-    width: 100;
+    width: 100vw;
     display: flex;
     margin-top: 100px;
     flex-direction: column;
@@ -130,7 +134,7 @@
         justify-content: center;
         list-style: none;
         padding: 0;
-        margin-top: 20px; // Add some space above pagination
+        margin-top: 50px; // Add some space above pagination
 
         li {
             align-self: center;

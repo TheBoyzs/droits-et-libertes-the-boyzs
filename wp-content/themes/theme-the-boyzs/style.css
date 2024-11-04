@@ -1073,9 +1073,13 @@ section {
     align-items: flex-start;
   }
 }
+#container-news {
+  margin-top: 150px !important;
+}
+
 .news-wrapper {
   margin: 0;
-  width: 100;
+  width: 100vw;
   display: flex;
   margin-top: 100px;
   flex-direction: column;
@@ -1187,7 +1191,7 @@ section {
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .container__pagination li {
   align-self: center;
@@ -1538,4 +1542,51 @@ button:hover ~ .nextprev-wrapper__divider {
 
 .webquebec {
   text-align: center;
+}
+
+.container {
+  background: #b20838;
+  padding: 25px;
+  border-radius: 3px;
+  display: grid;
+  box-shadow: -3px -3px 7px rgba(248, 82, 82, 0.4509803922), 3px 3px 5px rgba(138, 81, 81, 0.781);
+}
+.container__pagination {
+  display: flex;
+  list-style: none;
+}
+.container__pagination li {
+  flex: 1;
+  margin: 0px 5px;
+  background: #eec3c3;
+  border-radius: 3px;
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 3px 3px 5px rgba(129, 83, 83, 0.288);
+}
+.container__pagination li:first-child {
+  margin: 0 15px 0 0;
+}
+.container__pagination li:last-child {
+  margin: 0 0 0 15px;
+}
+.container__pagination li.active {
+  box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.4509803922), inset 3px 3px 5px rgba(121, 94, 94, 0.288);
+}
+.container__pagination li.active a {
+  font-size: 17px;
+  color: #6f6cde;
+}
+.container__pagination li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #523232;
+  height: 45px;
+  width: 55px;
+  display: block;
+  line-height: 45px;
+}
+.container__pagination li a:first-child {
+  width: 120px;
+}
+.container__pagination li a:last-child {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
