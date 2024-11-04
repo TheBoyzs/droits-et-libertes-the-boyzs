@@ -15,7 +15,7 @@
     
 
     h1 {
-        grid-column: span 2;
+        grid-column: span 3;
         font-family: 'Georgia', serif; // Classic serif font for headlines
         font-size: 2.5em; // Larger size for the main headline
         font-weight: bold; // Bold weight for emphasis
@@ -25,7 +25,7 @@
     }
 
     article { 
-        grid-column: span 1;
+        grid-column: 1 / 2;
         font-size: 1.1em; // Slightly larger than normal text size
         line-height: 1.6; // Increased line height for readability
         color: #555; // Darker gray for a softer contrast than pure black

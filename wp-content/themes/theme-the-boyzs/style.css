@@ -1169,7 +1169,7 @@ section {
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
-  margin-top: 0;
+  margin-top: 200px;
 }
 
 .descriptionapropos {
@@ -1303,7 +1303,7 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .headline-wrapper h1 {
-  grid-column: span 2;
+  grid-column: span 3;
   font-family: "Georgia", serif;
   font-size: 2.5em;
   font-weight: bold;
@@ -1312,7 +1312,7 @@ section {
   color: #333;
 }
 .headline-wrapper article {
-  grid-column: span 1;
+  grid-column: 1/2;
   font-size: 1.1em;
   line-height: 1.6;
   color: #555;
@@ -1407,7 +1407,13 @@ button:hover ~ .nextprev-wrapper__divider {
 }
 
 .titrecontact {
+  font-size: 50px;
+  margin-top: 200px;
   text-align: center;
+}
+
+.descriptioncontact {
+  margin-bottom: 50px;
 }
 
 .titremontreal {
