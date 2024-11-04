@@ -40,6 +40,7 @@
 
                 &:hover {
                     color: variables.$ldlRed; // Change color on hover
+                    cursor: pointer;
                 }
             }
         }
