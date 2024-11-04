@@ -1248,6 +1248,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 35px;
+  margin-bottom: 10px;
 }
 .equipe-container .equipe__carte .equipe_container_texte img {
   width: 40vw;
