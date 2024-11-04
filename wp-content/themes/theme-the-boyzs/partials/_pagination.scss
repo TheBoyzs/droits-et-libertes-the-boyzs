@@ -52,3 +52,28 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .container__pagination {
+        display: flex;
+        flex-wrap: wrap; // Keep items in a row, but could switch to column if needed
+        gap: 5px; // Reduce gap between pagination items
+
+        li {
+            margin: 0 3px; // Reduce margin between items
+            flex: 0; // Remove flex for equal spacing
+
+            a {
+                font-size: 14px; // Decrease font size for smaller screens
+                height: 35px; // Decrease button height
+                width: 40px; // Decrease button width
+                line-height: 35px; // Adjust line height to center text
+            }
+
+            &:first-child a,
+            &:last-child a {
+                width: 80px; // Reduce width for "Prev" and "Next" buttons
+            }
+        }
+    }
+}
