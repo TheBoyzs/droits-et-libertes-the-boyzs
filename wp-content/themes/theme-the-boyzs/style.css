@@ -1703,4 +1703,32 @@ p {
   .container__pagination li:first-child a, .container__pagination li:last-child a {
     width: 80px;
   }
+}
+.sectionerror {
+  padding-top: 210px !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.errorcode {
+  display: block;
+  color: #b20838;
+  font-size: 140px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -15px;
+}
+.errorcode span {
+  position: relative;
+}
+
+.errordescription {
+  font-weight: 600;
+  font-size: 18px;
+}
+.errordescription bold {
+  color: #b20838;
 }/*# sourceMappingURL=style.css.map */
