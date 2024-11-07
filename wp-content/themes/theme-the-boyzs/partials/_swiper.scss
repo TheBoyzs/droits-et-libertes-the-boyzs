@@ -2,9 +2,9 @@
 @use "sass:color";
 
 .swiper{
-    margin-top: 130px;
+    padding-top: 130px;
     width:100%;
-    height:60vh;
+    height:100vh;
     z-index: 0;
     .swiper-button-prev{
         color: variables.$white;
@@ -105,9 +105,9 @@
     
 }
 
-@media(min-width:1000px){
+@media(min-width:768px){
     .swiper{
-        margin-top: 210px;
+        padding-top: 200px;
         .swiper-wrapper{
             .swiper-slide{
                 .text{
@@ -124,5 +124,4 @@
         }
 
     }
-   
 }
