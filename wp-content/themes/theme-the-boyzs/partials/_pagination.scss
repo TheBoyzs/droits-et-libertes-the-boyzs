@@ -57,25 +57,27 @@
 }
 
 @media (max-width: 600px) {
-    .container__pagination {
-        display: flex;
-        flex-wrap: wrap; // Keep items in a row, but could switch to column if needed
-        gap: 5px; // Reduce gap between pagination items
+    .container {
+        &__pagination {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
 
-        li {
-            margin: 0 3px; // Reduce margin between items
-            flex: 0; // Remove flex for equal spacing
+            li {
+                margin: 0 3px;
+                flex: 0;
 
-            a {
-                font-size: 14px; // Decrease font size for smaller screens
-                height: 35px; // Decrease button height
-                width: 40px; // Decrease button width
-                line-height: 35px; // Adjust line height to center text
-            }
+                a {
+                    font-size: 14px;
+                    height: 35px;
+                    width: 40px;
+                    line-height: 35px;
+                }
 
-            &:first-child a,
-            &:last-child a {
-                width: 80px; // Reduce width for "Prev" and "Next" buttons
+                &:first-child a,
+                &:last-child a {
+                    width: 80px;
+                }
             }
         }
     }
