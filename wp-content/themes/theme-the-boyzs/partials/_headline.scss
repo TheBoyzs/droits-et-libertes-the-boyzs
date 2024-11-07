@@ -88,6 +88,7 @@
     &__container {
         margin: 60px 0; // Spacious layout
         display: flex;
+        align-items: center;
 
         button {
             background-color: #b20838; // Button color
@@ -105,18 +106,90 @@
                 transform 0.3s,
                 box-shadow 0.3s; // Smooth transitions
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
+            outline: none; // Remove default outline
+
+            // Click animation
+            &:active {
+                transform: scale(0.95);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
 
             &:hover {
                 background-color: #a00731; // Darker shade on hover
                 border-color: #a00731; // Darker border on hover
-                transform: translateY(-5px); // Increased lift effect
+                transform: translateY(-5px) rotate(2deg); // Increased lift and slight rotation
                 box-shadow: 0 8px 20px rgba(178, 8, 56, 0.4); // Enhanced shadow on hover
+                // Additional hover effect
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 12px;
+                    transform: scale(0);
+                    transition: transform 0.3s ease;
+                }
+                &::after {
+                    transform: scale(1);
+                }
             }
 
             &.active {
                 background-color: #a00731; // Highlight active button
                 border-color: #a00731; // Darker border
+                animation: pulse 2s infinite; // Pulse animation for active state
             }
+
+            // Pulse keyframes
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(178, 8, 56, 0.4);
+                }
+                70% {
+                    box-shadow: 0 0 0 10px rgba(178, 8, 56, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(178, 8, 56, 0);
+                }
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                transition: border-color 0.3s, transform 0.3s;
+            }
+
+            &.prev {
+                &::before {
+                    border-width: 6px 6px 6px 0; // Left arrow
+                    border-color: transparent #b20838 transparent transparent;
+                    left: -10px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+
+            &.next {
+                &::after {
+                    border-width: 6px 0 6px 6px; // Right arrow
+                    border-color: transparent transparent transparent #b20838;
+                    right: -10px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+        }
+
+        // Optional: Adjust spacing between buttons and divider
+        button + .nextprev-wrapper__divider + button {
+            margin-left: 50px;
         }
     }
 
@@ -128,8 +201,9 @@
         position: relative;
         transition: transform 0.3s, background-color 0.3s; // Smooth transitions
 
-        button:hover ~ & {
-            transform: scaleY(); // Enhanced scale effect on hover
+        // Enhanced scale effect on hover via sibling selector
+        .nextprev-wrapper__container button:hover ~ & {
+            transform: scaleY(1.2); // Slightly increase height
             background-color: #a00731; // Darker color on hover
         }
 
@@ -140,31 +214,17 @@
             width: 0;
             height: 0;
             border-style: solid;
+            transition: border-color 0.3s, transform 0.3s;
         }
 
-        &__prev:hover ~ &::after {
-            border-width: 6px 6px 6px 0; // Arrow size
-            border-color: transparent #b20838 transparent transparent; // Arrow color
-            right: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        &__next:hover ~ &::before {
-            border-width: 6px 0 6px 6px; // Arrow size
-            border-color: transparent transparent transparent #b20838; // Arrow color
-            left: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-    }
+        // Removed incorrect nesting and fixed selectors
+    
 
     button:focus {
         outline: none; // Remove default outline
         box-shadow: 0 0 8px rgba(178, 8, 56, 0.6); // Enhanced focus effect
     }
-
+}
     // Responsive adjustments
     @media (max-width: 600px) {
         button {
