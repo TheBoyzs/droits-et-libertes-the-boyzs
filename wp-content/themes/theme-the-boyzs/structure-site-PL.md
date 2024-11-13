@@ -1,12 +1,29 @@
+Par PL
+
 # Index
 
-# Headline
 ## TYPE DE CONTENU (POST TYPE)
 
 ## MODÈLE (TEMPLATE)
 
 ## COMPOSANTES
+### _nav.scss
+### _disclaimer.scss
+### _swiper.scss
+### _card.scss
+### _testimony.scss
+
+
+## AUTRES CHAMPS PERSONNALISÉS
+
+# Headline
+## Contenu Headline (POST TYPE)
+
+## MODÈLE (TEMPLATE)
+
+## COMPOSANTES
 ### _headline.scss_
+
 ### CHAMPS PERSONNALISÉS
 
 ## AUTRES CHAMPS PERSONNALISÉS
@@ -15,12 +32,12 @@
 
 ### AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
 # Contact
-## TYPE DE CONTENU (POST TYPE)
+## Contact (POST TYPE)
 
 ## MODÈLE (TEMPLATE)
 
 ## COMPOSANTES
-### NOM DU PARTIAL
+### _contact.scss
 ### CHAMPS PERSONNALISÉS
 
 ## AUTRES CHAMPS PERSONNALISÉS
@@ -69,7 +86,7 @@
 ### MODÈLE (TEMPLATE)
 
 ### COMPOSANTE DE LA PAGES
-#### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+#### _equipe.scss
 
 #### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
 
