@@ -26,6 +26,7 @@ Par PL
 
 ### CHAMPS PERSONNALISÉS
 
+
 ## AUTRES CHAMPS PERSONNALISÉS
 
 #### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
@@ -39,8 +40,13 @@ Par PL
 ## COMPOSANTES
 ### _contact.scss
 ### CHAMPS PERSONNALISÉS
+#### Adresse 
+#### Téléphone
+#### Email
 
 ## AUTRES CHAMPS PERSONNALISÉS
+### Formulaire de Contact
+###  Horaires d'ouverture pour contacter
 
 # À propos
 ## TYPE DE CONTENU (POST TYPE)
@@ -64,8 +70,15 @@ Par PL
 #### _pagination.scss
 
 #### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+#####  Image à la une : Champ média (image)
+##### Catégories associées : Taxonomies
+##### Extrait : Texte riche ou champ dédié à l’extrait
+##### Date de publication : Sélection automatique ou champ date
 
 ### AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+#### Auteur : Texte ou utilisateur lié
+#### Tags : Taxonomies
+#### Article avant ou après : Boutons.
 
 
 # Luttes
