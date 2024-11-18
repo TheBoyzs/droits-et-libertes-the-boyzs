@@ -7,11 +7,11 @@ Par PL
 ## MODÈLE (TEMPLATE)
 
 ## COMPOSANTES
-### _nav.scss
-### _disclaimer.scss
-### _swiper.scss
-### _card.scss
-### _testimony.scss
+### _nav.scss_
+### _disclaimer.scss_
+### _swiper.scss_
+### _card.scss_
+### _testimony.scss_
 
 
 ## AUTRES CHAMPS PERSONNALISÉS
@@ -102,8 +102,15 @@ Par PL
 #### _equipe.scss
 
 #### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+##### Nom du membre : Texte (ligne unique)
+##### Titre ou poste : Texte (ligne unique)
+##### Description ou biographie courte : Texte riche
+##### Photo de profil : Champ média (image)
+##### Liens sociaux : Répéteur (avec texte pour le réseau et URL)
+##### Ordre d'affichage : Numérique (pour trier les membres)
 
 ### AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+#### Disponibilité : Case à cocher ou champ texte (optionnel)
 
 # Erreur 404
 
