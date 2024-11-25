@@ -1,0 +1,129 @@
+@use "variables";
+
+.lutte-wrapper {
+  display: flex;
+  flex-direction: row;
+  &__left-section {
+    width: 50vw;
+  }
+  &__right-section {
+    width: 50%;
+    height: 100%;
+    align-self: flex-end;
+    img {
+      max-height: 500px;
+    }
+  }
+  &__fight-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: variables.$tan;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        border-left: 5px solid #e74c3c;
+        transition: 0.3s ease-in-out;
+        .arrow {
+          color: white;
+          font-size: large;
+          font-weight: bolder;
+          background-color: variables.$ldlRed;
+          padding: 10px;
+          border-radius: 15%;
+          transition: 0.3s ease-in-out;
+          &:hover{
+            background-color: rgb(68, 2, 2);
+          }
+        }
+        &:hover {
+          background-color: #e6e4e4;
+        }
+      }
+    }
+  }
+  &__see-more {
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 16px;
+  }
+}
+
+@media(max-width:768px){
+  .lutte-wrapper__right-section {
+      display:none;
+  }
+  .lutte-wrapper__left-section {
+    width: 100%;
+  }
+}
+
+.titrelutte h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 250px;
+}
+
+.descriptionlutte{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.committees {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .committee-card {
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    .icon {
+      padding: 20px;
+      margin: 0;
+      margin-bottom: auto;
+    }
+    p {
+      margin-bottom: auto;
+    }
+    &:hover {
+      color: variables.$ldlRed;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px 2px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+.herolutte {
+  padding-bottom: 0 !important;
+}
+
+.textelutte {
+  background: variables.$white;
+  width: 100%;
+  height: auto;
+  p {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 20px;
+  }
+}

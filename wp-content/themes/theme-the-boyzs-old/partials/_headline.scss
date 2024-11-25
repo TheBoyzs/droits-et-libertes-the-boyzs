@@ -1,0 +1,177 @@
+
+@use "variables";
+
+
+.headline-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px; // Set a max width for a more newspaper-like column
+    margin: 40px auto; // Center the wrapper with space above and below
+    padding: 2rem 1rem; // Add padding for spacing
+     // Light border to simulate newspaper edges
+    background-color: #f9f9f9; // Slightly off-white background for a classic feel
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    
+    .headline-title {
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        grid-column: span 3;
+        font-family: 'Georgia', serif; // Classic serif font for headlines
+        font-size: 2.5em; // Larger size for the main headline
+        font-weight: bold; // Bold weight for emphasis
+        margin-bottom: 10px; // Space below the headline
+        line-height: 1.2; // Tight line height for a compact look
+        color: #333; // Dark color for readability
+    }
+    .news-article{
+        text-align: left;
+        font-size: 1.9rem;
+        margin-bottom: 40px;
+
+        .article-link{
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            &:hover{
+                color: #0056b3;
+            }
+        }
+    }
+    .highlights {
+        background-color: #f9acb8;
+        width: 55vw;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+
+        h3 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+    }
+    article { 
+        grid-column: 1 / 2;
+        font-size: 1.1em; // Slightly larger than normal text size
+        line-height: 1.6; // Increased line height for readability
+        color: #555; // Darker gray for a softer contrast than pure black
+        margin-top: 20px; // Space above the article
+        max-width: 100%;
+        width: 100vw;
+        text-align: left;
+        p {
+          text-align: left;
+        }
+
+    }
+    
+}
+
+
+.nextprev-wrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$tan;
+
+    &__container {
+        margin: 60px 0; // Spacious layout
+        display: flex;
+        align-items: center;
+
+        button {
+            background-color: #b20838; // Button color
+            border: 2px solid #b20838; // Border color matches button
+            color: white; // White text for contrast
+            padding: 20px 50px; // Increased padding
+            cursor: pointer;
+            position: relative;
+            font-size: 20px; // Font size
+            border-radius: 12px; // Rounded corners
+            transition: 
+                color 0.3s,
+                border-color 0.3s,
+                background-color 0.3s,
+                transform 0.3s,
+                box-shadow 0.3s; // Smooth transitions
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
+            outline: none; // Remove default outline
+
+            // Click animation
+            &:active {
+                transform: scale(0.95);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            &:hover {
+                background-color: #a00731; // Darker shade on hover
+                border-color: #a00731; // Darker border on hover
+                transform: translateY(-5px) rotate(2deg); // Increased lift and slight rotation
+                box-shadow: 0 8px 20px rgba(178, 8, 56, 0.4); // Enhanced shadow on hover
+            }
+
+            &.active {
+                background-color: #a00731; // Highlight active button
+                border-color: #a00731; // Darker border
+                animation: pulse 2s infinite; // Pulse animation for active state
+            }
+
+            // Pulse keyframes for active state
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(178, 8, 56, 0.4);
+                }
+                70% {
+                    box-shadow: 0 0 0 10px rgba(178, 8, 56, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(178, 8, 56, 0);
+                }
+            }
+        }
+    }
+
+    &__divider {
+        width: 4px; // Thicker divider
+        height: 50px; // Increased height for visibility
+        background-color: #b20838; // Matches button color
+        margin: 0 50px; // Increased spacing for balance
+        position: relative;
+        transition: transform 0.3s, background-color 0.3s; // Smooth transitions
+
+        // Enhanced scale effect on hover via sibling selector
+        .nextprev-wrapper__container button:hover ~ & {
+            transform: scaleY(1.2); // Slightly increase height
+            background-color: #a00731; // Darker color on hover
+        }
+    }
+
+    button:focus {
+        outline: none; // Remove default outline
+        box-shadow: 0 0 8px rgba(178, 8, 56, 0.6); // Enhanced focus effect
+    }
+
+    // Responsive adjustments
+    @media (max-width: 600px) {
+        button {
+            padding: 16px 30px; // Smaller padding for mobile
+            font-size: 18px; // Consistent font size
+        }
+
+        &__divider {
+            height: 35px; // Smaller divider height for mobile
+            margin: 0 20px; // Reduced margin for mobile
+        }
+    }
+}

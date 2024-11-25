@@ -1,0 +1,112 @@
+@use "variables";
+
+
+.section-card {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  justify-content: center;
+  margin:0;
+  
+  
+  
+ 
+
+  &__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: variables.$white;
+    transition: 0.3s;
+    margin: 15px;
+    margin-left:0;
+    height: 95%;
+    max-width: 500px;
+    min-width: 480px;
+
+    
+    
+    &:hover{
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  
+    }
+    img{
+      max-width: 100%;
+      width: 100vw;
+    }
+  }
+  &__container {
+    padding: 2px 16px;
+  }
+  
+ 
+}
+.cardbouton{
+  max-width:100%;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  
+  button{
+    
+    margin-top: 20px;
+    
+
+  }
+
+}
+
+#barrecarte{
+  margin-left:30%;
+}
+#textcarte{
+  text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .section-card {
+    &__card{
+      max-width: 500px;
+      min-width: 180px;
+    }
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    flex-direction: row;
+    
+  }
+  .cardbouton{
+    
+    justify-content: flex-start;
+    
+  
+  }
+  #barrecarte{
+    margin-left: 0;
+  }
+  #textcarte{
+    text-align: start;
+  }
+}
+
+
+@media(min-width:1500px) {
+
+  .section-card{
+    &__card{
+      max-width: 500px;
+      min-width: 480px;
+    }
+  }
+
+  
+  .cardbouton{
+    
+    justify-content: flex-start;
+    
+  
+  }
+  
+}

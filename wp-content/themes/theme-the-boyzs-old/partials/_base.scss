@@ -1,0 +1,75 @@
+@use "variables";
+
+*{
+  box-sizing: border-box;
+}
+
+.posfix{
+  position: fixed;
+  z-index: 8;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: content-box;
+  max-width: 100%;
+  width: 100vw;
+  background-color: variables.$tan;
+}
+
+button {
+  background-color: variables.$ldlRed;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: variables.$white;
+  border: none;
+  border: solid 2px variables.$white;
+  padding: 15px;
+  /*
+  box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
+  */
+
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  &:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+}
+
+
+button:hover {
+  background-color: #7e082a;
+}
+
+a {
+  color: variables.$ldlRed;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+section hr {
+  margin-left: 0;
+  width: 40%;
+  border-width: 10px;
+  max-width: 400px;
+  border: solid 2px variables.$ldlRed;
+}
+
+// PL: ce style s'applique juste aux autres section excepté le carrousel
+section:not([name="carrousel"], [name="swiper"]) {
+  max-width: 1900px;
+  margin: auto;
+  padding: 40px;
+}
+
+

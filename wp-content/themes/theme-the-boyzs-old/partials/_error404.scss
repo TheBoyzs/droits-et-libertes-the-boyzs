@@ -1,0 +1,30 @@
+@use "variables";
+
+.sectionerror {
+    padding-top: 210px !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.errorcode {
+    display: block;
+    color: variables.$ldlRed;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -15px;
+    span {
+        position: relative;
+    }
+}
+
+.errordescription {
+    font-weight: 600;
+    font-size: 18px;
+    bold {
+        color: variables.$ldlRed
+    }
+}

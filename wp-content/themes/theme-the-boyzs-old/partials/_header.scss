@@ -1,0 +1,161 @@
+
+@use 'variables';
+@media(min-width:375px){
+    header{
+        width: 100vw;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: auto 20%;
+        align-content: space-around;
+        input[type="text"] {
+            display:none;
+        }
+
+        .header__searchbar{
+            display:none;
+        }
+
+        .header__boutons{
+            display: none;
+        }
+
+        img{
+            margin-top:6px;
+        }
+    }
+    
+    button{
+        background-color: variables.$ldlRed;
+        border: none;
+        padding: 5px;
+        width:10vw;
+        &:hover{
+            background-color: #570202;
+        }
+    }
+    
+    /*Image du logo du site*/
+    .logo{
+        align-self: center;
+        justify-self: center;
+        width:150px;
+    }
+    /*menu navbar doit etre amélioré avec bootstrap*/
+    nav{
+        align-self: center;
+        justify-self: center;
+        background-color: variables.$white;
+        .menu{
+            display: flex;
+            justify-content: start;
+            .fa-bars{
+                background-color: variables.$tan;
+                color:variables.$ldlRed;
+            }
+        }
+    }
+    
+    
+}
+
+
+
+@media (min-width: 768px){
+    /*Image du logo du site*/
+.logo{
+    width:150px;
+}
+/*menu navbar doit etre amélioré avec bootstrap*/
+nav{
+    .menu{
+        display: none;
+    }
+}
+
+
+
+header{
+    grid-template-columns: 25% 35% 40%;
+    margin-top: 10px;
+
+    .header__searchbar{
+        display:flex;
+        justify-content: start;
+        align-items: end;
+        color:variables.$ldlRed;
+
+        .fa-magnifying-glass{
+            margin-right:3px;
+            color:variables.$ldlRed;
+
+        }
+    }
+    
+    input[type="text"] {
+        display:flex;
+        width:20vw;
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        font-size: 17px;
+    }
+
+    .header__boutons{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+
+        button{
+            align-self: center;
+            height:6vh;
+            width:19vw;
+            background-color: variables.$ldlRed;
+            color:variables.$white;
+            
+            &:hover{
+                background-color:variables.$white;
+                color:variables.$ldlRed;
+                border: solid variables.$ldlRed;
+            }
+                
+            
+                
+            
+            
+        }
+
+
+        
+    }
+}
+
+
+}
+/*
+@media(min-width: 1400px){
+    header{
+        input[type="text"] {
+            display:grid;
+            width:10vw;
+            float: right;
+            padding: 6px;
+            border: solid black;
+            margin-top: 8px;
+            font-size: 17px;
+        }
+        .header__boutons{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+    
+            button{
+                width:19vw;
+            }
+    
+            
+        }
+
+    }
+}
+    */
