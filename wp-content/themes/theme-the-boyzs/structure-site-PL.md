@@ -34,13 +34,10 @@ Par PL
 # Contact
 ## Contact (POST TYPE)
 
-## MODÈLE (TEMPLATE)
 
 ## COMPOSANTES
 ### _contact.scss
-### CHAMPS PERSONNALISÉS
 
-## AUTRES CHAMPS PERSONNALISÉS
 
 # À propos
 ## TYPE DE CONTENU (POST TYPE)
