@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -17,19 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
     href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css />
-    <?php wp_head(); 
-	/* Cette fonction permet à WordPress et aux extensions d'instancier des fichier CSS et js dans le <head>
-		Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
-		Vous pouvez la déplacer si désiré, mais garder là. */
-	?>
+    <link rel="stylesheet" href="../../style.css">
 </head>
 
-<body <?php body_class(); 
-	/* Applique une classe contextuel sur le body
-		 ex: sur la page d'accueil vous aurez la classe "home"
-		 sur un article, "single postid-{ID}"
-		 etc. */
-	?>>
+<body>
     <div class="posfix">
         <div class="disclaimer" id="disclaimer">
             <p>Ce site est un une refonte dans le contexte d'un projet étudiant.
@@ -45,7 +34,7 @@
                     <input type="text" placeholder="  RECHERCHER">
                 </div>
     
-                <img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+                <img class="logo" src="medias/ldl-logo-horizontale-270.png" alt="logoldl">
     
                 <div class="navbar-top__buttons">
                     <button class="cta-button secondary">S'INFORMER</button>
@@ -73,7 +62,7 @@
     
             <div class="mobile-menu-overlay">
                 <div class="mobile-menu-content">
-                    <img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+                    <img class="logo" src="medias/ldl-logo-horizontale-270.png" alt="logoldl">
                     <div class="searchbar">
                         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                         <input type="text" placeholder="  RECHERCHER">

@@ -1,25 +1,25 @@
 <section class="partners-section">
         <div class="logo-container">
             <div class="logo-slider">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/casifq.png" alt="casifq">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/bdsquebec-logo-email.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/coalitionaidejuridique.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/fidh.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/iclmg-csilc.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/logo-echec-a-la-guerre-retin.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/osp.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/rodcd_logo.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/rqaca.png">
+                <img src="medias/partners/casifq.png" alt="casifq">
+                <img src="medias/partners/bdsquebec-logo-email.jpg">
+                <img src="medias/partners/coalitionaidejuridique.png">
+                <img src="medias/partners/fidh.jpg">
+                <img src="medias/partners/iclmg-csilc.jpg">
+                <img src="medias/partners/logo-echec-a-la-guerre-retin.png">
+                <img src="medias/partners/osp.png">
+                <img src="medias/partners/rodcd_logo.png">
+                <img src="medias/partners/rqaca.png">
                 <!-- Loop -->
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/casifq.png" alt="casifq">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/bdsquebec-logo-email.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/coalitionaidejuridique.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/fidh.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/iclmg-csilc.jpg">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/logo-echec-a-la-guerre-retin.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/osp.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/rodcd_logo.png">
-                <img src="<?php bloginfo('template_url'); ?>/html/medias/partners/rqaca.png">
+                <img src="medias/partners/casifq.png" alt="casifq">
+                <img src="medias/partners/bdsquebec-logo-email.jpg">
+                <img src="medias/partners/coalitionaidejuridique.png">
+                <img src="medias/partners/fidh.jpg">
+                <img src="medias/partners/iclmg-csilc.jpg">
+                <img src="medias/partners/logo-echec-a-la-guerre-retin.png">
+                <img src="medias/partners/osp.png">
+                <img src="medias/partners/rodcd_logo.png">
+                <img src="medias/partners/rqaca.png">
             </div>
         </div>
 
@@ -29,7 +29,7 @@
     <!-- Footer -->
     <footer class="footer-wrapper">
         <div class="footer-wrapper__socialtree">
-            <img class="footer-wrapper__logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-icone.png">
+            <img class="footer-wrapper__logo" src="medias/ldl-icone.png">
             <span class="text-logo" style="font-size: 30px; text-align: center">
                 <p>Ligue des <br> <b>Droits</b> et <b>libertés</b></p>
             </span>
@@ -74,11 +74,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b6c9a53dc1.js" crossorigin="anonymous"></script>
-    <?php wp_footer(); 
-	/* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
-		Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
-		Vous pouvez la déplacer si désiré, mais garder là. */
-	?>
+    <script src="../main.js"></script>
     
 </body>
-</html>
