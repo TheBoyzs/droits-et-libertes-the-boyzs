@@ -3,18 +3,19 @@
 footer {
   background-color: variables.$dark;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   text-align: left;
   padding: 55px 0;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  h1{
+
+  h1 {
     margin-top: 30px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     text-align: center;
   }
-  
+
 }
 
 footer:last-of-type {
@@ -22,12 +23,13 @@ footer:last-of-type {
   justify-items: center;
   grid-template-columns: 1fr;
 }
-p{
- vertical-align: middle;
- align-items: center;
- text-align: center;
- margin-left: 0;
- padding: 0;
+
+p {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+  padding: 0;
 }
 
 .legal {
@@ -50,7 +52,7 @@ p{
   display: grid;
   justify-items: center;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   grid-template-columns: fit-content;
   grid-template-rows: 1fr auto;
   justify-self: stretch;
@@ -68,12 +70,14 @@ p{
     margin-top: 10px;
     padding: 0;
   }
-  &__social-icons{
+
+  &__social-icons {
     justify-content: center;
     margin: 0;
     padding-left: 0;
     padding-bottom: 30px;
-    a{
+
+    a {
       background: variables.$white;
       color: #818a91;
       border-radius: 50%;
@@ -83,29 +87,35 @@ p{
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
       list-style: none;
-      .facebook:hover{
+
+      .facebook:hover {
         background-color: #3b5998;
         color: variables.$white;
       }
-      .twitter:hover{
+
+      .twitter:hover {
         background-color: #00aced;
         color: variables.$white;
       }
+
       .instagram:hover {
         background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
         color: variables.$white;
       }
+
       .linkedin:hover {
         background-color: #0428f5;
         color: variables.$white;
       }
     }
-    li{
+
+    li {
       display: inline-block;
       margin: 0 6px;
       padding: 0;
     }
-    .fa{
+
+    .fa {
       justify-content: center;
       font-size: 30px;
       width: 65px;
@@ -118,17 +128,20 @@ p{
       padding-bottom: 7px;
     }
   }
+
   // Styles pour les liens dans le milieu
   &__links {
     padding: 0;
-    li{
+
+    li {
       list-style: none;
       text-transform: uppercase;
       cursor: pointer;
       line-height: 3em;
       text-align: center;
     }
-    a:hover{
+
+    a:hover {
       text-decoration: underline;
       color: variables.$ldlRed;
     }
@@ -151,11 +164,12 @@ p{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    img{
+
+    img {
       justify-self: center;
       align-self: center;
       margin: 10px;
-      width:200px;
+      width: 200px;
     }
   }
 
@@ -169,7 +183,8 @@ p{
   &__buttons {
     cursor: pointer;
     margin-right: 0;
-    button{
+
+    button {
       text-decoration: none;
       height: 3.2em;
       min-width: 13vw;
@@ -202,7 +217,7 @@ p{
     .footer-wrapper__social-icons {
       margin-top: 10px;
       /* Keep spacing */
-      
+
     }
 
     .footer-wrapper__links li {
@@ -221,8 +236,9 @@ p{
       flex-direction: column;
       /* Stack buttons */
       align-items: center;
+
       /* Center buttons */
-      button{
+      button {
         width: 80%;
         /* Make buttons wider for touch targets */
         margin: 5px 0;
@@ -240,13 +256,13 @@ p{
 @media (min-width: 768px) {
   footer {
     background-color: variables.$dark;
-    max-width:100%;
+    max-width: 100%;
     width: 100vw;
     text-align: left;
     padding: 55px 0;
     color: white;
     display: grid;
-   
+
     justify-items: stretch;
     align-items: center;
   }
@@ -255,7 +271,8 @@ p{
     display: flex;
     flex-wrap: wrap;
     color: #999;
-    &__links{
+
+    &__links {
       display: flex;
       align-items: center;
     }
@@ -315,7 +332,7 @@ p{
     }
 
     &__social-icons .fa {
-      
+
       text-align: center;
       vertical-align: middle;
       font-size: 30px;
@@ -364,7 +381,7 @@ p{
       line-height: 0;
       text-align: center;
       color: gray;
-      
+
     }
 
     //Styles pour les infos: adresses, numéro de téléphone, etc.
@@ -372,12 +389,13 @@ p{
       text-align: center;
       line-height: 2%;
       margin: 30px;
-      
+
     }
 
     &__buttons {
       cursor: pointer;
       margin-right: 0;
+
       button {
         text-decoration: none;
         height: 3.2em;
@@ -390,25 +408,28 @@ p{
         text-align: center;
       }
     }
+
     &__partner {
       max-width: 100vw;
       display: grid;
       grid-template-columns: auto auto auto;
       grid-template-rows: auto;
-      img{
+
+      img {
         justify-self: center;
         align-self: center;
         margin: 10px;
-        width:200px;
+        width: 200px;
       }
     }
   }
 }
 
-@media(min-width:1000px){
-  .footer-wrapper{
+@media(min-width:1000px) {
+  .footer-wrapper {
     grid-template-rows: auto auto auto;
   }
+
   footer:last-of-type {
     display: grid;
     justify-items: center;

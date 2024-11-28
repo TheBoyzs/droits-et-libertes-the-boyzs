@@ -35,7 +35,8 @@ button {
   /*
   box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
   */
-  cursor: pointer; /* Safari */
+  cursor: pointer;
+  /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
 }
@@ -47,22 +48,29 @@ button:active:after {
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
+  /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f4f4f4; /* Background of the scrollbar track */
-  border-radius: 10px; /* Rounded corners */
+  background: #f4f4f4;
+  /* Background of the scrollbar track */
+  border-radius: 10px;
+  /* Rounded corners */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners */
-  border: 3px solid #f4f4f4; /* Creates padding between the thumb and the track */
+  background: #888;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 3px solid #f4f4f4;
+  /* Creates padding between the thumb and the track */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker shade when hovered */
+  background: #555;
+  /* Darker shade when hovered */
 }
 
 button:hover {

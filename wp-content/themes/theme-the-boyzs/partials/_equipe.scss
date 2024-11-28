@@ -1,48 +1,52 @@
 @use "variables";
 
-.titre_equipe{
+.titre_equipe {
     text-align: center;
-    margin-top:130px;
-    margin-bottom:20px;
+    margin-top: 130px;
+    margin-bottom: 20px;
 }
 
-#modal-close{
-    width:90%;
+#modal-close {
+    width: 90%;
     display: flex;
-    margin-top:40px;
+    margin-top: 40px;
     justify-content: end;
 
 }
-#modal-close:hover{
+
+#modal-close:hover {
     cursor: pointer;
 }
 
 
 
-.equipe__modal{
+.equipe__modal {
     display: none;
     position: fixed;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
     z-index: 14;
     background-color: rgba(0, 0, 0, 0.838);
-    .equipe__modal-container{
-        display:flex;
+
+    .equipe__modal-container {
+        display: flex;
         justify-content: center;
-       
-        .modal-texte{
-            p{
+
+        .modal-texte {
+            p {
                 margin: 20px;
             }
+
             align-self: center;
             text-align: center;
             width:70vw;
             background-color: variables.$lightdark;
             height:100vh;
-            
+
             color: variables.$white;
-            font-family: "Manrope", sans-serif;
+            font-family: "Manrope",
+            sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,87 +56,98 @@
     }
 
 }
-.equipe-container{
-    display: grid;
-    width:100vw;
-    max-width: 100%;
-    grid-template-columns: auto ;
-    justify-content: center;
-    
 
-    .equipe__carte:hover{
+.equipe-container {
+    display: grid;
+    width: 100vw;
+    max-width: 100%;
+    grid-template-columns: auto;
+    justify-content: center;
+
+
+    .equipe__carte:hover {
         background-color: variables.$lightdark;
         cursor: pointer;
 
     }
+
     .equipe__carte {
-        
+
         transition: ease-in-out 0.3s;
 
         background-color: variables.$dark;
-        width:55vw;
-        display:flex;
+        width: 55vw;
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin:10px;
-        .equipe_container_texte{
-            display:flex;
+        margin: 10px;
+
+        .equipe_container_texte {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top:35px;
-            margin-bottom:10px;
-            img{
-                width:40vw;
+            margin-top: 35px;
+            margin-bottom: 10px;
+
+            img {
+                width: 40vw;
             }
-            p{
+
+            p {
                 font-family: "Manrope", sans-serif;
-                margin-top:10px;
+                margin-top: 10px;
                 font-size: 20px;
-                color:variables.$white;
+                color: variables.$white;
             }
         }
-        
+
     }
 
 }
 
-@media(min-width:768px){
-    .titre_equipe{
+@media(min-width:768px) {
+    .titre_equipe {
         text-align: center;
-        margin-top:200px;
-        margin-bottom:20px;
+        margin-top: 200px;
+        margin-bottom: 20px;
     }
-    .equipe-container{
+
+    .equipe-container {
         grid-template-columns: auto auto;
-        .equipe__carte{
-            width:40vw;
-            .equipe_container_texte{
-                img{
-                    width:30vw;
+
+        .equipe__carte {
+            width: 40vw;
+
+            .equipe_container_texte {
+                img {
+                    width: 30vw;
                 }
             }
         }
     }
-    
+
 }
 
-@media(min-width:1000px){
-    .titre_equipe{
+@media(min-width:1000px) {
+    .titre_equipe {
         text-align: center;
-        margin-top:200px;
-        margin-bottom:20px;
+        margin-top: 200px;
+        margin-bottom: 20px;
     }
-    .equipe-container{
+
+    .equipe-container {
         grid-template-columns: auto auto auto;
-        .equipe__carte{
-            width:30vw;
-            .equipe_container_texte{
-                img{
-                    width:20vw;
+
+        .equipe__carte {
+            width: 30vw;
+
+            .equipe_container_texte {
+                img {
+                    width: 20vw;
                 }
             }
         }
     }
-    
+
 }
