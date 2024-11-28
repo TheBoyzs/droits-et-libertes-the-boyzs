@@ -1,37 +1,41 @@
 @use "variables";
 
-.titrecontact .h1{
-    font-size: 50px ;
+.titrecontact .h1 {
+    font-size: 50px;
     margin-top: 180px;
     text-align: center;
 }
 
-.descriptioncontact{
+.descriptioncontact {
     margin-bottom: 50px;
 }
 
-.titremontreal{
+.titremontreal {
     text-align: center;
 }
 
-.titrequebec{
+.titrequebec {
     text-align: center;
 }
 
-.webquebec{
+.webquebec {
     text-align: center;
 }
-.formulaire{
-    padding: 0 !important;;
-    width:100vw;
-    max-width:100%;
+
+.formulaire {
+    padding: 0 !important;
+    ;
+    width: 100vw;
+    max-width: 100%;
     background-color: variables.$lightdark;
-    .titre{
+
+    .titre {
         color: variables.$white;
         text-align: center;
     }
-    .label-form{
+
+    .label-form {
         color: variables.$white;
-        margin-left:10px;
+        margin-left: 10px;
     }
 }

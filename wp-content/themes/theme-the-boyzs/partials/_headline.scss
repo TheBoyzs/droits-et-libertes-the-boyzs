@@ -9,15 +9,15 @@
     padding: 2rem 1rem; // Add padding for spacing
     background-color: #f9f9f9; // Slightly off-white background for a classic feel
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-    
+
     .headline-title {
-        grid-column: 1 / 2; 
+        grid-column: 1 / 2;
         font-size: 4.5rem;
         font-weight: bold;
         line-height: 1.4;
         margin-bottom: 20px;
     }
-    
+
     h1 {
         font-family: 'Georgia', serif; // Classic serif font for headlines
         font-size: 2.5em; // Larger size for the main headline
@@ -26,36 +26,42 @@
         line-height: 1.2; // Tight line height for a compact look
         color: #333; // Dark color for readability
     }
-    .news-article{
+
+    .news-article {
         text-align: left;
         font-size: 1.9rem;
         margin-bottom: 40px;
 
-        .article-link{
+        .article-link {
             color: #007bff;
             text-decoration: none;
             transition: color 0.3s ease;
-            &:hover{
+
+            &:hover {
                 color: #0056b3;
             }
         }
     }
+
     .highlights {
         background-color: #f9acb8;
         width: 55vw;
         padding: 15px;
         border-radius: 2px;
-        box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
         h3 {
             font-size: 2.6rem;
             margin-bottom: 10px;
         }
+
         p {
             font-size: 1.5rem;
             line-height: 1.6;
         }
     }
-    article { 
+
+    article {
         grid-column: 1 / 2;
         font-size: 1.1em; // Slightly larger than normal text size
         line-height: 1.6; // Increased line height for readability
@@ -64,18 +70,20 @@
         max-width: 100%;
         width: 100vw;
         text-align: left;
+
         p {
-          text-align: left;
+            text-align: left;
         }
-    } 
+    }
 }
+
 .nextprev-wrapper {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: variables.$tan;
-    
+
     &__container {
         margin: 60px 0; // Spacious layout
         display: flex;
@@ -89,7 +97,7 @@
             cursor: pointer;
             position: relative;
             font-size: 20px; // Font size
-            transition: 
+            transition:
                 color 0.3s,
                 border-color 0.3s,
                 background-color 0.3s,
@@ -122,9 +130,11 @@
                 0% {
                     box-shadow: 0 0 0 0 rgba(178, 8, 56, 0.4);
                 }
+
                 70% {
                     box-shadow: 0 0 0 10px rgba(178, 8, 56, 0);
                 }
+
                 100% {
                     box-shadow: 0 0 0 0 rgba(178, 8, 56, 0);
                 }
@@ -141,7 +151,7 @@
         transition: transform 0.3s, background-color 0.3s; // Smooth transitions
 
         // Enhanced scale effect on hover via sibling selector
-        .nextprev-wrapper__container button:hover ~ & {
+        .nextprev-wrapper__container button:hover~& {
             transform: scaleY(1.2); // Slightly increase height
             background-color: #a00731; // Darker color on hover
         }

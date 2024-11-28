@@ -1,26 +1,27 @@
 @use "variables";
 
-*{
+* {
     box-sizing: border-box;
-  }
+}
 
-.titreapropos .h1{
+.titreapropos .h1 {
     text-align: center;
     font-size: 50px;
     margin-bottom: 30px;
     margin-top: 180px;
 }
 
-.descriptionapropos{
+.descriptionapropos {
     text-align: center;
     font-size: 18px;
 }
-.titredescription{
+
+.titredescription {
     text-align: left;
     margin-top: 100px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.descriptionhistoire p{
+.descriptionhistoire p {
     text-align: left;
 }
