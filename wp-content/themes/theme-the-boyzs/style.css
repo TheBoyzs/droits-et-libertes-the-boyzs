@@ -9,8 +9,8 @@
 }
 
 html {
-  scrollbar-width: large; /* Makes the scrollbar thinner */
-  scrollbar-color: #5a0505 #f37272; /* Thumb color and track color *
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #5a0505 #f37272;
 }
 
 body {
@@ -21,17 +21,16 @@ body {
   box-sizing: content-box;
   max-width: 100%;
   width: 100vw;
-  background-color: variables.$tan;
-
+  background-color: #e4dcca;
 }
 
 button {
-  background-color: variables.$ldlRed;
+  background-color: #b20838;
   font-size: 20px;
   text-transform: uppercase;
-  color: variables.$white;
+  color: #fdfdff;
   border: none;
-  border: solid 2px variables.$white;
+  border: solid 2px #fdfdff;
   padding: 15px;
   /*
   box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
@@ -40,7 +39,7 @@ button {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-html:active:after {
+button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
@@ -381,7 +380,6 @@ section:not([name=carrousel], [name=swiper]) {
   bottom: 0;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("/sources/medias/nouvelle1.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 30px rgb(0, 0, 0);
@@ -1189,6 +1187,7 @@ p {
   margin-top: 100px;
   flex-direction: column;
   background-color: rgba(253, 253, 255, 0.3725490196);
+  margin-top: 200px;
 }
 .news-wrapper ul.news-wrapper__list {
   display: flex;
