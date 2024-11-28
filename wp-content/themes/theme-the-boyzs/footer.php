@@ -44,7 +44,7 @@
         <div>
             <ul class="footer-wrapper__links">
                 <li><a link="#">Accueil</a></li>
-                <li> <a link="#">Luttes</a></li>
+                <li><a link="#">Luttes</a></li>
                 <li><a link="#">Équipe</a></li>
                 <li><a link="#">Nouvelles</a></li>
                 <li><a link="#">À Propos</a></li>
