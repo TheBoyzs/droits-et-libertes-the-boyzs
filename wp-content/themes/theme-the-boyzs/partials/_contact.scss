@@ -21,4 +21,17 @@
 .webquebec{
     text-align: center;
 }
-
+.formulaire{
+    padding: 0 !important;;
+    width:100vw;
+    max-width:100%;
+    background-color: variables.$lightdark;
+    .titre{
+        color: variables.$white;
+        text-align: center;
+    }
+    .label-form{
+        color: variables.$white;
+        margin-left:10px;
+    }
+}
