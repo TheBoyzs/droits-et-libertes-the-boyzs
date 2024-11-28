@@ -78,6 +78,10 @@ h1 {
   font-weight: bolder;
 }
 
+.h1 {
+  font-weight: bolder;
+}
+
 section hr {
   margin-left: 0;
   width: 40%;
@@ -160,7 +164,7 @@ section:not([name=carrousel], [name=swiper]) {
 }
 .navbar .navbar-top .logo {
   justify-self: center;
-  height: 3rem;
+  height: 60px;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -978,11 +982,11 @@ p {
     width: 100%;
   }
 }
-.titrelutte h1 {
+.titrelutte .h1 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
-  margin-top: 250px;
+  margin-top: 180px;
 }
 
 .descriptionlutte {
@@ -1039,6 +1043,11 @@ p {
   font-size: 20px;
 }
 
+@media (max-width: 1000px) {
+  .lutte-wrapper__right-section img {
+    height: 380px;
+  }
+}
 .don {
   background-color: white;
 }
@@ -1055,7 +1064,9 @@ p {
   }
 }
 .swiper {
+  /*
   padding-top: 130px;
+  */
   width: 100%;
   height: 100vh;
   z-index: 0;
@@ -1071,22 +1082,23 @@ p {
 .swiper .swiper-wrapper .swiper-slide {
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 .swiper .swiper-wrapper .swiper-slide .fondnoir {
   position: absolute;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 .swiper .swiper-wrapper .swiper-slide .text {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   position: absolute;
   display: flex;
+  padding-top: 180px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1146,6 +1158,17 @@ p {
 
 @media (min-width: 768px) {
   .swiper {
+    /*
+    padding-top: 200px;
+    */
+  }
+  .swiper .swiper-button-prev {
+    padding-top: 100px;
+  }
+  .swiper .swiper-button-next {
+    padding-top: 100px;
+  }
+  .swiper .swiper-wrapper .swiper-slide .text {
     padding-top: 200px;
   }
   .swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text .text3, .swiper .swiper-wrapper .swiper-slide .text p, .swiper .swiper-wrapper .swiper-slide .text span {
@@ -1320,11 +1343,11 @@ p {
   box-sizing: border-box;
 }
 
-.titreapropos h1 {
+.titreapropos .h1 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .descriptionapropos {
@@ -1333,12 +1356,13 @@ p {
 }
 
 .titredescription {
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
+  margin-bottom: 20px;
 }
 
-.descriptionhistoire {
-  text-align: center;
+.descriptionhistoire p {
+  text-align: left;
 }
 
 .partners-section {
@@ -1639,9 +1663,9 @@ p {
   }
 }
 
-.titrecontact {
+.titrecontact .h1 {
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 180px;
   text-align: center;
 }
 
