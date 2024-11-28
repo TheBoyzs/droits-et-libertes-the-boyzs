@@ -1,6 +1,4 @@
 The Boyzs
 ===============
 
-Un thème de base pour bien commencer avec Wordpress
-Après tout, il faut bien commencer quelque part.
-Pourquoi pas ici ⬇️ Pourquoi pas maintenant 🕒
+Le thème du site Ligue des droits et libertés de l'équipe The Boyzs
