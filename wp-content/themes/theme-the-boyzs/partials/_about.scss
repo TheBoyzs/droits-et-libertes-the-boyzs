@@ -4,11 +4,11 @@
     box-sizing: border-box;
   }
 
-.titreapropos h1{
+.titreapropos .h1{
     text-align: center;
     font-size: 50px;
     margin-bottom: 30px;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 .descriptionapropos{
@@ -16,10 +16,11 @@
     font-size: 18px;
 }
 .titredescription{
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
+    margin-bottom:20px;
 }
 
-.descriptionhistoire{
-    text-align: center;
+.descriptionhistoire p{
+    text-align: left;
 }
