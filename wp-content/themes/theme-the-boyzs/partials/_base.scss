@@ -9,6 +9,11 @@
   z-index: 8;
 }
 
+html{
+  scrollbar-width: large; /* Makes the scrollbar thinner */
+  scrollbar-color: #5a0505 #f37272; /* Thumb color and track color *
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -18,6 +23,7 @@ body {
   max-width: 100%;
   width: 100vw;
   background-color: variables.$tan;
+  
 }
 
 button {
@@ -43,6 +49,27 @@ button {
     transition: 0s;
   }
 }
+
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f4f4f4; /* Creates padding between the thumb and the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker shade when hovered */
+}
+
+
 
 
 button:hover {

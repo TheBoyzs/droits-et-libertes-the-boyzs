@@ -8,6 +8,11 @@
   z-index: 8;
 }
 
+html {
+  scrollbar-width: large; /* Makes the scrollbar thinner */
+  scrollbar-color: #5a0505 #f37272; /* Thumb color and track color *
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -16,16 +21,17 @@ body {
   box-sizing: content-box;
   max-width: 100%;
   width: 100vw;
-  background-color: #e4dcca;
+  background-color: variables.$tan;
+
 }
 
 button {
-  background-color: #b20838;
+  background-color: variables.$ldlRed;
   font-size: 20px;
   text-transform: uppercase;
-  color: #fdfdff;
+  color: variables.$white;
   border: none;
-  border: solid 2px #fdfdff;
+  border: solid 2px variables.$white;
   padding: 15px;
   /*
   box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
@@ -34,11 +40,30 @@ button {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-button:active:after {
+html:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f4f4f4; /* Creates padding between the thumb and the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker shade when hovered */
 }
 
 button:hover {
@@ -356,7 +381,6 @@ section:not([name=carrousel], [name=swiper]) {
   bottom: 0;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("/sources/medias/nouvelle1.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 30px rgb(0, 0, 0);
@@ -1164,6 +1188,7 @@ p {
   margin-top: 100px;
   flex-direction: column;
   background-color: rgba(253, 253, 255, 0.3725490196);
+  margin-top: 200px;
 }
 .news-wrapper ul.news-wrapper__list {
   display: flex;
@@ -1384,7 +1409,6 @@ p {
 #modal-close {
   width: 90%;
   display: flex;
-  color: #fdfdff;
   margin-top: 40px;
   justify-content: end;
 }
@@ -1505,13 +1529,13 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .headline-wrapper .headline-title {
+  grid-column: 1/2;
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 20px;
 }
 .headline-wrapper h1 {
-  grid-column: span 3;
   font-family: "Georgia", serif;
   font-size: 2.5em;
   font-weight: bold;
@@ -1536,7 +1560,7 @@ p {
   background-color: #f9acb8;
   width: 55vw;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 .headline-wrapper .highlights h3 {
@@ -1581,7 +1605,6 @@ p {
   cursor: pointer;
   position: relative;
   font-size: 20px;
-  border-radius: 12px;
   transition: color 0.3s, border-color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   outline: none;
@@ -1659,6 +1682,21 @@ p {
 
 .webquebec {
   text-align: center;
+}
+
+.formulaire {
+  padding: 0 !important;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #373f40;
+}
+.formulaire .titre {
+  color: #fdfdff;
+  text-align: center;
+}
+.formulaire .label-form {
+  color: #fdfdff;
+  margin-left: 10px;
 }
 
 .container {

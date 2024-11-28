@@ -1,6 +1,4 @@
-
 @use "variables";
-
 
 .headline-wrapper {
     display: grid;
@@ -9,11 +7,11 @@
     max-width: 800px; // Set a max width for a more newspaper-like column
     margin: 40px auto; // Center the wrapper with space above and below
     padding: 2rem 1rem; // Add padding for spacing
-     // Light border to simulate newspaper edges
     background-color: #f9f9f9; // Slightly off-white background for a classic feel
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
     
     .headline-title {
+        grid-column: 1 / 2; 
         font-size: 4.5rem;
         font-weight: bold;
         line-height: 1.4;
@@ -21,7 +19,6 @@
     }
     
     h1 {
-        grid-column: span 3;
         font-family: 'Georgia', serif; // Classic serif font for headlines
         font-size: 2.5em; // Larger size for the main headline
         font-weight: bold; // Bold weight for emphasis
@@ -47,14 +44,12 @@
         background-color: #f9acb8;
         width: 55vw;
         padding: 15px;
-        border-radius: 8px;
+        border-radius: 2px;
         box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
-
         h3 {
             font-size: 2.6rem;
             margin-bottom: 10px;
         }
-
         p {
             font-size: 1.5rem;
             line-height: 1.6;
@@ -72,19 +67,15 @@
         p {
           text-align: left;
         }
-
-    }
-    
+    } 
 }
-
-
 .nextprev-wrapper {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: variables.$tan;
-
+    
     &__container {
         margin: 60px 0; // Spacious layout
         display: flex;
@@ -98,7 +89,6 @@
             cursor: pointer;
             position: relative;
             font-size: 20px; // Font size
-            border-radius: 12px; // Rounded corners
             transition: 
                 color 0.3s,
                 border-color 0.3s,
