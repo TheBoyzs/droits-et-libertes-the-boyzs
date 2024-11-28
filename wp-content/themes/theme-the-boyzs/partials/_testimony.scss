@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 
-  
+
+
   &__testimonial {
     margin-bottom: 30px;
     position: relative;
@@ -16,12 +16,13 @@
     border-left: 5px solid variables.$ldlRed;
     // background: variables.$white;
     width: 70vw;
-    &:not(#left){
+
+    &:not(#left) {
       align-self: flex-end;
     }
 
-    
-    
+
+
   }
 
   &__testimonial::before,
@@ -31,24 +32,28 @@
     color: variables.$ldlRed;
     position: absolute;
   }
+
   &__testimonial::before {
     left: 0;
     top: 0;
   }
+
   &__testimonial::after {
     content: "”";
     font-size: 80px;
     right: 0;
     bottom: -30px;
   }
+
   &__testimonial p {
     text-align: justify;
     font-size: 20px;
   }
+
   &__source {
     font-weight: bold;
     margin-top: 10px;
-    
+
   }
 }
 
@@ -57,44 +62,48 @@
 }
 
 
-@media(max-width:1000px){
-  .testimony-wrapper{
+@media(max-width:1000px) {
+  .testimony-wrapper {
     &__testimonial {
       width: 70vw;
-      &:not(#left){
+
+      &:not(#left) {
         align-self: center;
-        
+
       }
-      
+
     }
 
   }
+
   .right-align p {
     text-align: left;
   }
 
 }
 
-@media(max-width:1000px){
-  .testimony-wrapper{
+@media(max-width:1000px) {
+  .testimony-wrapper {
     align-items: center;
   }
 }
 
-#barretemoi{
-  margin-left:30%;
+#barretemoi {
+  margin-left: 30%;
 }
-#texttemoi{
+
+#texttemoi {
   text-align: center;
 }
 
 @media(min-width:1000px) {
 
-  #barretemoi{
+  #barretemoi {
     margin-left: 0;
   }
-  #texttemoi{
+
+  #texttemoi {
     text-align: start;
   }
-  
+
 }
