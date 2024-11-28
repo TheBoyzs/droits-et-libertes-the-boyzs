@@ -12,8 +12,22 @@ hamburger.addEventListener("click", () => {
 const closeButton = document.getElementById("disclaimer-close");
 const disclaimer = document.getElementById("disclaimer");
 closeButton.addEventListener("click", () => {
-  disclaimer.style.display = "none";
+  hideDisclaimer()
 });
+
+if (localStorage.getItem("disclaimerClosed") == "true") {
+  hideDisclaimer()
+}
+
+function showDisclaimer() {
+  disclaimer.style.display = "grid";
+  localStorage.setItem("disclaimerClosed", false);
+}
+
+function hideDisclaimer() {
+  disclaimer.style.display = "none";
+  localStorage.setItem("disclaimerClosed", true);
+}
 
 
 //Script pour pagination 
