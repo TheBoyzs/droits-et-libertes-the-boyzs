@@ -10,7 +10,7 @@
 
 html {
   scrollbar-width: large; /* Makes the scrollbar thinner */
-  scrollbar-color: #5a0505 #f37272; /* Thumb color and track color *
+  scrollbar-color: #5a0505 #f37272; /* Thumb color and track color */
 }
 
 body {
@@ -21,17 +21,16 @@ body {
   box-sizing: content-box;
   max-width: 100%;
   width: 100vw;
-  background-color: variables.$tan;
-
+  background-color: #e4dcca;
 }
 
 button {
-  background-color: variables.$ldlRed;
+  background-color: #b20838;
   font-size: 20px;
   text-transform: uppercase;
-  color: variables.$white;
+  color: #fdfdff;
   border: none;
-  border: solid 2px variables.$white;
+  border: solid 2px #fdfdff;
   padding: 15px;
   /*
   box-shadow: 3px 1px 10px 1px rgb(65, 64, 64);
@@ -40,7 +39,7 @@ button {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-html:active:after {
+button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
