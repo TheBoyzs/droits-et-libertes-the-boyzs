@@ -1408,7 +1408,6 @@ p {
 #modal-close {
   width: 90%;
   display: flex;
-  color: #fdfdff;
   margin-top: 40px;
   justify-content: end;
 }
@@ -1682,6 +1681,21 @@ p {
 
 .webquebec {
   text-align: center;
+}
+
+.formulaire {
+  padding: 0 !important;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #373f40;
+}
+.formulaire .titre {
+  color: #fdfdff;
+  text-align: center;
+}
+.formulaire .label-form {
+  color: #fdfdff;
+  margin-left: 10px;
 }
 
 .container {
