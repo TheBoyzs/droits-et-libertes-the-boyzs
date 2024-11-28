@@ -3,29 +3,41 @@
  * 	Template Name: NewsHub
  *  Template Post Type: page, post
  */
-
-get_header(); // Affiche header.php
-
-if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
-	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
-	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
-		
-		<?php the_content(); // Contenu principal de la page ?>
-	</article>
-<?php endwhile; // Fermeture de la boucle
+<!--Navigation-->
+<?php
+	get_header(); // Affiche header.php
+?>
 
-else : // Si aucune page n'a été trouvée
-	get_template_part( 'partials/404' ); // Affiche partials/404.php
-endif;
+<!--Before the posts-->
+<section class="news-wrapper">
+<div class="news-wrapper__news">
+	
+</div>
+<ul class="news-wrapper__list"></ul>
 
-get_footer(); // Affiche footer.php
+<!--Loop through the posts-->
+<?php
+	$articles = new WP_Query('post_type=article'); //Typer d'article à afficher
+	while ($articles->have_posts()) : $articles->the_post();
+?>
 
+<!--Post Template-->
+<li>
+	<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+	</a>
+</li>
+
+<?php
+	endwhile; 
+	wp_reset_postdata(); 
+?>
+
+<!--After the posts-->
+
+
+<!--Partner and footer-->
+<?php
+	get_footer(); // Affiche footer.php
 ?>
