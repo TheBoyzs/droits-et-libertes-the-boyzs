@@ -12,30 +12,29 @@
 
 <!--Before the posts-->
 <section class="news-wrapper">
-<div class="news-wrapper__news">
-	
-</div>
-<ul class="news-wrapper__list"></ul>
 
-<!--Loop through the posts-->
-<?php
-	$articles = new WP_Query('post_type=article'); //Typer d'article à afficher
-	while ($articles->have_posts()) : $articles->the_post();
-?>
+	<ul class="news-wrapper__list">
 
-<!--Post Template-->
-<li>
-	<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
-	</a>
-</li>
+		<!--Loop through the posts-->
+		<?php
+			$articles = new WP_Query('post_type=article'); //Typer d'article à afficher
+			while ($articles->have_posts()) : $articles->the_post();
+		?>
 
-<?php
-	endwhile; 
-	wp_reset_postdata(); 
-?>
+		<!--Post Template-->
+		<li>
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+			</a>
+		</li>
 
-<!--After the posts-->
+		<?php
+			endwhile; 
+			wp_reset_postdata(); 
+		?>
 
+	<!--After the posts-->
+	</ul>
+</section>
 
 <!--Partner and footer-->
 <?php
