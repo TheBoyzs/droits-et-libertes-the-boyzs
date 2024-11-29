@@ -1715,6 +1715,7 @@ p {
 }
 .container {
   background: #b20838;
+  width: 80vw;
   padding: 25px;
   border-radius: 3px;
   display: grid;
