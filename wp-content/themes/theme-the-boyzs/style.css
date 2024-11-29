@@ -1703,6 +1703,8 @@ p {
 }
 .formulaire .titre {
   color: #fdfdff;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .formulaire .label-form {
   color: #fdfdff;
