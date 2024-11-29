@@ -399,8 +399,6 @@ section:not([name=carrousel], [name=swiper], [name=formulaire]) {
   z-index: 2;
   background-color: #f7b9cc;
   padding: 40px;
-  max-width: 800px;
-  min-width: 800px;
 }
 
 .section-card {
