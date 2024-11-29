@@ -5,10 +5,13 @@
     padding: 25px;
     border-radius: 3px;
     display: grid;
+    justify-items: stretch;
     box-shadow: -3px -3px 7px #f8525273, 3px 3px 5px rgba(138, 81, 81, 0.781);
 
     &__pagination {
         display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
         list-style: none;
 
         li {

@@ -1718,10 +1718,13 @@ p {
   padding: 25px;
   border-radius: 3px;
   display: grid;
+  justify-items: stretch;
   box-shadow: -3px -3px 7px rgba(248, 82, 82, 0.4509803922), 3px 3px 5px rgba(138, 81, 81, 0.781);
 }
 .container__pagination {
   display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   list-style: none;
 }
 .container__pagination li {
