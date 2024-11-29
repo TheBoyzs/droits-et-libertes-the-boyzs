@@ -97,7 +97,7 @@ section hr {
   border: solid 2px #b20838;
 }
 
-section:not([name=carrousel], [name=swiper]) {
+section:not([name=carrousel], [name=swiper], [name=formulaire]) {
   max-width: 1900px;
   margin: auto;
   padding: 40px;
@@ -1692,14 +1692,17 @@ p {
 }
 
 .formulaire {
-  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
   width: 100vw;
   max-width: 100%;
   background-color: #373f40;
 }
 .formulaire .titre {
   color: #fdfdff;
-  text-align: center;
 }
 .formulaire .label-form {
   color: #fdfdff;
