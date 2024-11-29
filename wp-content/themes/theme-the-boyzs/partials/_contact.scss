@@ -48,3 +48,14 @@
     }
     
 }
+
+@media(min-width:1000px){
+    .formulaire {
+    
+        .label-form {
+            color: variables.$white;
+            margin-left: 10px;
+        }
+        
+    }
+}

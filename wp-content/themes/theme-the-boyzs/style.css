@@ -1711,6 +1711,12 @@ p {
   margin-left: 10px;
 }
 
+@media (min-width: 1000px) {
+  .formulaire .label-form {
+    color: #fdfdff;
+    margin-left: 10px;
+  }
+}
 .container {
   background: #b20838;
   padding: 25px;
