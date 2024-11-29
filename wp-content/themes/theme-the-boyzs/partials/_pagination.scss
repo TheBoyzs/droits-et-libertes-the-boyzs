@@ -12,7 +12,7 @@
     &__pagination {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 5px;
         list-style: none;
 
         li {
@@ -85,5 +85,27 @@
                 }
             }
         }
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        &__pagination {
+            display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto ;
+        }
+        gap:15px;
+    }
+}
+
+
+
+
+@media (min-width: 1450px) {
+    .container {
+        &__pagination {
+            display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+        }
+        gap:15px;
     }
 }
