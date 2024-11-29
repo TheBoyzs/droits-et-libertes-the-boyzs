@@ -86,42 +86,51 @@
 
     <section>
         <div class="container" id="container-news">
-            <ul class="container__pagination">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">Next</a></li>
-            </ul>
+            
+            
+
+            <select class="ordre">
+                <option value="" selected disabled hidden>Ordre d'affichage</option>
+              <option value="recente">Voir les nouvelles récentes</option>
+              <option value="anciennes">Voir les nouvelles anciennes</option>
+              <option value="populaire">Voir les nouvelles populaires</option>
+            </select>
+            <button>Voir plus de nouvelles</button>
+           
         </div>
     </section>
+
+    <div class="titrenouvelle">
+        <p class="h1">Nouvelles</p>
+    </div>
+
     <section class="news-wrapper">
+        <!--
         <div class="news-wrapper__news">
 
         </div>
-        <ul class="news-wrapper__list">
-            <li>
+        -->
+        
+
+        <div class="news-wrapper__list">
+            <div class="liste-carte">
                 <a href="headline.html">Pour l'interdiction des interpellations policières une bonne fois pour toute
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="liste-carte">
                 <a href="https://liguedesdroits.ca/pinel-les-cas-complexes-crient-au-secours/">Pinel: Les cas complexes
                     crient au secours!</a>
-            </li>
-            <li>
+            </div>
+            <div class="liste-carte">
                 <a
                     href="https://liguedesdroits.ca/pour-linterdiction-des-interpellations-policieres-une-bonne-fois-pour-toute/">Pour
                     l’interdiction des interpellations
                     policières une bonne fois pour toute</a>
-            </li>
-            <li>
+            </div>
+            <div class="liste-carte">
                 <a>États généraux de la fonction public du Québec</a>
-            </li>
+            </div>
+            <!--
             <li>
                 <a>Le Canada doit stopper de façon urgente l’exportation
                     d’armes à destination d’Israël</a>
@@ -144,7 +153,8 @@
                 <a>Le Canada doit stopper de façon urgente l’exportation
                     d’armes à destination d’Israël</a>
             </li>
-        </ul>
+            -->
+        </div>
     </section>
     <!-- Footer -->
     <footer>

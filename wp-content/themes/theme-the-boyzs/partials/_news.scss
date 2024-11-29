@@ -1,39 +1,67 @@
 @use "variables";
 
+.titrenouvelle .h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.ordre{
+    height:70px;
+    font-size: 20px;
+    text-align: center;
+    background-color: variables.$ldlRed;
+    border: variables.$white solid 2px;
+    color:variables.$white;
+    text-transform: uppercase;
+}
+
+
+
 
 #container-news{
+    display:grid;
+    gap:10px;
+    grid-template-columns: auto;
     margin-top: 150px !important;
 }
 .news-wrapper {
     margin: 0;
-    width: 100vw;
+    
+    max-width: 100%;
     display: flex;
     margin-top: 100px;
     flex-direction: column;
+    align-items: center;
+    /*
     background-color: variables.$whitetrans;
+    */
+    
     margin-top: 200px;
    ; // Light background for better contrast
 
-    ul.news-wrapper__list {
-        display: flex;
-        flex-direction: column;
-        
-    
+    .news-wrapper__list {
+        display: grid;
+        grid-template-columns: auto ;
 
-        li {
+        .liste-carte {
             list-style-type: none;
             margin: 1rem 0; // Add margin for spacing
             border-radius: 1px; // Rounded corners
             overflow: hidden; // Contain any overflow
             transition: transform 0.3s, box-shadow 0.3s; // Smooth transitions
-
+            height: 400px;
+            display: flex;
+            justify-content: start;
+            border: variables.$dark solid 2px;
+            border-radius: 3px;
             &:nth-child(odd) {
                 background-color: variables.$dark; // Alternate background color
-                height: 75px;
                 color: white;
-                display: flex;
-                align-items: center;
-                justify-content: start;
+            }
+            &:nth-child(1){
+                border: variables.$ldlRed 3px solid
             }
 
             &:hover {
@@ -42,7 +70,7 @@
             }
 
             a {
-                display: block;
+                
                 padding: 1rem; // Add padding inside the link
                 text-align: left;
                 font-size: 18px; // Slightly smaller font for links
@@ -57,6 +85,40 @@
             }
         }
     }
+}
+
+@media(min-width:768px){
+    .news-wrapper{
+        .news-wrapper__list{
+            display: grid;
+            grid-template-columns: auto auto ;
+            gap:5px;
+        }
+        
+    }
+
+}
+@media(min-width:1000px){
+    .news-wrapper{
+        .news-wrapper__list{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            
+        }
+        
+    }
+
+}
+@media(min-width:1400px){
+    .news-wrapper{
+        .news-wrapper__list{
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            
+        }
+        
+    }
+
 }
 
 /*
@@ -120,6 +182,8 @@
     }
 }
     */
+
+   
 
 .container {
     padding: 5px;
