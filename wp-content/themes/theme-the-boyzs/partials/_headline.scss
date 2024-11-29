@@ -2,7 +2,7 @@
 
 .headline-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100vw;
     gap: 20px;
     max-width: 800px; // Set a max width for a more newspaper-like column
     margin: 40px auto; // Center the wrapper with space above and below
@@ -11,7 +11,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
 
     .headline-title {
-        grid-column: 1 / 2;
+
         font-size: 4.5rem;
         font-weight: bold;
         line-height: 1.4;
@@ -62,13 +62,13 @@
     }
 
     article {
-        grid-column: 1 / 2;
+
         font-size: 1.1em; // Slightly larger than normal text size
         line-height: 1.6; // Increased line height for readability
         color: #555; // Darker gray for a softer contrast than pure black
         margin-top: 20px; // Space above the article
         max-width: 100%;
-        width: 100vw;
+        width: 80vw;
         text-align: left;
 
         p {

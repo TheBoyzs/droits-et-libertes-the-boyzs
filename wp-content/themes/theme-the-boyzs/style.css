@@ -1527,7 +1527,7 @@ p {
 }
 .headline-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100vw;
   gap: 20px;
   max-width: 800px;
   margin: 40px auto;
@@ -1536,7 +1536,6 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .headline-wrapper .headline-title {
-  grid-column: 1/2;
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 1.4;
@@ -1579,13 +1578,12 @@ p {
   line-height: 1.6;
 }
 .headline-wrapper article {
-  grid-column: 1/2;
   font-size: 1.1em;
   line-height: 1.6;
   color: #555;
   margin-top: 20px;
   max-width: 100%;
-  width: 100vw;
+  width: 80vw;
   text-align: left;
 }
 .headline-wrapper article p {
