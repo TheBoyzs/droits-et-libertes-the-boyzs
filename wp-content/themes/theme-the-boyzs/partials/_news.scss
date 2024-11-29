@@ -15,7 +15,17 @@
     border: variables.$white solid 2px;
     color:variables.$white;
     text-transform: uppercase;
+    transition-duration: 0.4s;
+    option{
+        text-transform:none;
+    }
 }
+
+.ordre:hover{
+    cursor:pointer;
+    background-color: #7e082a;
+}
+
 
 
 
@@ -53,7 +63,9 @@
             transition: transform 0.3s, box-shadow 0.3s; // Smooth transitions
             height: 400px;
             display: flex;
-            justify-content: start;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
             border: variables.$dark solid 2px;
             border-radius: 3px;
             &:nth-child(odd) {
@@ -73,7 +85,7 @@
                 
                 padding: 1rem; // Add padding inside the link
                 text-align: left;
-                font-size: 18px; // Slightly smaller font for links
+                font-size: 25px; // Slightly smaller font for links
                 color: inherit; // Inherit color from parent
                 text-decoration: none; // Remove underline
                 transition: color 0.3s; // Smooth color transition
@@ -82,6 +94,14 @@
                     color: variables.$ldlRed; // Change color on hover
                     cursor: pointer;
                 }
+            }
+            p{
+                padding: 1rem; // Add padding inside the link
+                text-align: left;
+                font-size: 15px; // Slightly smaller font for links
+                color: inherit; // Inherit color from parent
+                text-decoration: none; // Remove underline
+
             }
         }
     }
@@ -93,6 +113,30 @@
             display: grid;
             grid-template-columns: auto auto ;
             gap:5px;
+            .liste-carte{
+                a {
+                
+                    padding: 1rem; // Add padding inside the link
+                    text-align: left;
+                    font-size: 25px; // Slightly smaller font for links
+                    color: inherit; // Inherit color from parent
+                    text-decoration: none; // Remove underline
+                    transition: color 0.3s; // Smooth color transition
+    
+                    &:hover {
+                        color: variables.$ldlRed; // Change color on hover
+                        cursor: pointer;
+                    }
+                }
+                p{
+                    padding: 1rem; // Add padding inside the link
+                    text-align: left;
+                    font-size: 15px; // Slightly smaller font for links
+                    color: inherit; // Inherit color from parent
+                    text-decoration: none; // Remove underline
+    
+                }
+            }
         }
         
     }
