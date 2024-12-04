@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: NewsHub
- *  Template Post Type: page, post
+ *  Template Post Type: page
  */
 ?>
 
@@ -11,29 +11,72 @@
 ?>
 
 <!--Before the posts-->
-<section class="news-wrapper">
+<section>
+	<div class="container" id="container-news">
+		<select class="ordre" id="orderSelect" onchange="fetchArticle()">
+			<option value="asc" selected disabled hidden>Ordre d'affichage</option>
+			<option value="asc">Voir les nouvelles récentes</option>
+			<option value="desc">Voir les nouvelles anciennes</option>
+		</select>
+	</div>
+</section>
 
-	<ul class="news-wrapper__list">
+<div class="titrenouvelle">
+	<p class="h1">Nouvelles</p>
+</div>
+
+<section class="news-wrapper">
+	<div class="news-wrapper__list">
 
 		<!--Loop through the posts-->
-		<?php
-			$articles = new WP_Query('post_type=article'); //Typer d'article à afficher
-			while ($articles->have_posts()) : $articles->the_post();
-		?>
+		<script>
+			let orderSelect = document.querySelector("#orderSelect");
+			let nbArticle = 4;
+			let nbArticleFetch = 0;
+			fetch("/wp-json/wp/v2/article")
+					.then((data) => data.json())
+					.then((results) => nbArticleFetch = results.length)
 
-		<!--Post Template-->
-		<li>
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
-			</a>
-		</li>
+			function fetchArticle() {
+				fetch("/wp-json/wp/v2/article?orderby=date&order="+orderSelect.value+"&per_page="+nbArticle)
+					.then((data) => data.json())
+					.then((results) => buildElements(results))
+					.catch((error) => console.log("Catch Error: ", error));
+			}
+			
+			function buildElements(results) {
+				let html = "";
+				let list = document.querySelector(".news-wrapper__list");
+				list.innerHTML = ""
+				results.forEach((article) => {
+					/*--Post Template--*/
+					html += '<div class="liste-carte"><a href="'+article.link+'">'+article.acf.titre_de_larticle+'</a><p>'+article.acf.texte_du_resume+'</p></div>'
+					
+				})
+				list.innerHTML=html;
 
-		<?php
-			endwhile; 
-			wp_reset_postdata(); 
-		?>
+				let moreBtn = document.querySelector(".moreBtn");
+				console.log(nbArticle, nbArticleFetch)
+				if (nbArticle >= nbArticleFetch) {
+					moreBtn.style.display="none";
+				} else {
+					moreBtn.style.display="block";
+				}
+			}
+
+			function seeMore() {
+				nbArticle = nbArticle + 6;
+				fetchArticle();
+			}
+			
+			fetchArticle();
+		</script>
+
+		
 
 	<!--After the posts-->
-	</ul>
+	</div>
+    <button class="moreBtn" onclick="seeMore()">Voir plus de nouvelles</button>
 </section>
 
 <!--Partner and footer-->

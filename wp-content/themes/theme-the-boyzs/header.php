@@ -45,7 +45,7 @@
                     <input type="text" placeholder="  RECHERCHER">
                 </div>
     
-                <img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+                <a href=""><img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl"></a>
     
                 <div class="navbar-top__buttons">
                     <button class="cta-button secondary">S'INFORMER</button>

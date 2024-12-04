@@ -11,17 +11,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
-		
-		<?php the_content(); // Contenu principal de la page ?>
-	</article>
-
 	<div class="hero-image" style="background-image:url('<?php the_field('image_cover'); ?>')">
         <div class="hero-image__text" name="text">
             <h1><?php echo get_field('titre_du_resume'); ?></h1><br>
