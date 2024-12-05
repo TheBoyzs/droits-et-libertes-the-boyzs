@@ -379,6 +379,10 @@ section:not([name=carrousel], [name=swiper], [name=formulaire]) {
 }
 
 .hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   padding: 200px;
 }
@@ -398,7 +402,6 @@ section:not([name=carrousel], [name=swiper], [name=formulaire]) {
   z-index: 1; /* Make sure it sits behind the text */
 }
 .hero-image__text {
-  position: relative;
   z-index: 2;
   background-color: #f7b9cc;
   padding: 40px;

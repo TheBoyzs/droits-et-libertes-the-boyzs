@@ -12,7 +12,10 @@
 }
 
 .hero-image{
-   
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
     position:relative;
     padding: 200px;
     &::before{
@@ -31,10 +34,12 @@
         z-index: 1; /* Make sure it sits behind the text */
     }
     &__text{
-        position: relative;
+        
+        
         z-index: 2;
         background-color: variables.$pink;
         padding: 40px;
     }
 }
+
 
