@@ -1,18 +1,18 @@
 @use 'variables';
 
 /* le disclaimer est en display grid sur une colonne et une rangée*/
-@media(min-width:375px){
-    .disclaimer{
+@media(min-width:375px) {
+    .disclaimer {
         display: grid;
         grid-template-columns: auto auto;
-        max-width:100%;
+        max-width: 100%;
         width: 100vw;
         height: 10vh;
         background: variables.$pink;
         color: variables.$ldlRed;
         font-size: 1rem;
-      
-        p{
+
+        p {
             /*
             align-self: center;
             */
@@ -21,43 +21,48 @@
             font-size: 15px;
             vertical-align: middle;
             align-self: center;
-            margin:0;
+            margin: 0;
         }
-        i{
-            margin-right: 2vw;;
+
+        i {
+            margin-right: 2vw;
+            ;
             align-self: center;
             justify-self: center;
             cursor: pointer;
         }
     }
-    
+
 
 }
 
 
-@media(min-width: 768px){
-    p{
+@media(min-width: 768px) {
+    p {
         align-self: center;
         margin-left: 4vw;
-        margin:0;
+        margin: 0;
     }
-    i{
+
+    i {
         margin-left: 1vw;
     }
 }
 
-@media(min-width: 1400px){
- .disclaimer{
-    grid-template-columns: auto 10vw;
-    margin:0;
- }
- p{
-    align-self:center;
-    margin:0;
-}
- i{
-    align-self: center;
- }
- 
-    
+@media(min-width: 1400px) {
+    .disclaimer {
+        grid-template-columns: auto 10vw;
+        margin: 0;
+    }
+
+    p {
+        align-self: center;
+        margin: 0;
+    }
+
+    i {
+        align-self: center;
+    }
+
+
 }

@@ -1107,7 +1107,9 @@ p {
   justify-content: center;
   align-items: center;
 }
-.swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text span {
+.swiper .swiper-wrapper .swiper-slide .text .text1,
+.swiper .swiper-wrapper .swiper-slide .text .text2,
+.swiper .swiper-wrapper .swiper-slide .text span {
   width: 50vw;
   height: auto;
   font-size: 29px;
@@ -1175,7 +1177,11 @@ p {
   .swiper .swiper-wrapper .swiper-slide .text {
     padding-top: 200px;
   }
-  .swiper .swiper-wrapper .swiper-slide .text .text1, .swiper .swiper-wrapper .swiper-slide .text .text2, .swiper .swiper-wrapper .swiper-slide .text .text3, .swiper .swiper-wrapper .swiper-slide .text p, .swiper .swiper-wrapper .swiper-slide .text span {
+  .swiper .swiper-wrapper .swiper-slide .text .text1,
+  .swiper .swiper-wrapper .swiper-slide .text .text2,
+  .swiper .swiper-wrapper .swiper-slide .text .text3,
+  .swiper .swiper-wrapper .swiper-slide .text p,
+  .swiper .swiper-wrapper .swiper-slide .text span {
     text-align: left;
   }
   .swiper .swiper-wrapper .swiper-slide .text .boutonhero {
