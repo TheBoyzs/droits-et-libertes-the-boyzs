@@ -12,7 +12,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 ?>
 
 	<div class="hero-image" style="background-image:url('<?php the_field('image_cover'); ?>')">
-        <div class="hero-image__text" name="text">
+        <div class="hero-image__text" name="text" style="background-color:<?php the_field('categorie'); ?>">
             <h1><?php echo get_field('titre_du_resume'); ?></h1><br>
             <h3><?php echo get_field('texte_du_resume'); ?></h3>
         </div>

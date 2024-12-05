@@ -347,6 +347,9 @@ section:not([name=carrousel], [name=swiper], [name=formulaire]) {
   .navbar .navbar-top {
     justify-content: center;
   }
+  .navbar .navbar-top .logo {
+    height: 20px;
+  }
   .navbar .hamburger {
     display: flex;
   }

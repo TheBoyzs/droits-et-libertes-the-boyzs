@@ -59,15 +59,16 @@
                 <span></span>
                 <span></span>
             </div>
-    
+
             <nav class="navbar-bottom">
                 <ul class="nav-links">
-                    <li><a class="nav-link__active" href="index.html">ACCUEIL</a></li>
-                    <li><a class="nav-link" href="luttes.html">LUTTES</a></li>
-                    <li><a class="nav-link" href="team.html">ÉQUIPE</a></li>
-                    <li><a class="nav-link" href="news.html">NOUVELLES</a></li>
-                    <li><a class="nav-link" href="about.html">À PROPOS</a></li>
-                    <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <?php
+                        wp_nav_menu( array(
+                            'container' => false,  // Don't wrap the menu in an additional container
+                            'items_wrap' => '%3$s',  // Remove the default <ul> wrapper, we'll create it ourselves
+                            'depth' => 1  // Limit to one level of menu items
+                        ));
+                    ?>
                 </ul>
             </nav>
     
@@ -79,12 +80,13 @@
                         <input type="text" placeholder="  RECHERCHER">
                     </div>
                     <ul class="nav-links">
-                    <li><a class="nav-link" href="index.html">ACCUEIL</a></li>
-                    <li><a  href="luttes.html">LUTTES</a></li>
-                    <li><a  href="team.html">ÉQUIPE</a></li>
-                    <li><a  href="news.html">NOUVELLES</a></li>
-                    <li><a  href="about.html">À PROPOS</a></li>
-                    <li><a  href="contact.html">CONTACT</a></li>
+                        <?php
+                            wp_nav_menu( array(
+                                'container' => false,  // Don't wrap the menu in an additional container
+                                'items_wrap' => '%3$s',  // Remove the default <ul> wrapper, we'll create it ourselves
+                                'depth' => 1  // Limit to one level of menu items
+                            ));
+                        ?>
                     </ul>
                     <div class="buttons">
                         <button class="cta-button secondary">S'INFORMER</button>
