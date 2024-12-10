@@ -37,8 +37,7 @@
                 <li><a class="facebook" href="https://www.facebook.com/LigueDesDroitsEtLibertes/"><i class="fa fa-facebook"></i></a></li>
                 <li><a class="twitter" href="https://x.com/liguedesdroits"><i class="fa fa-twitter"></i></a></li>
                 <li><a class="instagram" href="https://www.instagram.com/liguedesdroits"><i class="fa fa-instagram"></i></a></li>
-                <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i
-                            class="fa fa-linkedin"></i></a></li>
+                <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
         <div>
