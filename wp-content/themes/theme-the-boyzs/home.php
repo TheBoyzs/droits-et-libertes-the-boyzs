@@ -104,11 +104,11 @@ if ( have_posts() ) :
             <div class="lutte-wrapper__left-section">
                 <ul class="lutte-wrapper__fight-list">
                     <li><a href="#">Droits des personnes en détention <span class="arrow">→</span></a></li>
-                    <li><a href="#">Droits des peuples autochtones <span class="arrow">→</span></a></li>
-                    <li><a href="#">Racisme, exclusion sociale et laïcité <span class="arrow">→</span></a></li>
+                    <li><a href="https://the-boyzs.tim-momo.com/lutte/droits-des-peuples-autochtones/">Droits des peuples autochtones <span class="arrow">→</span></a></li>
+                    <li><a href="https://the-boyzs.tim-momo.com/lutte/racisme-exclusion-sociale-et-laicite-de-letat/">Racisme, exclusion sociale et laïcité <span class="arrow">→</span></a></li>
                     <li><a href="#">Droits des personnes migrantes <span class="arrow">→</span></a></li>
                     <li><a href="#">Environnement et droits humains <span class="arrow">→</span></a></li>
-                    <li><a href="#">Droits à la santé <span class="arrow">→</span></a></li>
+                    <li><a href="https://the-boyzs.tim-momo.com/lutte/droits-humains-et-covid-19/">Droits à la santé <span class="arrow">→</span></a></li>
                 </ul>
             </div>
             <div class="lutte-wrapper__right-section">
