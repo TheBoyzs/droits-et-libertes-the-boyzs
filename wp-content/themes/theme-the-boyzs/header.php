@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="/sources/medias/ldl-icone.ico">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css />
     <?php wp_head(); 
 	/* Cette fonction permet à WordPress et aux extensions d'instancier des fichier CSS et js dans le <head>
 		Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
@@ -34,7 +36,7 @@
         <div class="disclaimer" id="disclaimer">
             <p>Ce site est un une refonte dans le contexte d'un projet étudiant.
                 <strong><a href="https://liguedesdroits.ca/">Consulter le site original</a></strong>
-                
+
             </p>
             <i class="fa-solid fa-x fa-2x" id="disclaimer-close"></i>
         </div>
@@ -44,16 +46,22 @@
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                     <input type="text" placeholder="  RECHERCHER">
                 </div>
-    
-                <a href=""><img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl"></a>
-    
+
+                <a href=""><img class="logo"
+                        src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png"
+                        alt="logoldl"></a>
+
                 <div class="navbar-top__buttons">
-                    <button class="cta-button secondary">S'INFORMER</button>
-                    <button class="cta-button">DONNER</button>
+                    <button class="cta-button secondary">
+                        <i class="fa-solid fa-info-circle"></i> S'INFORMER
+                    </button>
+                    <button class="cta-button">
+                        <i class="fa-solid fa-hand-holding-heart"></i> DONNER
+                    </button>
                 </div>
-    
+
             </div>
-    
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -71,10 +79,11 @@
                     ?>
                 </ul>
             </nav>
-    
+
             <div class="mobile-menu-overlay">
                 <div class="mobile-menu-content">
-                    <img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png" alt="logoldl">
+                    <img class="logo" src="<?php bloginfo('template_url'); ?>/html/medias/ldl-logo-horizontale-270.png"
+                        alt="logoldl">
                     <div class="searchbar">
                         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                         <input type="text" placeholder="  RECHERCHER">

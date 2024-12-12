@@ -63,12 +63,12 @@
         <p id="media"><i class="fa-solid fa-mobile-screen"></i> Cell. médias: 514-715-7727</p><br>
 
             <div class="footer-wrapper__buttons">
-                <button>
-                    S'INFORMER
-                </button><br>
-                <button>
-                    DONNER
-                </button>
+            <button class="cta-button secondary">
+                        <i class="fa-solid fa-info-circle"></i> S'INFORMER
+                    </button> <br>
+                    <button class="cta-button">
+                        <i class="fa-solid fa-hand-holding-heart"></i> DONNER
+                    </button>
             </div>
         </div>
     </footer>
