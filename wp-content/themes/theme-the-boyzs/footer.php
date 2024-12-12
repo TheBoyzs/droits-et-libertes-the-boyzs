@@ -57,10 +57,11 @@
             </div>
         </div>
         <div class="footer-wrapper__info">
-            <p id="address">469 Jean-Talon Ouest, bureau 105</p><br>
-            <p id="ville">Montréal, Québec H3N 1R4</p><br>
-            <p id="cell">Tél.: 514 849-7717</p><br>
-            <p id="media">Cell. médias: 514-715-7727</p><br>
+        <p id="address"><i class="fa-solid fa-location-dot"></i> 469 Jean-Talon Ouest, bureau 105</p><br>
+        <p id="ville"><i class="fa-solid fa-city"></i> Montréal, Québec H3N 1R4</p><br>
+        <p id="cell"><i class="fa-solid fa-phone"></i> Tél.: 514 849-7717</p><br>
+        <p id="media"><i class="fa-solid fa-mobile-screen"></i> Cell. médias: 514-715-7727</p><br>
+
             <div class="footer-wrapper__buttons">
                 <button>
                     S'INFORMER
