@@ -34,20 +34,20 @@
                 <p>Ligue des <br> <b>Droits</b> et <b>libertés</b></p>
             </span>
             <ul class="footer-wrapper__social-icons">
-                <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/LigueDesDroitsEtLibertes/"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://x.com/liguedesdroits"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/liguedesdroits"><i class="fa fa-instagram"></i></a></li>
                 <li><a class="linkedin" href="https://fr.linkedin.com/company/liguedesdroits"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
         <div>
             <ul class="footer-wrapper__links">
-                <li><a link="#">Accueil</a></li>
-                <li><a link="#">Luttes</a></li>
-                <li><a link="#">Équipe</a></li>
-                <li><a link="#">Nouvelles</a></li>
-                <li><a link="#">À Propos</a></li>
-                <li><a link="#">Contact</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com">Accueil</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com/fights/">Luttes</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com/team/">Équipe</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com/news/">Nouvelles</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com/about/">À Propos</a></li>
+                <li><a link="https://the-boyzs.tim-momo.com/contact/">Contact</a></li>
                 <li><a link="#">FAQ</a></li>
             </ul>
             <hr>
